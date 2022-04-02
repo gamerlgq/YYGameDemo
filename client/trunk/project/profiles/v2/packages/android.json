@@ -1,7 +1,7 @@
 {
   "options": {
     "android": {
-      "packageName": "com.yy.game.test",
+      "packageName": "com.android.demo",
       "orientation": {
         "portrait": true,
         "upsideDown": false,
@@ -10,8 +10,7 @@
       },
       "apiLevel": "android-26",
       "appABIs": [
-        "arm64-v8a",
-        "armeabi-v7a"
+        "arm64-v8a"
       ],
       "useDebugKeystore": true,
       "keystorePath": "",
@@ -27,7 +26,8 @@
         "vulkan": false,
         "gles3": true,
         "gles2": true
-      }
+      },
+      "__version__": "1.0.0"
     }
   }
 }
