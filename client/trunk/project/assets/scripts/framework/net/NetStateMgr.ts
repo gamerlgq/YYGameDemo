@@ -12,12 +12,12 @@ import { DoubleBtnDialogArgsType } from "../../app/define/ConfigType";
 import { Protocol } from "../../app/define/define";
 import { ModelLogin } from "../../app/model/model";
 import { GameConfig } from "../../GameConfig";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { gameMgr } from "../core/GameMgr";
 import { msgEventMgr } from "../listener/EventMgr";
 import { socketMgr } from "./SocketMgr";
 
-class NetStateMgr extends Singleton{
+class NetStateMgr extends Singleton implements IRerunApp{
     private _reconnect;
     private _request_server_info_time: number = null;
     private _status: any;
@@ -64,7 +64,7 @@ class NetStateMgr extends Singleton{
             }
             let msg = event.reason;
             if (msg == "") {
-                msg = "与战车失去联系，请指挥官检查网络再尝试。";
+                msg = "与服务器失去联系，请指挥官检查网络再尝试。";
             }
             this.netWorkError(msg);
             socketMgr.sendInnerMsg(Protocol.Inner.FightPause);
@@ -154,10 +154,19 @@ class NetStateMgr extends Singleton{
 
     clear() {
         netStateMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        netStateMgr = create()();
     }
 }
 
+function create() {
+    return (()=>{
+        return NetStateMgr.getInstance<NetStateMgr>();
+    })
+}
+
 // ()();
-export let netStateMgr = (()=>{
-    return NetStateMgr.getInstance<NetStateMgr>();
-})();
+export let netStateMgr = create()();

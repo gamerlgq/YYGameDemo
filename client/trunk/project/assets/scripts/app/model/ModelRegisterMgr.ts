@@ -5,11 +5,12 @@
  * @LastEditors: Gino
  */
 
-import { Singleton } from "../../framework/components/Singleton";
+import { IRerunApp, Singleton } from "../../framework/components/Singleton";
 import { gameMgr } from "../../framework/core/GameMgr";
 import { ModelLogin } from "./ModelLogin";
 
-export class ModelRegisterMgr extends Singleton{
+export class ModelRegisterMgr extends Singleton implements IRerunApp{
+  
     ModelType:{
         ModelLogin:ModelLogin;
     }
@@ -25,11 +26,20 @@ export class ModelRegisterMgr extends Singleton{
     }
 
     clear(){
-        modelRegisterMgr = null
+        modelRegisterMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        modelRegisterMgr = create()();
     }
 }
 
+function create() {
+    return (()=>{
+        return ModelRegisterMgr.getInstance<ModelRegisterMgr>();
+    })
+}
+
 // ()();
-export let modelRegisterMgr = (()=>{
-    return ModelRegisterMgr.getInstance<ModelRegisterMgr>();
-})();
+export let modelRegisterMgr = create()();

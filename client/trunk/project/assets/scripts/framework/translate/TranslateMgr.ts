@@ -1,7 +1,7 @@
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { dataMgr } from "../data/DataMgr";
 
-class TranslateMgr extends Singleton {
+class TranslateMgr extends Singleton implements IRerunApp{
     // 缓存
     private _translateCfg:any = {};
     // 构造函数
@@ -44,6 +44,11 @@ class TranslateMgr extends Singleton {
 
     clear(){
         translateMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        translateMgr = create()();
     }
 }
 
@@ -62,7 +67,11 @@ class TranslateMgr extends Singleton {
 //     return TranslateMgr.getInstance().getExStr("e" + id);
 // }
 
+function create() {
+    return (()=>{
+        return TranslateMgr.getInstance<TranslateMgr>();
+    })
+}
+
 // ()();
-export let translateMgr = (()=>{
-    return TranslateMgr.getInstance<TranslateMgr>();
-})();
+export let translateMgr = create()();

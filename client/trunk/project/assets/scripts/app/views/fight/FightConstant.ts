@@ -61,19 +61,6 @@ export namespace FightConstant {
         Jump,//跳跃
     }
 
-    // 单位acion id对应的字符串；
-    export const FightUnitActionString = {
-        AddPrefab:FightUnitAction.AddPrefab,//添加预制体
-        Delay:FightUnitAction.Delay,//延迟
-        SpineAnimation:FightUnitAction.SpineAnimation,//特殊动作指令,每个spine角色不一样
-        Color:FightUnitAction.Color,//颜色变化
-        GoBack:FightUnitAction.GoBack,//返回阵位
-        Hide:FightUnitAction.Hide,//消失
-        Show:FightUnitAction.Show,//显示
-        Move:FightUnitAction.Move,//移动
-        Jump:FightUnitAction.Jump,//跳跃
-    }
-
     // 单位effect添加部位 
     export enum FightUnitEffectPart {
         Front, //胸前,默认

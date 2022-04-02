@@ -1,11 +1,12 @@
 
 import { Asset, find, instantiate, log, Node, Prefab, resources, UIOpacity, UITransform, Widget, widgetManager } from "cc";
+import { ViewProtocol } from "../../app/define/define";
 import { ShowBackgroundMgr } from "../../app/define/ShowBackgroundMgr";
 import { viewRegisterMgr } from "../../app/define/ViewRegisterMgr";
 import { MainEventTrigger } from "../../app/views/common/MainEventTrigger";
 import { TouchEffect } from "../../app/views/common/TouchEffect";
 import { TouchMain } from "../../app/views/common/TouchMain";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { ResourcesLoader } from "../data/ResourcesLoader";
 import { viewEventMgr } from "../listener/EventMgr";
 import { Message } from "../listener/Message";
@@ -14,7 +15,7 @@ import { setNodeVisible } from "../utils/functions";
 import { sceneTriggerMgr } from "../utils/SceneTriggerMgr";
 // import { functions, ShowBackgroundMgr, Message, TableLayer, viewEventMgr } from "../yy";
 
-class SceneMgr extends Singleton {
+class SceneMgr extends Singleton implements IRerunApp{
     _layerMap: Map<string, Node>;
     _tableLayerStack: Array<TableLayer>;
     _viewIndex: number = 0;
@@ -23,18 +24,6 @@ class SceneMgr extends Singleton {
     // 构造函数
     private constructor() {
         super();
-    }
-
-    init() {
-        this._layerMap = new Map();
-        this._tableLayerStack = [];
-        this.initAllScence();
-        this._initTouchGroup()
-    }
-
-    clear() {
-        this.clearAllScence();
-        sceneMgr = null;
     }
 
     private createNode(flag: string, parent?: Node): Node {
@@ -757,7 +746,8 @@ class SceneMgr extends Singleton {
     }
 
     public sendCreateView(UiFlag: number, data?: any) {
-        log("send create view:" + UiFlag)
+        let values = Object.values(ViewProtocol)
+        log("send create view:" + values[UiFlag]);
         let msg = new Message(UiFlag, data);
         viewEventMgr.dispatchEvent(msg);
     }
@@ -777,11 +767,31 @@ class SceneMgr extends Singleton {
             let node = instantiate(data)
             node.active = isShow
             this._layerMap.get("NetLoading").addChild(node)
-        }, false)
+        },Prefab, false)
+    }
+
+    init() {
+        this._layerMap = new Map();
+        this._tableLayerStack = [];
+        this.initAllScence();
+        this._initTouchGroup()
+    }
+
+    clear() {
+        this.clearAllScence();
+        sceneMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        sceneMgr = create()();
     }
 }
 
+function create() {
+    return (() => {
+        return SceneMgr.getInstance<SceneMgr>();
+    })
+}
 
-export let sceneMgr = (() => {
-    return SceneMgr.getInstance<SceneMgr>();
-})();
+export let sceneMgr = create()();

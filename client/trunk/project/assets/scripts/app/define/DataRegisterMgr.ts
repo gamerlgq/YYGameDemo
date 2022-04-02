@@ -6,11 +6,12 @@
  * @Description: file content
  */
 import { error, log } from "cc";
-import { Singleton } from "../../framework/components/Singleton";
+import { IRerunApp, Singleton } from "../../framework/components/Singleton";
 import { dataMgr } from "../../framework/data/DataMgr";
 import { Test_Parser } from "../parser/Test_Parser";
 
-export class DataRegisterMgr extends Singleton{
+export class DataRegisterMgr extends Singleton implements IRerunApp{
+
     DataType = {
         /**
          * @param [0] data handler name:"Test";
@@ -56,10 +57,19 @@ export class DataRegisterMgr extends Singleton{
 
     clear(){
         dataRegisterMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        dataRegisterMgr = create()();
     }
 }
 
+function create() {
+    return (() => {
+        return DataRegisterMgr.getInstance<DataRegisterMgr>();
+    })
+}
+
 // ()();
-export let dataRegisterMgr = (()=>{
-    return DataRegisterMgr.getInstance<DataRegisterMgr>();
-})();
+export let dataRegisterMgr = create()();

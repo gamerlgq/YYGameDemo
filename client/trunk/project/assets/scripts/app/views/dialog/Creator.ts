@@ -1,10 +1,11 @@
-import { instantiate, Prefab } from "cc";
+import { instantiate, log, Prefab } from "cc";
 import { sceneMgr } from "../../../framework/core/SceneMgr";
 import { ResourcesLoader } from "../../../framework/data/ResourcesLoader";
 import { Message } from "../../../framework/listener/Message";
 import { ViewCreatorBase } from "../../../framework/ui/ViewCreatorBase";
 import { ViewProtocol } from "../../define/ViewProtocol";
 import { viewRegisterMgr } from "../../define/ViewRegisterMgr";
+import { DoubleBtnDialog } from "./DoubleBtnDialog";
 import { Tips } from "./Tips";
 
 export class DialogCreator extends ViewCreatorBase {
@@ -23,11 +24,11 @@ export class DialogCreator extends ViewCreatorBase {
     onCreateDoubleBtnDialogView(event:Message) {
         let viewInfo = viewRegisterMgr.getViewInfo("dialog","DoubleBtnDialog");
         ResourcesLoader.loadWithViewInfo(viewInfo,(data:Prefab)=>{
-            data.addRef()
             let node = instantiate(data);
-            // let com = node.getComponent("DoubleBtnDialog").updateDialog(event.getRawData[0]);
+            let com = node.getComponent(DoubleBtnDialog);
+            com.updateDialog(event.getRawData());
             sceneMgr.pushNewTableLayer();
-            sceneMgr.replaceTableContent(node,viewInfo.View);
+            sceneMgr.replaceDialog(node);
         })
     }
 

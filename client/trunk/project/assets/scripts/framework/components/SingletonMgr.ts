@@ -1,3 +1,6 @@
+import { log } from "cc";
+import { Module } from "module";
+
 /*
  * @Author: liuguoqing
  * @Date: 2022-03-02 16:35:22
@@ -42,8 +45,9 @@ class SingletonMgr {
     destoryAll() {
         while (this._singletonList.length > 0) {
             let singleton = this._singletonList.pop();
-            singleton.clear();
-            singleton.destoryInstance();
+            log("===>destoryAll",singleton.instance);
+            singleton?.destoryInstance();
+            singleton.instance?.clear()
             singleton.instance = null;
         }
     }

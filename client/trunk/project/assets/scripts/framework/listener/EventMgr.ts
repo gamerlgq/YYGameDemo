@@ -1,5 +1,5 @@
 import { log } from "cc";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { Message } from "./Message";
 /*
  * @Author: liuguoqing
@@ -14,7 +14,7 @@ export interface EventCallback {
     (event: Message):void | string | boolean;
 }
 
-export class EventMgr extends Singleton {
+class EventMgr extends Singleton implements IRerunApp{
     // 字段
     _listeners: Map<number, Map<string, EventCallback>>;
     _listenerHandleIndex: number;
@@ -32,7 +32,7 @@ export class EventMgr extends Singleton {
         this._waitAddListeners = [];
         this._waitDelListeners = new Map();
     }
-
+ 
     // 方法
     addEventListener(eventName: number, listener: EventCallback): string {
         if (this._listeners.get(eventName) == null) {
@@ -122,21 +122,40 @@ export class EventMgr extends Singleton {
     clear() {
        
     }
+
+    recreate(): void {
+        
+    }
 }
 
-class ModelEventMgr extends EventMgr {
+class ModelEventMgr extends EventMgr implements IRerunApp{
     clear() {
         modelEventMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        modelEventMgr = ModelEventMgr.getInstance<ModelEventMgr>();
     }
 }
-class MsgEventMgr extends EventMgr {
+class MsgEventMgr extends EventMgr implements IRerunApp{
     clear() {
         msgEventMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        msgEventMgr = MsgEventMgr.getInstance<MsgEventMgr>();
     }
 }
-class ViewEventMgr extends EventMgr {
+class ViewEventMgr extends EventMgr implements IRerunApp{
     clear() {
         viewEventMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        viewEventMgr = ViewEventMgr.getInstance<ViewEventMgr>();
     }
 }
 

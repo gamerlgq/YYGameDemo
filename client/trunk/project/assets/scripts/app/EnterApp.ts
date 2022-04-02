@@ -11,7 +11,6 @@ import { dataRegisterMgr } from "./define/DataRegisterMgr";
 import { ViewProtocol } from "./define/ViewProtocol";
 import { viewRegisterMgr } from "./define/ViewRegisterMgr";
 import { modelRegisterMgr } from "./model/ModelRegisterMgr";
-
 /*
  * @Author: liuguoqing
  * @Date: 2022-03-02 16:36:11
@@ -39,10 +38,12 @@ export class EnterApp {
         // gameMgr.setCamera("default", main.defaultCamera);
         // gameMgr.setCamera("fight", main.fightCamera);
         // this.run();
-        director.loadScene("HotUpdate");
+        // director.loadScene("Launch");
+        game.restart();
     }
 
     init() {
+        
         sceneMgr.init();
         gameMgr.setApp(this);
         audioMgr.init();

@@ -33,7 +33,9 @@ export class FightActionMgr extends Singleton{
 
     private _fightMainWorld:FightMainWorld = null;
 
-    private _tempActionList:ActionBase[] = null
+    private _tempActionList:ActionBase[] = null;
+
+    private _tempFightUnitAciontNames:Map<string,number> = null;
 
     public static init(mainLayer:FightMainLayer){
         fightActionMgr = FightActionMgr.getInstance<FightActionMgr>();
@@ -168,7 +170,23 @@ export class FightActionMgr extends Singleton{
     }
 
     private _getUnitActionEnumByName(name:string):number{
-        return FightConstant.FightUnitActionString[name]
+        if (!this._tempFightUnitAciontNames){
+            this._tempFightUnitAciontNames = new Map();
+            let values = Object.values(FightConstant.FightUnitAction);
+            let names = [];
+            values.filter(v=>{
+                if (Number.isNaN(Number(v))) {
+                    log(v,"v");
+                    names.push(v);
+                }
+            })
+            for (let index = 0; index < names.length; index++) {
+                const value = names[index];
+                this._tempFightUnitAciontNames.set(value,index);
+            }
+        }
+
+        return this._tempFightUnitAciontNames.get(name);
     }
 
     /**

@@ -1,7 +1,7 @@
 import { Component, error, game, log, Node, Pool, Tween, tween, _decorator } from "cc"
 import { ErrorCode } from "../../app/define/ErrorCode";
 import { Protocol } from "../../app/define/Protocol";
-import { Singleton } from "../components/Singleton"
+import { IRerunApp, Singleton } from "../components/Singleton"
 import { gameMgr } from "../core/GameMgr";
 import { sceneMgr } from "../core/SceneMgr";
 import { Message } from "../listener/Message";
@@ -11,7 +11,7 @@ const { ccclass, property } = _decorator;
 @ccclass('NetLoadindComp')
 class NetLoadindComp extends Component {
     update(dt) {
-        netLoadingMgr.tick(dt)
+        netLoadingMgr?.tick(dt)
     }
 }
 
@@ -21,10 +21,10 @@ interface IMsg {
 }
 
 //网络loading管理
-class NetLoadingMgr extends Singleton {
+class NetLoadingMgr extends Singleton implements IRerunApp{
+
     private _msgList:IMsg[] = []
     private _time:number = 0; 
-    
 
     init() {
         let node = new Node("NetLoadingMgr")
@@ -81,9 +81,18 @@ class NetLoadingMgr extends Singleton {
 
     clear() {
         netLoadingMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        netLoadingMgr = create()();
     }
 }
 
-export let netLoadingMgr = (() => {
-    return NetLoadingMgr.getInstance<NetLoadingMgr>();
-})();
+function create() {
+    return (() => {
+        return NetLoadingMgr.getInstance<NetLoadingMgr>();
+    })
+}
+
+export let netLoadingMgr = create()();

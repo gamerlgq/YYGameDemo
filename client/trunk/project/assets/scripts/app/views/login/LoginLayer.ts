@@ -109,8 +109,8 @@ export class LoginLayer extends LayerBase {
     }
 
     private _connectServer() {
-            let model = gameMgr.getModel(ModelLogin);
-            let loginData = model.getLoginData();
+            // let model = gameMgr.getModel(ModelLogin);
+            // let loginData = model.getLoginData();
     
             // GET service + /client/which_server?user_id=xxx&channel_key=xxxxx&version=yyyy
             // user_id 账号唯一标识 内网包是上面接口的user_id sdk包是sdk唯一用户id
@@ -134,10 +134,13 @@ export class LoginLayer extends LayerBase {
             //             let serverData = modelServer.getServerInfoById(serverId);
             //             model.setSelectServerData(serverData);
     
-            //             socketMgr.connect(
+                        socketMgr.connect(
+                            "192.168.0.121",
+                            "9001",
             //                 serverData.address,
             //                 serverData.port,
-            //                 (event) => {
+                            (event:Event) => {
+                                log("openFunc:",event);
             //                     //打点
             //                     let param: any = {};
             //                     let serverInfo: any = {};
@@ -146,11 +149,11 @@ export class LoginLayer extends LayerBase {
             //                     serverInfo.id = serverData.id;
             //                     param.serverInfo = serverInfo;
                                 this._loginServer();
-            //                 },
-            //                 (event) => {
-            //                     log(event);
-            //                 }
-            //             );
+                            },
+                            (event:Event) => {
+                                log("errorFunc:",event);
+                            }
+                        );
             //         } else {
             //             G.showMsgTips(GetTranslateCode(178));
             //         }
@@ -176,6 +179,7 @@ export class LoginLayer extends LayerBase {
     }
 
     private _enterGame() {
+        this._connectServer();
         //打点
            // logDot(DotIDS.loginGameSuccess);
            sceneMgr.sendCreateView(ViewProtocol.ResLoadingLayer);

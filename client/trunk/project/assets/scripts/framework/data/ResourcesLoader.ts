@@ -64,7 +64,7 @@ export class ResourcesLoader {
     /**
      * @description 创建界面一定使用此方法 resources需要动态加载的资源(使用此方法，引擎底层资源释放)
      */
-    static loadWithViewInfo(viewInfo: ViewInfoType, doneFunc: FileCallback<UnionAsset>, isShowLoading: boolean = true, type?: typeof Asset) {
+    static loadWithViewInfo(viewInfo: ViewInfoType, doneFunc: FileCallback<UnionAsset>, type?: typeof Asset,isShowLoading: boolean = true) {
         let path = viewInfo.Path;
         if (isShowLoading) {
             netLoadingMgr.addMsgLoading("load view:" + path, 0)

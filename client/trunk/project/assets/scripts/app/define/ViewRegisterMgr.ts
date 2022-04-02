@@ -6,7 +6,7 @@
  * @Description: file content
  */
 
-import { Singleton } from "../../framework/components/Singleton";
+import { IRerunApp, Singleton } from "../../framework/components/Singleton";
 import { DialogCreator } from "../views/dialog/Creator";
 import { LoginCreator } from "../views/login/Creator";
 import { PreRewardCreator } from "../views/pre_reward/Creator";
@@ -24,7 +24,7 @@ import { G } from "../common/GlobalFunction";
 
 type ViewConfig = {
     path: string;//预制体路径
-    isShowBg?: boolean;//是否显示背景(默认false不现实背景)
+    isShowBg?: boolean;//是否显示背景(默认false不显示背景)
     isCache?: boolean;//是否永久缓存(默认false不永久缓存) 手动管理是否释放
     batch?:Array<number>;//批量资源例如 hero_1 ~ helr_xx [1,xx];
 }
@@ -40,7 +40,7 @@ interface ViewRegMgrInterface {
 }
 
 
-export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface {
+export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IRerunApp {
   
     // 注册预页面预制体路径
     ViewType = {
@@ -259,11 +259,20 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface {
     }
 
     clear(){
-        viewRegisterMgr = null
+        viewRegisterMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        viewRegisterMgr = create()();
     }
 }
 
+function create() {
+    return (() => {
+        return ViewRegisterMgr.getInstance<ViewRegisterMgr>();
+    })
+}
+
 // ()();
-export let viewRegisterMgr = (() => {
-    return ViewRegisterMgr.getInstance<ViewRegisterMgr>();
-})();
+export let viewRegisterMgr = create()();

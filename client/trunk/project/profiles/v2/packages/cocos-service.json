@@ -6,8 +6,15 @@
     },
     "android": {
       "configID": "f09b61",
-      "services": [],
-      "__version__": "3.0.2"
+      "services": [
+        {
+          "service_id": "235",
+          "service_component_name": "service-analytics",
+          "builder": "/Users/steven/.CocosCreator/.service/analytics/builder/builder.js",
+          "enable": false,
+          "params": {}
+        }
+      ]
     },
     "mac": {
       "configID": "f09b61",
@@ -20,7 +27,14 @@
   },
   "builder-options": {
     "configID": "f09b61",
-    "services": [],
-    "__version__": "3.0.2"
+    "services": [
+      {
+        "service_id": "235",
+        "service_component_name": "service-analytics",
+        "builder": "/Users/steven/.CocosCreator/.service/analytics/builder/builder.js",
+        "enable": false,
+        "params": {}
+      }
+    ]
   }
 }

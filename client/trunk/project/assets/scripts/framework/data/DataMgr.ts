@@ -6,18 +6,18 @@
  * @Description: file content
  */
 import { error, log } from "cc";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { DataBase, DataCallback } from "./DataBase";
 import { DataParserBase } from "./DataParserBase";
 
-class DataMgr extends Singleton {
+class DataMgr extends Singleton implements IRerunApp{
     private _dataMap: Map<string, DataBase>;
 
     constructor() {
         super();
         this._dataMap = new Map();
     }
-
+ 
     registerDataFile(dataHandlerName: string, path: string, parser: DataParserBase| null): void {
         let data = new DataBase(dataHandlerName, path, parser);
         this._dataMap.set(dataHandlerName, data);
@@ -91,10 +91,18 @@ class DataMgr extends Singleton {
 
     clear() {
         dataMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        dataMgr = create()();
     }
 }
 
+function create() {
+    return (()=>{
+        return DataMgr.getInstance<DataMgr>();
+    })
+}
 // ()();
-export let dataMgr = (()=>{
-    return DataMgr.getInstance<DataMgr>();
-})();
+export let dataMgr = create()();

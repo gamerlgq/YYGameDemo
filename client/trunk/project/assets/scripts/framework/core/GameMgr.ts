@@ -2,7 +2,7 @@ import { Camera, director, Game, game, ISchedulable, log, Scheduler, sys } from 
 import { DeviceInfoType } from "../../app/define/ConfigType";
 import { yy } from "../../app/define/YYNamespace";
 import { EnterApp } from "../../app/EnterApp";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { ModelBase } from "../data/ModelBase";
 import { modelEventMgr, msgEventMgr } from "../listener/EventMgr";
 import { Message } from "../listener/Message";
@@ -17,7 +17,7 @@ import { sceneMgr } from "./SceneMgr";
  */
 type tickFunc = (hdl: number) => void;
 
-export class GameMgr extends Singleton implements ISchedulable {
+export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     // ISchedulable
     id?: string;
     uuid?: string;
@@ -132,7 +132,7 @@ export class GameMgr extends Singleton implements ISchedulable {
             this._app.reRun();
         } else {
             log("GameMgr reRunRun2");
-            director.loadScene("HotUpdate");
+            director.loadScene("Launch");
         }
     }
 
@@ -234,10 +234,18 @@ export class GameMgr extends Singleton implements ISchedulable {
 
     clear(){
         gameMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        gameMgr = create()();
     }
 }
 
+function create() {
+    return  (()=>{
+        return GameMgr.getInstance<GameMgr>();
+    })
+}
 // ()();
-export let gameMgr = (()=>{
-    return GameMgr.getInstance<GameMgr>();
-})();
+export let gameMgr = create()();

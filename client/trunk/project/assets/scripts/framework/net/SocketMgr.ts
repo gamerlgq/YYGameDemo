@@ -1,6 +1,6 @@
 import { log, sys } from "cc";
 import { Proto } from "../../app/define/proto_mate";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { gameMgr } from "../core/GameMgr";
 import { Message } from "../listener/Message";
 import { decodeUtf8, encodeUtf8, str2ab } from "../utils/functions";
@@ -22,7 +22,7 @@ export type SocketCallback = {
 }
 
 const BUFF_SIZE = 1024 * 2;
-class SocketMgr extends Singleton {
+class SocketMgr extends Singleton implements IRerunApp{
     private _ws: WebSocket;
     private _StateChangeCallback: SocketCallback;
     private _ip: string;
@@ -165,10 +165,19 @@ class SocketMgr extends Singleton {
 
     clear() {
         socketMgr = null;
+        this.recreate();
+    }
+
+    recreate(): void {
+        socketMgr = create()();
     }
 }
 
+function create() {
+    return (() => {
+        return SocketMgr.getInstance<SocketMgr>();
+    })
+}
+
 // ()();
-export let socketMgr = (() => {
-    return SocketMgr.getInstance<SocketMgr>();
-})();
+export let socketMgr = create()();
