@@ -1,6 +1,7 @@
 
-import { _decorator, Component, Node, ScrollView, Button, Label, EventTouch, ProgressBar } from 'cc';
+import { _decorator, Component, Node, ScrollView, Button, Label, EventTouch, ProgressBar, log } from 'cc';
 import { ListView, ListViewDelegate } from '../../../../framework/ui/ListView';
+import { HeroSpineNode, MonsterSpineNode } from '../../common/spine/SpineNodeBase';
 import { FightConstant } from '../FightConstant';
 const { ccclass, property } = _decorator;
 
@@ -14,6 +15,10 @@ export class FightEditorUI extends Component {
     fullBar:ProgressBar = null;
 
     private _isShowActionOption:boolean = false;
+
+    private _attaker:HeroSpineNode | MonsterSpineNode = null;
+
+    private _defender:HeroSpineNode | MonsterSpineNode = null;
 
     start () {
         this._initScrollView();
@@ -61,6 +66,26 @@ export class FightEditorUI extends Component {
 
     onUnitActionBtnClick(event:EventTouch,customEventData:string){
         let node = event.getCurrentTarget();
-        node
+        log(node);
+    }
+
+    onClickAttacker(event:EventTouch,customEventData:string){
+        if (!this._attaker) {
+            this._showFingerEffect();
+        }
+    }
+
+    onClickDefender(event:EventTouch,customEventData:string){
+        if (!this._defender) {
+            this._showFingerEffect();
+        }
+    }
+
+    private _showFingerEffect() {
+        
+    }
+
+    onClickClear(){
+
     }
 }

@@ -1,244 +1,74 @@
-2022-03-31 20:19:15-log: [Package] menu@1.0.0 enable
-2022-03-31 20:19:15-log: [Package] profile@1.0.0 enable
-2022-03-31 20:19:15-log: [Package] project@1.0.1 enable
-2022-03-31 20:19:15-log: [Package] messages@1.0.0 enable
-2022-03-31 20:19:15-log: [Package] program@1.0.0 enable
-2022-03-31 20:19:15-log: [Package] device@1.0.1 enable
-2022-03-31 20:19:15-log: [Package] ui-kit@1.0.1 enable
-2022-03-31 20:19:15-log: [Package] tester@1.0.0 enable
-2022-03-31 20:19:15-log: [Package] preferences@1.0.0 enable
-2022-03-31 20:19:16-log: Setup mods mgr.: 299.319ms
-2022-03-31 20:19:16-log: [Package] engine@1.0.5 enable
-2022-03-31 20:19:18-log: [Package] programming@1.0.0 enable
-2022-03-31 20:19:18-log: [Package] engine-extends@1.0.0 enable
-2022-03-31 20:19:18-log: [Package] asset-db@1.0.0 enable
-2022-03-31 20:19:18-log: [Package] console@1.0.0 enable
-2022-03-31 20:19:18-log: [Package] scene@1.0.0 enable
-2022-03-31 20:19:19-log: [Package] about@1.0.0 enable
-2022-03-31 20:19:19-log: [Package] server@1.0.0 enable
-2022-03-31 20:19:19-log: [Package] utils@1.0.0 enable
-2022-03-31 20:19:19-log: [Package] assets@1.0.0 enable
-2022-03-31 20:19:19-log: [Package] inspector@1.0.0 enable
-2022-03-31 20:19:19-log: [Package] hierarchy@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] builder@1.3.1 enable
-2022-03-31 20:19:21-log: [Package] node-library@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] shortcuts@1.0.1 enable
-2022-03-31 20:19:21-log: [Package] package-asset@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] reference-image@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] animation-graph@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] channel-upload-tools@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] runtime-dev-tools@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] lightmap@1.0.4 enable
-2022-03-31 20:19:21-log: [Package] alipay-mini-game@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] android@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] baidu-mini-game@1.0.0 enable
-2022-03-31 20:19:21-log: [Package] bytedance-mini-game@1.0.1 enable
-2022-03-31 20:19:21-log: [Package] huawei-agc@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] ios@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] ios-app-clip@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] mac@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] native@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] ohos@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] web-desktop@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] web-mobile@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] wechatgame@1.0.1 enable
-2022-03-31 20:19:22-log: [Package] windows@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] xiaomi-quick-game@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] cocos-play@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] huawei-quick-game@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] link-sure@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] oppo-mini-game@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] qtt@1.0.0 enable
-2022-03-31 20:19:22-log: [Package] vivo-mini-game@1.0.0 enable
-2022-03-31 20:19:23-log: [Package] cocos-service@3.0.2 enable
-2022-03-31 20:19:23-log: [Package] importer@1.0.0 enable
-2022-03-31 20:19:23-log: [Package] extension@3.0.15 enable
-2022-03-31 20:19:23-log: [Im-plugin] Check im-plugin version.
-2022-03-31 20:19:23-log: [Package] im-plugin@3.0.8 enable
-2022-03-31 20:19:23-log: [Package] ccc-skeleton-viewer@1.4.0.20220128 enable
-2022-03-31 20:19:23-log: [Package] hot-update@0.0.2 enable
-2022-03-31 20:19:23-log: [Package] right-click-menu-extension@1.0.0 enable
-2022-03-31 20:19:24-warn: Browserslist: caniuse-lite is outdated. Please run:
+2022-04-02 10:59:48-log: [Package] menu@1.0.0 enable
+2022-04-02 10:59:48-log: [Package] profile@1.0.0 enable
+2022-04-02 10:59:48-log: [Package] project@1.0.1 enable
+2022-04-02 10:59:48-log: [Package] messages@1.0.0 enable
+2022-04-02 10:59:48-log: [Package] program@1.0.0 enable
+2022-04-02 10:59:48-log: [Package] device@1.0.1 enable
+2022-04-02 10:59:48-log: [Package] ui-kit@1.0.1 enable
+2022-04-02 10:59:48-log: [Package] tester@1.0.0 enable
+2022-04-02 10:59:48-log: [Package] preferences@1.0.0 enable
+2022-04-02 10:59:49-log: Setup mods mgr.: 285.793ms
+2022-04-02 10:59:49-log: [Package] engine@1.0.5 enable
+2022-04-02 10:59:51-log: [Package] programming@1.0.0 enable
+2022-04-02 10:59:51-log: [Package] engine-extends@1.0.0 enable
+2022-04-02 10:59:51-log: [Package] asset-db@1.0.0 enable
+2022-04-02 10:59:51-log: [Package] console@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] scene@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] about@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] server@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] utils@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] assets@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] inspector@1.0.0 enable
+2022-04-02 10:59:52-log: [Package] hierarchy@1.0.0 enable
+2022-04-02 10:59:53-log: [Package] preview@1.0.1 enable
+2022-04-02 10:59:54-log: [Package] builder@1.3.1 enable
+2022-04-02 10:59:54-log: [Package] node-library@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] shortcuts@1.0.1 enable
+2022-04-02 10:59:54-log: [Package] package-asset@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] reference-image@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] animation-graph@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] channel-upload-tools@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] runtime-dev-tools@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] lightmap@1.0.4 enable
+2022-04-02 10:59:54-log: [Package] alipay-mini-game@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] android@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] baidu-mini-game@1.0.0 enable
+2022-04-02 10:59:54-log: [Package] bytedance-mini-game@1.0.1 enable
+2022-04-02 10:59:54-log: [Package] huawei-agc@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] ios@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] ios-app-clip@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] mac@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] native@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] ohos@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] web-desktop@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] web-mobile@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] wechatgame@1.0.1 enable
+2022-04-02 10:59:55-log: [Package] windows@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] xiaomi-quick-game@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] cocos-play@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] huawei-quick-game@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] link-sure@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] oppo-mini-game@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] qtt@1.0.0 enable
+2022-04-02 10:59:55-log: [Package] vivo-mini-game@1.0.0 enable
+2022-04-02 10:59:56-log: [Package] cocos-service@3.0.2 enable
+2022-04-02 10:59:56-log: [Package] importer@1.0.0 enable
+2022-04-02 10:59:56-log: [Package] extension@3.0.15 enable
+2022-04-02 10:59:56-log: [Im-plugin] Check im-plugin version.
+2022-04-02 10:59:56-log: [Package] im-plugin@3.0.8 enable
+2022-04-02 10:59:56-log: [Package] ccc-skeleton-viewer@1.4.0.20220128 enable
+2022-04-02 10:59:56-log: [Package] ccc-quick-finder@1.4.0.20210910 enable
+2022-04-02 10:59:56-log: [Package] hot-update@0.0.2 enable
+2022-04-02 10:59:56-log: [Package] right-click-menu-extension@1.0.0 enable
+2022-04-02 10:59:57-log: [Im-plugin] Im-plugin online version is 3.0.8.
+2022-04-02 10:59:57-log: [Im-plugin] Im-plugin local version is 3.0.8.
+2022-04-02 10:59:57-log: [Im-plugin] Im-plugin need not update.
+2022-04-02 11:00:00-warn: Browserslist: caniuse-lite is outdated. Please run:
 npx browserslist@latest --update-db
 
 Why you should do it regularly:
 https://github.com/browserslist/browserslist#browsers-data-updating
-2022-03-31 20:19:24-log: [Scene] Cocos Creator v3.4.2
-2022-03-31 20:19:24-log: [Scene] Extensions AnimationManagerEx v1.0
-2022-03-31 20:19:24-log: [Im-plugin] Im-plugin online version is 3.0.8.
-2022-03-31 20:19:24-log: [Im-plugin] Im-plugin local version is 3.0.8.
-2022-03-31 20:19:24-log: [Im-plugin] Im-plugin need not update.
-2022-03-31 20:19:24-info: [Scene] Forward render pipeline initialized.
-2022-03-31 20:30:21-warn: [Scene] Component property dump failed:
-  Node: spine(47ZEUY/QZP953uR15HGB1F)
- Component: sp.Skeleton(e9wFnc81VJBZHJuJ0nzmIc)
- Property: sockets
-2022-03-31 20:30:21-warn: [Scene] Maximum call stack size exceeded
-2022-03-31 20:30:36-warn: [Scene] Component property dump failed:
-  Node: spine(47ZEUY/QZP953uR15HGB1F)
- Component: sp.Skeleton(e9wFnc81VJBZHJuJ0nzmIc)
- Property: sockets
-2022-03-31 20:30:36-warn: [Scene] Maximum call stack size exceeded
-2022-03-31 20:30:37-warn: [Scene] Component property dump failed:
-  Node: spine(47ZEUY/QZP953uR15HGB1F)
- Component: sp.Skeleton(e9wFnc81VJBZHJuJ0nzmIc)
- Property: sockets
-2022-03-31 20:30:37-warn: [Scene] Maximum call stack size exceeded
-2022-03-31 20:30:39-warn: [Scene] Component property dump failed:
-  Node: spine(47ZEUY/QZP953uR15HGB1F)
- Component: sp.Skeleton(e9wFnc81VJBZHJuJ0nzmIc)
- Property: sockets
-2022-03-31 20:30:39-warn: [Scene] Maximum call stack size exceeded
-2022-03-31 20:37:09-error: [Asset DB] Importer exec failed: {asset[/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/fight/datas/hit/hit_2.json](424b89ad-fd64-4e06-8fa2-31bc6b9354a4)}
-2022-03-31 20:37:09-error: [Asset DB] /Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/fight/datas/hit/hit_2.json: Unexpected token } in JSON at position 103
-2022-03-31 20:37:10-warn: [Scene] Component property dump failed:
-  Node: spine(47ZEUY/QZP953uR15HGB1F)
- Component: sp.Skeleton(e9wFnc81VJBZHJuJ0nzmIc)
- Property: sockets
-2022-03-31 20:37:10-warn: [Scene] Maximum call stack size exceeded
-2022-03-31 20:37:13-log: [Scene] Animation node(47ZEUY/QZP953uR15HGB1F)doesn't exist
-2022-04-01 10:06:02-error: [Preview]Uncaught TypeError: Cannot read properties of undefined (reading 'skillAnimation') in http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/action/AttackActionMgr.js
-2022-04-01 10:07:37-error: [Preview]Uncaught TypeError: animations.forEach is not a function in http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/action/AttackActionMgr.js
-2022-04-01 10:08:50-error: [Preview]Uncaught TypeError: Cannot read properties of undefined (reading 'skillTimeline') in http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/action/ResultActionMgr.js
-2022-04-01 10:10:46-error: [Preview]Uncaught TypeError: The thing you want to instantiate must be an object in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 10:10:47-error: [Preview]Uncaught TypeError: The thing you want to instantiate must be an object in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 10:10:49-error: [Preview]Uncaught TypeError: The thing you want to instantiate must be an object in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 10:10:51-error: [Preview]Uncaught TypeError: The thing you want to instantiate must be an object in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 10:10:52-error: [Preview]Uncaught TypeError: The thing you want to instantiate must be an object in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 10:14:07-error: [Preview]Uncaught TypeError: Cannot read properties of null (reading 'setStartCallback') in http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/action/ActionAddPrefab.js
-2022-04-01 10:14:08-error: [Preview]Uncaught TypeError: Cannot read properties of null (reading 'setStartCallback') in http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/action/ActionAddPrefab.js
-2022-04-01 10:22:16-warn: [Scene] Component property dump failed:
-  Node: spine(edaNhBkvhE8aW6DQyuCUhE)
- Component: sp.Skeleton(8b70OnGeRDErW4gQ+X3gMZ)
- Property: sockets
-2022-04-01 10:22:16-warn: [Scene] Maximum call stack size exceeded
-2022-04-01 10:22:18-warn: [Scene] Component property dump failed:
-  Node: spine(edaNhBkvhE8aW6DQyuCUhE)
- Component: sp.Skeleton(8b70OnGeRDErW4gQ+X3gMZ)
- Property: sockets
-2022-04-01 10:22:18-warn: [Scene] Maximum call stack size exceeded
-2022-04-01 10:22:19-warn: [Scene] Component property dump failed:
-  Node: spine(edaNhBkvhE8aW6DQyuCUhE)
- Component: sp.Skeleton(8b70OnGeRDErW4gQ+X3gMZ)
- Property: sockets
-2022-04-01 10:22:19-warn: [Scene] Maximum call stack size exceeded
-2022-04-01 10:22:22-warn: [Scene] Component property dump failed:
-  Node: spine(edaNhBkvhE8aW6DQyuCUhE)
- Component: sp.Skeleton(8b70OnGeRDErW4gQ+X3gMZ)
- Property: sockets
-2022-04-01 10:22:22-warn: [Scene] Maximum call stack size exceeded
-2022-04-01 10:40:39-warn: [Scene] Component property dump failed:
-  Node: spine(bfdRToPKBAnLJPbL/GJjsn)
- Component: sp.Skeleton(af7/bPHcxNY7dEXJN0DtCw)
- Property: sockets
-2022-04-01 10:40:39-warn: [Scene] Maximum call stack size exceeded
-2022-04-01 10:41:14-log: [Scene] Animation node(96QgWvDXVP9K5G9p3qSJ5M)doesn't exist
-2022-04-01 10:41:56-log: [Scene] Animation node(744DfRQZFD8btiu1aGm8T6)doesn't exist
-2022-04-01 10:42:20-log: [Scene] Animation node(2fPZh5TvpM5LfHpvvfuW1U)doesn't exist
-2022-04-01 10:42:21-log: [Scene] Animation node(7760rPmK1J651usTwOlbrr)doesn't exist
-2022-04-01 10:42:37-log: [Scene] Animation node(b6rKJ5CahBU6PHTaGBshWc)doesn't exist
-2022-04-01 10:51:57-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:51:57-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:52:04-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:52:04-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:17-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:17-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:27-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:27-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:34-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:34-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:52-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:53:52-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:54:50-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 10:54:50-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:02:52-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:02:52-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:13-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:13-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:13-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:13-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:33-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:33-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:34-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:04:34-warn: [Scene] Reference "_verticalScrollBar" of "ScrollView<ScrollView>" to external scene object "scrollBar" can not be saved in prefab asset.
-2022-04-01 11:26:33-error: [Preview]Uncaught TypeError: Cannot read properties of null (reading 'getComponent') in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 11:31:18-error: [Preview]Uncaught TypeError: Cannot read properties of null (reading 'getComponent') in http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js
-2022-04-01 11:35:16-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:16-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:19-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:19-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:57-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:57-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:57-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:57-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:58-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:58-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:58-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:35:58-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:56-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:56-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:56-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:56-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:56-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:56-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:57-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:36:57-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:37:41-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:37:41-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:37:41-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:37:41-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:37:41-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:37:41-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:12-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:12-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:25-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:25-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:54-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:54-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:54-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:38:54-warn: [Scene] Reference "scrollView" of "fighteditorui<FightEditorUI>" to external scene object "ScrollView" can not be saved in prefab asset.
-2022-04-01 11:40:00-log: [Scene] Animation node(efQ1pIaEZGMq4U4WbhB3ff)doesn't exist
-2022-04-01 11:40:08-log: [Scene] Animation node(74NUhyzDBD9KRWU+IGPfCN)doesn't exist
-2022-04-01 15:46:05-warn: [Scene] can't find node in current scene: a9XeWSwBtJHpv+KGA5Eh7Q
-2022-04-01 16:35:21-error: 无法加载模块 file:///Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/scripts/app/views/common/spine/SpineNodeBase.ts ：SyntaxError: unknown: Unexpected token, expected "," (90:47)
-
-  88 |             this._spineCom.addBloodUI(node);
-  89 |             if (this._camp == FightConstant.FightUnitType.Defend) [
-> 90 |                 node.setScale(new Vec3(-1,1,1));
-     |                                                ^
-  91 |             ]
-  92 |         });
-  93 |     }.
-2022-04-01 16:35:21-error: 无法加载模块 file:///Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/scripts/app/views/common/spine/SpineNodeBase.ts ：SyntaxError: unknown: Unexpected token, expected "," (90:47)
-
-  88 |             this._spineCom.addBloodUI(node);
-  89 |             if (this._camp == FightConstant.FightUnitType.Defend) [
-> 90 |                 node.setScale(new Vec3(-1,1,1));
-     |                                                ^
-  91 |             ]
-  92 |         });
-  93 |     }.
-2022-04-01 16:35:21-error: [Scene] 无法从 pack:///mods/fs/0/assets/scripts/app/views/fight/layer/RoleLayer.js 解析出模块 __unresolved_3。
-2022-04-01 16:35:22-error: [Preview]Unable to resolve bare specifier '__unresolved_32' from http://localhost:7456/scripting/x/mods/cce/internal/x/prerequisite-imports.js (SystemJS Error#8 https://git.io/JvFET#8)
-2022-04-01 16:35:22-error: [Preview]Error: Unable to resolve bare specifier '__unresolved_32' from http://localhost:7456/scripting/x/mods/cce/internal/x/prerequisite-imports.js (SystemJS Error#8 https://git.io/JvFET#8)
-    at throwUnresolved (http://localhost:7456/scripting/systemjs/system.js:696:11)
-    at SystemJS.systemJSPrototype.resolve (http://localhost:7456/scripting/systemjs/system.js:692:102)
-    at SystemJS.systemJSPrototype.resolve (http://localhost:7456/scripting/systemjs/system.js:1048:24)
-    at http://localhost:7456/scripting/systemjs/system.js:335:39
-    at Array.map (<anonymous>)
-    at http://localhost:7456/scripting/systemjs/system.js:333:43
-2022-04-01 16:35:22-error: [Preview]unhandledrejection: Unable to resolve bare specifier '__unresolved_3' from http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/layer/RoleLayer.js (SystemJS Error#8 https://git.io/JvFET#8)
-2022-04-01 16:35:22-error: [Preview]Error: Unable to resolve bare specifier '__unresolved_3' from http://localhost:7456/scripting/x/mods/fs/0/assets/scripts/app/views/fight/layer/RoleLayer.js (SystemJS Error#8 https://git.io/JvFET#8)
-    at throwUnresolved (http://localhost:7456/scripting/systemjs/system.js:696:11)
-    at SystemJS.systemJSPrototype.resolve (http://localhost:7456/scripting/systemjs/system.js:692:102)
-    at SystemJS.systemJSPrototype.resolve (http://localhost:7456/scripting/systemjs/system.js:1048:24)
-    at http://localhost:7456/scripting/systemjs/system.js:335:39
-    at Array.map (<anonymous>)
-    at http://localhost:7456/scripting/systemjs/system.js:333:43
-2022-04-01 18:00:53-warn: [Scene] can't find node in current scene: 78p7HrG8VFHolKfuNcXRfW
-2022-04-02 09:37:43-log: 完成自定义创建Assets 文件夹(系统)!
-2022-04-02 09:37:43-log: db://assets/resourcesSystemFolder目录名称需要自己手动更改!
-2022-04-02 09:50:38-log: [Scene] Animation node(6eO0q9nXBK8ZUyQJTU120O)doesn't exist
-2022-04-02 09:54:58-info: [Window] Name  已被复制：    finger.prefab
-2022-04-02 09:55:04-info: [Window] FilePath  已被复制：    /Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/newguide/prefabs/finger.prefab
-2022-04-02 09:55:17-info: [Window] URL  已被复制：    db://assets/resources/newguide/prefabs/finger.prefab
+2022-04-02 11:00:05-log: [Scene] Cocos Creator v3.4.2
+2022-04-02 11:00:09-log: [Scene] Extensions AnimationManagerEx v1.0
+2022-04-02 11:00:09-info: [Scene] Forward render pipeline initialized.
+2022-04-02 11:04:51-error: [Scene] Can't add component 'cc.Label' because Label already contains the same component.

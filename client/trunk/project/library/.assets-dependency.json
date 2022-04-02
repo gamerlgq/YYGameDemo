@@ -59,6 +59,21 @@
     ],
     "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/man_enemy_004.json": [
       "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/man_enemy_004.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/fight/pics/effect/embattled/hit_eff01.plist": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/fight/pics/effect/embattled/embattled_1.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/common_ui/fonts/decrease.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/common_ui/fonts/decrease.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/common_ui/fonts/doublehit.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/common_ui/fonts/doublehit.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/hero/pics/hero/man_enemy_004.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/hero/pics/hero/hero_new_tangyun.atlas"
     ]
   },
   "uuid": {
@@ -136,6 +151,15 @@
       "acea6b14-d6d7-4497-86e6-c8c5393d4b6c@6c48a"
     ],
     "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "31360ba5-59c8-4ae2-859d-52dedaf40661@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "2789d213-a004-469a-9afb-7ef596f1b7c0@6c48a",
+      "1da658d8-54b5-40b5-a6e9-7aae8ae383a3@6c48a",
+      "85373794-ee7f-45b7-be7e-a06b870b4979@6c48a",
+      "acea6b14-d6d7-4497-86e6-c8c5393d4b6c@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/resources/hero/pics/hero/man_enemy_004.json": [
       "31360ba5-59c8-4ae2-859d-52dedaf40661@6c48a"
     ]
   }

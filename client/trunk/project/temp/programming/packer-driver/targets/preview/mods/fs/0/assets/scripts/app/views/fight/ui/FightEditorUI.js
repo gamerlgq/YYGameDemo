@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, ScrollView, Label, ProgressBar, ListView, FightConstant, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, FightEditorUI;
+  var _reporterNs, _cclegacy, _decorator, Component, ScrollView, Label, ProgressBar, log, ListView, FightConstant, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, FightEditorUI;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -19,6 +19,14 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("ListViewDelegate", "../../../../framework/ui/ListView", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfHeroSpineNode(extras) {
+    _reporterNs.report("HeroSpineNode", "../../common/spine/SpineNodeBase", _context.meta, extras);
+  }
+
+  function _reportPossibleCrUseOfMonsterSpineNode(extras) {
+    _reporterNs.report("MonsterSpineNode", "../../common/spine/SpineNodeBase", _context.meta, extras);
+  }
+
   function _reportPossibleCrUseOfFightConstant(extras) {
     _reporterNs.report("FightConstant", "../FightConstant", _context.meta, extras);
   }
@@ -33,6 +41,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       ScrollView = _cc.ScrollView;
       Label = _cc.Label;
       ProgressBar = _cc.ProgressBar;
+      log = _cc.log;
     }, function (_unresolved_2) {
       ListView = _unresolved_2.ListView;
     }, function (_unresolved_3) {
@@ -57,6 +66,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           _initializerDefineProperty(this, "fullBar", _descriptor2, this);
 
           _defineProperty(this, "_isShowActionOption", false);
+
+          _defineProperty(this, "_attaker", null);
+
+          _defineProperty(this, "_defender", null);
         }
 
         start() {
@@ -108,8 +121,24 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         onUnitActionBtnClick(event, customEventData) {
           var node = event.getCurrentTarget();
-          node;
+          log(node);
         }
+
+        onClickAttacker(event, customEventData) {
+          if (!this._attaker) {
+            this._showFingerEffect();
+          }
+        }
+
+        onClickDefender(event, customEventData) {
+          if (!this._defender) {
+            this._showFingerEffect();
+          }
+        }
+
+        _showFingerEffect() {}
+
+        onClickClear() {}
 
       }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "scrollView", [_dec2], {
         configurable: true,

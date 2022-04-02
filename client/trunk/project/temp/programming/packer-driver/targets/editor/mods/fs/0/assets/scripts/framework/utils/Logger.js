@@ -58,7 +58,7 @@ System.register(["cc"], function (_export, _context) {
 
         static net(message) {
           if (this.lv >= 4) {
-            log(message);
+            log("NET: ", message);
           }
         }
 

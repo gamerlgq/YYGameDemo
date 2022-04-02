@@ -5,14 +5,14 @@
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/GameConfig.js",
-    "mTimestamp": 1648434921167
+    "mTimestamp": 1648868402557
   },
   "assets/scripts/app/define/ModelEnum.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/ModelEnum.js",
-    "mTimestamp": 1648434921564
+    "mTimestamp": 1648868401431
   },
   "assets/scripts/app/model/ModelLogin.js": {
     "imports": {
@@ -21,7 +21,7 @@
       "__unresolved_1": "assets/scripts/framework/data/ModelBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/model/ModelLogin.js",
-    "mTimestamp": 1648434921702
+    "mTimestamp": 1648868401522
   },
   "assets/scripts/app/model/model.js": {
     "imports": {
@@ -29,7 +29,7 @@
       "__unresolved_0": "assets/scripts/app/model/ModelLogin.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/model/model.js",
-    "mTimestamp": 1648434921820
+    "mTimestamp": 1648868402316
   },
   "assets/scripts/app/test.js": {
     "imports": {
@@ -46,7 +46,7 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/data/DataParserBase.js",
-    "mTimestamp": 1648434923523
+    "mTimestamp": 1648868404348
   },
   "assets/scripts/framework/data/ModelBase.js": {
     "imports": {
@@ -55,7 +55,7 @@
       "__unresolved_1": "assets/scripts/framework/listener/EventMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/data/ModelBase.js",
-    "mTimestamp": 1648434923518
+    "mTimestamp": 1648868404679
   },
   "assets/scripts/app/parser/Test_Parser.js": {
     "imports": {
@@ -64,7 +64,7 @@
       "__unresolved_1": "assets/scripts/framework/data/DataParserBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/parser/Test_Parser.js",
-    "mTimestamp": 1648434921732
+    "mTimestamp": 1648868402310
   },
   "assets/scripts/framework/UI/ListView.js": {
     "imports": {
@@ -78,7 +78,7 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/ListView.js",
-    "mTimestamp": 1648434923784
+    "mTimestamp": 1648868404727
   },
   "assets/scripts/framework/data/DataBase.js": {
     "imports": {
@@ -87,7 +87,7 @@
       "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/data/DataBase.js",
-    "mTimestamp": 1648434923486
+    "mTimestamp": 1648868404251
   },
   "assets/scripts/framework/ui/TranslateLabel.js": {
     "imports": {
@@ -96,7 +96,7 @@
       "__unresolved_1": "assets/scripts/framework/translate/TranslateMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/TranslateLabel.js",
-    "mTimestamp": 1648434923883
+    "mTimestamp": 1648868404805
   },
   "assets/scripts/extensions/AnimationManagerEx.proxy.js?cjs&original=.js": {
     "imports": {
@@ -140,21 +140,21 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/common/spine/effect/Jitter.js",
-    "mTimestamp": 1648434921932
+    "mTimestamp": 1648868402598
   },
   "assets/scripts/framework/listener/Message.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/listener/Message.js",
-    "mTimestamp": 1648434923558
+    "mTimestamp": 1648868404441
   },
   "assets/scripts/app/define/FightConst.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/FightConst.js",
-    "mTimestamp": 1648434921544
+    "mTimestamp": 1648868401421
   },
   "assets/scripts/app/views/pre_reward/PreReward.js": {
     "imports": {
@@ -164,7 +164,7 @@
       "__unresolved_2": "assets/scripts/framework/ui/ListView.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/pre_reward/PreReward.js",
-    "mTimestamp": 1648434923155
+    "mTimestamp": 1648868403958
   },
   "assets/skill_eitor/TimeLine.js": {
     "imports": {
@@ -174,14 +174,14 @@
       "__unresolved_2": "assets/skill_eitor/TimeLineItem.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/TimeLine.js",
-    "mTimestamp": 1648434924027
+    "mTimestamp": 1648868405047
   },
   "assets/skill_eitor/ActionTypeSelItem.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/ActionTypeSelItem.js",
-    "mTimestamp": 1648434923974
+    "mTimestamp": 1648868404965
   },
   "assets/skill_eitor/ActionTypeSelPanel.js": {
     "imports": {
@@ -191,14 +191,14 @@
       "__unresolved_2": "assets/skill_eitor/ActionTypeSelItem.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/ActionTypeSelPanel.js",
-    "mTimestamp": 1648434923994
+    "mTimestamp": 1648868405000
   },
   "assets/skill_eitor/ActionOptionPanel.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/ActionOptionPanel.js",
-    "mTimestamp": 1648434923949
+    "mTimestamp": 1648868404948
   },
   "assets/skill_eitor/TimeLineItem.js": {
     "imports": {
@@ -208,21 +208,21 @@
       "__unresolved_2": "assets/skill_eitor/TimeSetPanel.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/TimeLineItem.js",
-    "mTimestamp": 1648434924052
+    "mTimestamp": 1648868405113
   },
   "assets/skill_eitor/skill_edirot.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/skill_edirot.js",
-    "mTimestamp": 1648434924083
+    "mTimestamp": 1648868405088
   },
   "assets/skill_eitor/TimeSetPanel.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/skill_eitor/TimeSetPanel.js",
-    "mTimestamp": 1648434924067
+    "mTimestamp": 1648868405062
   },
   "assets/scripts/app/views/formation/GeneralIconShowComp.js": {
     "imports": {
@@ -248,7 +248,7 @@
       "__unresolved_1": "assets/scripts/framework/ui/TableContentLayer.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/TableLayer.js",
-    "mTimestamp": 1648434923850
+    "mTimestamp": 1648868404787
   },
   "assets/scripts/app/views/fight/FightFormation.js": {
     "imports": {
@@ -278,7 +278,7 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/UIWidget.js",
-    "mTimestamp": 1648434923859
+    "mTimestamp": 1648868404826
   },
   "assets/scripts/app/views/dialog/DoubleBtnDialog.js": {
     "imports": {
@@ -288,7 +288,7 @@
       "__unresolved_2": "assets/scripts/framework/ui/LayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/dialog/DoubleBtnDialog.js",
-    "mTimestamp": 1648434922050
+    "mTimestamp": 1648868402942
   },
   "assets/scripts/framework/core/audio/AudioEffect.js": {
     "imports": {
@@ -297,21 +297,21 @@
       "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/audio/AudioEffect.js",
-    "mTimestamp": 1648434923341
+    "mTimestamp": 1648868404178
   },
   "assets/scripts/framework/core/storage/EncryptUtil.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/storage/EncryptUtil.js",
-    "mTimestamp": 1648434923375
+    "mTimestamp": 1648868404238
   },
   "assets/scripts/framework/core/storage/Md5.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/storage/Md5.js",
-    "mTimestamp": 1648434923447
+    "mTimestamp": 1648868404302
   },
   "assets/scripts/framework/core/storage/SqlUtil.js": {
     "imports": {
@@ -338,7 +338,7 @@
       "__unresolved_2": "assets/scripts/framework/core/storage/Md5.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/storage/Storage.js",
-    "mTimestamp": 1648434923471
+    "mTimestamp": 1648868404343
   },
   "assets/scripts/app/views/common/CloseButton.js": {
     "imports": {
@@ -356,14 +356,14 @@
       "__unresolved_1": "assets/scripts/framework/listener/EventMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/ViewCreatorBase.js",
-    "mTimestamp": 1648434923902
+    "mTimestamp": 1648868404838
   },
   "assets/scripts/app/define/ConfigType.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/ConfigType.js",
-    "mTimestamp": 1648434921481
+    "mTimestamp": 1648868401339
   },
   "assets/scripts/app/views/formation/Creator.js": {
     "imports": {
@@ -376,7 +376,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/formation/Creator.js",
-    "mTimestamp": 1648434922878
+    "mTimestamp": 1648868403665
   },
   "assets/scripts/app/views/pre_reward/Creator.js": {
     "imports": {
@@ -389,14 +389,14 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/pre_reward/Creator.js",
-    "mTimestamp": 1648434923142
+    "mTimestamp": 1648868403945
   },
   "assets/scripts/app/views/dialog/Tips.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/dialog/Tips.js",
-    "mTimestamp": 1648434921950
+    "mTimestamp": 1648868402638
   },
   "assets/scripts/app/views/common/Tips.js": {
     "imports": {
@@ -426,7 +426,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/dialog/Creator.js",
-    "mTimestamp": 1648434921978
+    "mTimestamp": 1648868402621
   },
   "assets/scripts/app/views/loading/LoginAccountLayer.js": {
     "imports": {
@@ -444,7 +444,7 @@
       "__unresolved_2": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/login/UserAgreementAndPrivacyPolicy.js",
-    "mTimestamp": 1648434923094
+    "mTimestamp": 1648868404053
   },
   "assets/scripts/app/views/maincity/Creator.js": {
     "imports": {
@@ -457,7 +457,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/maincity/Creator.js",
-    "mTimestamp": 1648434923199
+    "mTimestamp": 1648868403882
   },
   "assets/scripts/framework/ui/TableContentLayer.js": {
     "imports": {
@@ -466,7 +466,7 @@
       "__unresolved_1": "assets/scripts/framework/utils/functions.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/TableContentLayer.js",
-    "mTimestamp": 1648434923800
+    "mTimestamp": 1648868404772
   },
   "assets/scripts/framework/ui/LayerBase.js": {
     "imports": {
@@ -476,7 +476,7 @@
       "__unresolved_2": "assets/scripts/framework/ui/UIWidget.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/LayerBase.js",
-    "mTimestamp": 1648434923752
+    "mTimestamp": 1648868404667
   },
   "assets/scripts/app/common/GlobalFunction.js": {
     "imports": {
@@ -488,7 +488,7 @@
       "__unresolved_3": "assets/scripts/framework/data/DataMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/common/GlobalFunction.js",
-    "mTimestamp": 1648434921435
+    "mTimestamp": 1648868401198
   },
   "assets/scripts/app/define/InnerProtocol.js": {
     "imports": {
@@ -520,7 +520,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/login/Creator.js",
-    "mTimestamp": 1648434922986
+    "mTimestamp": 1648868403865
   },
   "assets/scripts/app/views/login/LoginAccountLayer.js": {
     "imports": {
@@ -532,14 +532,14 @@
       "__unresolved_3": "assets/scripts/framework/ui/LayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/login/LoginAccountLayer.js",
-    "mTimestamp": 1648434923033
+    "mTimestamp": 1648868403737
   },
   "assets/scripts/app/define/ErrorCode.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/ErrorCode.js",
-    "mTimestamp": 1648434921530
+    "mTimestamp": 1648868401381
   },
   "assets/scripts/app/define/define.js": {
     "imports": {
@@ -550,7 +550,7 @@
       "__unresolved_3": "assets/scripts/app/define/ShowBackgroundMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/define.js",
-    "mTimestamp": 1648434921659
+    "mTimestamp": 1648868401490
   },
   "assets/scripts/app/views/login/LoginLayer.js": {
     "imports": {
@@ -565,7 +565,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/LayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/login/LoginLayer.js",
-    "mTimestamp": 1648434923129
+    "mTimestamp": 1648868403771
   },
   "assets/scripts/app/views/login/NoticeView.js": {
     "imports": {
@@ -577,14 +577,14 @@
       "__unresolved_3": "assets/scripts/framework/ui/LayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/login/NoticeView.js",
-    "mTimestamp": 1648434923081
+    "mTimestamp": 1648868403800
   },
   "assets/scripts/framework/ui/LoadingIndicator.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/LoadingIndicator.js",
-    "mTimestamp": 1648434923743
+    "mTimestamp": 1648868404696
   },
   "assets/scripts/app/views/fight/Data/FightDataMgr.js": {
     "imports": {
@@ -602,7 +602,7 @@
       "__unresolved_1": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/formation/FormationView.js",
-    "mTimestamp": 1648434922934
+    "mTimestamp": 1648868403682
   },
   "assets/scripts/app/views/fight/Action/FightActionMgr.js": {
     "imports": {
@@ -638,21 +638,21 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/effect/FightEffectMgr.js",
-    "mTimestamp": 1648434922684
+    "mTimestamp": 1648868403378
   },
   "assets/scripts/app/views/fight/fightFormation/GeneralIconShowComp.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/fightFormation/GeneralIconShowComp.js",
-    "mTimestamp": 1648434922762
+    "mTimestamp": 1648868403424
   },
   "assets/scripts/app/define/Protocol.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/Protocol.js",
-    "mTimestamp": 1648434921556
+    "mTimestamp": 1648868401444
   },
   "assets/scripts/framework/ui/ComponentBase.js": {
     "imports": {
@@ -661,7 +661,7 @@
       "__unresolved_1": "assets/scripts/framework/listener/EventMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/ComponentBase.js",
-    "mTimestamp": 1648434923668
+    "mTimestamp": 1648868404976
   },
   "assets/scripts/app/common/ui/CloseButton.js": {
     "imports": {
@@ -670,7 +670,7 @@
       "__unresolved_1": "assets/scripts/framework/core/SceneMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/common/ui/CloseButton.js",
-    "mTimestamp": 1648434921465
+    "mTimestamp": 1648868401372
   },
   "assets/scripts/app/define/PrototypeExtension.js": {
     "imports": {
@@ -679,14 +679,14 @@
       "__unresolved_1": "assets/scripts/framework/translate/TranslateMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/PrototypeExtension.js",
-    "mTimestamp": 1648434921576
+    "mTimestamp": 1648868401458
   },
   "assets/scripts/app/define/ShowBackgroundMgr.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/ShowBackgroundMgr.js",
-    "mTimestamp": 1648434921673
+    "mTimestamp": 1648868401469
   },
   "assets/scripts/app/model/ModelRegisterMgr.js": {
     "imports": {
@@ -696,7 +696,7 @@
       "__unresolved_2": "assets/scripts/framework/core/GameMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/model/ModelRegisterMgr.js",
-    "mTimestamp": 1648434922645
+    "mTimestamp": 1648868405011
   },
   "assets/scripts/framework/components/Singleton.js": {
     "imports": {
@@ -705,21 +705,21 @@
       "__unresolved_1": "assets/scripts/framework/components/SingletonMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/components/Singleton.js",
-    "mTimestamp": 1648434923253
+    "mTimestamp": 1648868404042
   },
   "assets/scripts/app/views/fight/event/FightEvent.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/event/FightEvent.js",
-    "mTimestamp": 1648434922705
+    "mTimestamp": 1648868403398
   },
   "assets/scripts/framework/components/SingletonMgr.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/components/SingletonMgr.js",
-    "mTimestamp": 1648434923212
+    "mTimestamp": 1648868405021
   },
   "assets/scripts/framework/listener/EventMgr.js": {
     "imports": {
@@ -728,7 +728,7 @@
       "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/listener/EventMgr.js",
-    "mTimestamp": 1648434923630
+    "mTimestamp": 1648868404431
   },
   "assets/scripts/framework/net/HttpMgr.js": {
     "imports": {
@@ -738,7 +738,7 @@
       "__unresolved_2": "assets/scripts/framework/net/NetStateMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/net/HttpMgr.js",
-    "mTimestamp": 1648434923581
+    "mTimestamp": 1648868404501
   },
   "assets/scripts/framework/net/NetLoadingMgr.js": {
     "imports": {
@@ -751,7 +751,7 @@
       "__unresolved_5": "assets/scripts/framework/listener/Message.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/net/NetLoadingMgr.js",
-    "mTimestamp": 1648434923606
+    "mTimestamp": 1648868404520
   },
   "assets/scripts/framework/translate/TranslateMgr.js": {
     "imports": {
@@ -761,7 +761,7 @@
       "__unresolved_2": "assets/scripts/framework/data/DataMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/translate/TranslateMgr.js",
-    "mTimestamp": 1648434923726
+    "mTimestamp": 1648868404657
   },
   "assets/scripts/framework/net/NetStateMgr.js": {
     "imports": {
@@ -777,7 +777,7 @@
       "__unresolved_8": "assets/scripts/framework/net/SocketMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/net/NetStateMgr.js",
-    "mTimestamp": 1648434923701
+    "mTimestamp": 1648868404553
   },
   "assets/scripts/framework/ui/ViewCreatorManager.js": {
     "imports": {
@@ -786,7 +786,7 @@
       "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/ViewCreatorManager.js",
-    "mTimestamp": 1648434923892
+    "mTimestamp": 1648868404847
   },
   "assets/scripts/framework/net/SocketMgr.js": {
     "imports": {
@@ -795,11 +795,13 @@
       "__unresolved_1": "assets/scripts/framework/components/Singleton.js",
       "__unresolved_2": "assets/scripts/framework/core/GameMgr.js",
       "__unresolved_3": "assets/scripts/framework/listener/Message.js",
-      "__unresolved_4": "assets/scripts/framework/net/NetLoadingMgr.js",
-      "__unresolved_5": "assets/scripts/framework/net/NetStateMgr.js"
+      "__unresolved_5": "assets/scripts/framework/net/BufferParser.js",
+      "__unresolved_6": "assets/scripts/framework/net/NetLoadingMgr.js",
+      "__unresolved_7": "assets/scripts/framework/net/NetStateMgr.js",
+      "__unresolved_4": "assets/scripts/framework/utils/Logger.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/net/SocketMgr.js",
-    "mTimestamp": 1648434923655
+    "mTimestamp": 1648868404597
   },
   "assets/scripts/framework/utils/SceneTriggerMgr.js": {
     "imports": {
@@ -809,14 +811,14 @@
       "__unresolved_2": "assets/scripts/framework/core/SceneMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/utils/SceneTriggerMgr.js",
-    "mTimestamp": 1648434923934
+    "mTimestamp": 1648868404881
   },
   "assets/scripts/framework/utils/MutableForwardIterator.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/utils/MutableForwardIterator.js",
-    "mTimestamp": 1648434924008
+    "mTimestamp": 1648868404861
   },
   "assets/scripts/framework/data/DataMgr.js": {
     "imports": {
@@ -826,7 +828,7 @@
       "__unresolved_2": "assets/scripts/framework/data/DataBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/data/DataMgr.js",
-    "mTimestamp": 1648434923504
+    "mTimestamp": 1648868404323
   },
   "assets/scripts/app/views/fight/Creator.js": {
     "imports": {
@@ -840,7 +842,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/Creator.js",
-    "mTimestamp": 1648434922021
+    "mTimestamp": 1648868402657
   },
   "assets/scripts/app/views/fight/data/FightData.js": {
     "imports": {
@@ -849,21 +851,21 @@
       "__unresolved_1": "assets/scripts/app/views/fight/data/FightDataBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/data/FightData.js",
-    "mTimestamp": 1648434922698
+    "mTimestamp": 1648868403209
   },
   "assets/scripts/app/define/ViewProtocol.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/ViewProtocol.js",
-    "mTimestamp": 1648434921590
+    "mTimestamp": 1648868401481
   },
   "assets/scripts/app/views/chat/ChatMsgItemComp.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/chat/ChatMsgItemComp.js",
-    "mTimestamp": 1648434921721
+    "mTimestamp": 1648868402331
   },
   "assets/scripts/app/views/chat/ChatMsgItemNode.js": {
     "imports": {
@@ -872,7 +874,7 @@
       "__unresolved_1": "assets/scripts/app/views/chat/ChatMsgItemComp.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/chat/ChatMsgItemNode.js",
-    "mTimestamp": 1648434921759
+    "mTimestamp": 1648868402352
   },
   "assets/scripts/app/views/chat/ChatScrollView.js": {
     "imports": {
@@ -881,7 +883,7 @@
       "__unresolved_1": "assets/scripts/app/views/chat/ChatMsgItemNode.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/chat/ChatScrollView.js",
-    "mTimestamp": 1648434921796
+    "mTimestamp": 1648868402386
   },
   "assets/scripts/app/views/chat/Creator.js": {
     "imports": {
@@ -894,7 +896,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/chat/Creator.js",
-    "mTimestamp": 1648434921813
+    "mTimestamp": 1648868402402
   },
   "assets/scripts/app/views/fight/data/FightDataMgr.js": {
     "imports": {
@@ -903,14 +905,14 @@
       "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/data/FightDataMgr.js",
-    "mTimestamp": 1648434922595
+    "mTimestamp": 1648868403320
   },
   "assets/scripts/app/views/fight/data/FightDataBase.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/data/FightDataBase.js",
-    "mTimestamp": 1648434922581
+    "mTimestamp": 1648868403298
   },
   "assets/scripts/app/views/fight/layer/TopEffectLayer.js": {
     "imports": {
@@ -919,7 +921,7 @@
       "__unresolved_1": "assets/scripts/app/views/fight/layer/FightLayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/TopEffectLayer.js",
-    "mTimestamp": 1648434922861
+    "mTimestamp": 1648868403596
   },
   "assets/scripts/app/views/fight/layer/FomationLayer.js": {
     "imports": {
@@ -931,7 +933,7 @@
       "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/FomationLayer.js",
-    "mTimestamp": 1648434922808
+    "mTimestamp": 1648868403584
   },
   "assets/scripts/app/views/fight/action/Action.js": {
     "imports": {
@@ -945,7 +947,7 @@
       "__unresolved_4": "assets/scripts/app/views/fight/action/ActionSpineAnim.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/Action.js",
-    "mTimestamp": 1648434922245
+    "mTimestamp": 1648868402997
   },
   "assets/scripts/app/views/fight/effect/Embattled_1.js": {
     "imports": {
@@ -966,7 +968,7 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionColor.js",
-    "mTimestamp": 1648434922308
+    "mTimestamp": 1648868402992
   },
   "assets/scripts/app/views/fight/effect/Effect.js": {
     "imports": {
@@ -975,7 +977,7 @@
       "__unresolved_1": "assets/scripts/app/views/fight/effect/EffectBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/effect/Effect.js",
-    "mTimestamp": 1648434922690
+    "mTimestamp": 1648868403356
   },
   "assets/scripts/app/views/fight/action/ActionDelay.js": {
     "imports": {
@@ -984,7 +986,7 @@
       "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionDelay.js",
-    "mTimestamp": 1648434922381
+    "mTimestamp": 1648868403041
   },
   "assets/scripts/app/views/fight/action/ActionMove.js": {
     "imports": {
@@ -993,7 +995,7 @@
       "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionMove.js",
-    "mTimestamp": 1648434922519
+    "mTimestamp": 1648868403080
   },
   "assets/scripts/app/views/fight/effect/BloodEffect.js": {
     "imports": {
@@ -1002,7 +1004,7 @@
       "__unresolved_1": "assets/scripts/app/views/fight/effect/EffectBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/effect/BloodEffect.js",
-    "mTimestamp": 1648434922676
+    "mTimestamp": 1648868403348
   },
   "assets/scripts/app/views/fight/layer/FightLayerBase.js": {
     "imports": {
@@ -1011,7 +1013,7 @@
       "__unresolved_1": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/FightLayerBase.js",
-    "mTimestamp": 1648434922817
+    "mTimestamp": 1648868403533
   },
   "assets/scripts/app/views/fight/action/ActionGoBack.js": {
     "imports": {
@@ -1022,7 +1024,7 @@
       "__unresolved_3": "assets/scripts/app/views/fight/action/FightActionMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionGoBack.js",
-    "mTimestamp": 1648434922366
+    "mTimestamp": 1648868403059
   },
   "assets/scripts/app/views/common/MainEventTrigger.js": {
     "imports": {
@@ -1031,14 +1033,14 @@
       "__unresolved_1": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/common/MainEventTrigger.js",
-    "mTimestamp": 1648437015469
+    "mTimestamp": 1648868402427
   },
   "assets/scripts/app/views/common/TouchEffect.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/common/TouchEffect.js",
-    "mTimestamp": 1648437015660
+    "mTimestamp": 1648868402440
   },
   "assets/scripts/app/views/common/TouchMain.js": {
     "imports": {
@@ -1050,7 +1052,7 @@
       "__unresolved_2": "assets/scripts/framework/utils/functions.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/common/TouchMain.js",
-    "mTimestamp": 1648437015706
+    "mTimestamp": 1648868402461
   },
   "assets/scripts/hotUpdate/HotUpdate.js": {
     "imports": {
@@ -1059,7 +1061,7 @@
       "__unresolved_1": "assets/scripts/app/EnterApp.js"
     },
     "physicalLocation": "fs/0/assets/scripts/hotUpdate/HotUpdate.js",
-    "mTimestamp": 1648517625292
+    "mTimestamp": 1648868404941
   },
   "assets/scripts/app/views/maincity/MainCityLayer.js": {
     "imports": {
@@ -1073,7 +1075,7 @@
       "__unresolved_5": "assets/scripts/framework/utils/SceneTriggerMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/maincity/MainCityLayer.js",
-    "mTimestamp": 1648554375001
+    "mTimestamp": 1648868403908
   },
   "assets/scripts/framework/ui/DInertiaMove.js": {
     "imports": {
@@ -1082,7 +1084,7 @@
       "__unresolved_1": "assets/scripts/framework/utils/functions.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/DInertiaMove.js",
-    "mTimestamp": 1648554375040
+    "mTimestamp": 1648868404647
   },
   "assets/scripts/framework/ui/MulitMoveingBgs.js": {
     "imports": {
@@ -1092,14 +1094,14 @@
       "__unresolved_1": "assets/scripts/framework/utils/functions.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/ui/MulitMoveingBgs.js",
-    "mTimestamp": 1648554375192
+    "mTimestamp": 1648868404754
   },
   "assets/scripts/framework/components/CameraControls.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/components/CameraControls.js",
-    "mTimestamp": 1648605598997
+    "mTimestamp": 1648868404034
   },
   "assets/scripts/framework/core/GameMgr.js": {
     "imports": {
@@ -1110,7 +1112,7 @@
       "__unresolved_2": "assets/scripts/framework/listener/EventMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/GameMgr.js",
-    "mTimestamp": 1648606444959
+    "mTimestamp": 1648868404087
   },
   "assets/scripts/app/views/maincity/MainCityUI.js": {
     "imports": {
@@ -1121,7 +1123,7 @@
       "__unresolved_2": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/maincity/MainCityUI.js",
-    "mTimestamp": 1648622797538
+    "mTimestamp": 1648868403933
   },
   "assets/scripts/framework/core/SceneMgr.js": {
     "imports": {
@@ -1140,14 +1142,14 @@
       "__unresolved_10": "assets/scripts/framework/utils/functions.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/SceneMgr.js",
-    "mTimestamp": 1648623421081
+    "mTimestamp": 1648868404165
   },
   "assets/scripts/app/common/animation/CameraLock.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/common/animation/CameraLock.js",
-    "mTimestamp": 1648628790465
+    "mTimestamp": 1648868401358
   },
   "assets/scripts/app/views/fight/FightMainUI.js": {
     "imports": {
@@ -1162,7 +1164,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightMainUI.js",
-    "mTimestamp": 1648629208638
+    "mTimestamp": 1648868402883
   },
   "assets/scripts/app/views/fight/action/AcitonJump.js": {
     "imports": {
@@ -1173,7 +1175,7 @@
       "__unresolved_3": "assets/scripts/app/views/fight/action/FightActionMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/AcitonJump.js",
-    "mTimestamp": 1648630692043
+    "mTimestamp": 1648868402986
   },
   "assets/scripts/app/views/fight/event/FightEventMgr.js": {
     "imports": {
@@ -1183,7 +1185,7 @@
       "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/event/FightEventMgr.js",
-    "mTimestamp": 1648630692173
+    "mTimestamp": 1648868403445
   },
   "assets/scripts/app/views/fight/FightController.js": {
     "imports": {
@@ -1199,7 +1201,7 @@
       "__unresolved_2": "assets/scripts/framework/core/GameMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightController.js",
-    "mTimestamp": 1648636221382
+    "mTimestamp": 1648868402756
   },
   "assets/scripts/app/views/loading/Creator.js": {
     "imports": {
@@ -1212,7 +1214,7 @@
       "__unresolved_3": "assets/scripts/framework/ui/ViewCreatorBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/loading/Creator.js",
-    "mTimestamp": 1648640569433
+    "mTimestamp": 1648868403841
   },
   "assets/scripts/app/define/YYNamespace.js": {
     "imports": {
@@ -1220,7 +1222,7 @@
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/define/YYNamespace.js",
-    "mTimestamp": 1648689991019
+    "mTimestamp": 1648868401509
   },
   "assets/scripts/app/EnterApp.js": {
     "imports": {
@@ -1238,7 +1240,7 @@
       "__unresolved_5": "assets/scripts/framework/net/NetLoadingMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/EnterApp.js",
-    "mTimestamp": 1648694700850
+    "mTimestamp": 1648868401155
   },
   "assets/scripts/framework/data/ResourcesLoader.js": {
     "imports": {
@@ -1247,7 +1249,7 @@
       "__unresolved_1": "assets/scripts/framework/net/NetLoadingMgr.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/data/ResourcesLoader.js",
-    "mTimestamp": 1648694700988
+    "mTimestamp": 1648868404391
   },
   "assets/scripts/framework/language/LanguageLabel.js": {
     "imports": {
@@ -1257,7 +1259,7 @@
       "__unresolved_1": "assets/scripts/framework/ui/ComponentBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/language/LanguageLabel.js",
-    "mTimestamp": 1648694701067
+    "mTimestamp": 1648868404628
   },
   "assets/scripts/framework/language/Language.js": {
     "imports": {
@@ -1268,35 +1270,35 @@
       "__unresolved_1": "assets/scripts/framework/utils/Logger.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/language/Language.js",
-    "mTimestamp": 1648694701101
+    "mTimestamp": 1648868404365
   },
   "assets/scripts/framework/language/LanguageSprite.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/language/LanguageSprite.js",
-    "mTimestamp": 1648694701110
+    "mTimestamp": 1648868404399
   },
   "assets/scripts/framework/language/code/en.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/language/code/en.js",
-    "mTimestamp": 1648694701118
+    "mTimestamp": 1648868404404
   },
   "assets/scripts/framework/language/code/zh.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/language/code/zh.js",
-    "mTimestamp": 1648694701125
+    "mTimestamp": 1648868404409
   },
   "assets/scripts/framework/utils/Logger.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/utils/Logger.js",
-    "mTimestamp": 1648694701140
+    "mTimestamp": 1648868404815
   },
   "assets/scripts/Launch.js": {
     "imports": {
@@ -1305,7 +1307,7 @@
       "__unresolved_1": "assets/scripts/GameConfig.js"
     },
     "physicalLocation": "fs/0/assets/scripts/Launch.js",
-    "mTimestamp": 1648695648507
+    "mTimestamp": 1648868401329
   },
   "assets/scripts/framework/core/audio/AudioManager.js": {
     "imports": {
@@ -1316,7 +1318,7 @@
       "__unresolved_1": "assets/scripts/framework/core/storage/Storage.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/audio/AudioManager.js",
-    "mTimestamp": 1648696324426
+    "mTimestamp": 1648868404229
   },
   "assets/scripts/app/views/common/spine/RoleSpineFactory.js": {
     "imports": {
@@ -1326,7 +1328,7 @@
       "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/common/spine/RoleSpineFactory.js",
-    "mTimestamp": 1648698667766
+    "mTimestamp": 1648868402476
   },
   "assets/scripts/app/views/fight/fightFormation/FightFormation.js": {
     "imports": {
@@ -1338,7 +1340,7 @@
       "__unresolved_2": "assets/scripts/framework/ui/LayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/fightFormation/FightFormation.js",
-    "mTimestamp": 1648716145656
+    "mTimestamp": 1648868403485
   },
   "assets/scripts/framework/core/audio/AudioMusic.js": {
     "imports": {
@@ -1348,14 +1350,14 @@
       "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/core/audio/AudioMusic.js",
-    "mTimestamp": 1648721759643
+    "mTimestamp": 1648868404201
   },
   "assets/scripts/app/views/common/RedPoint.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/common/RedPoint.js",
-    "mTimestamp": 1648721759655
+    "mTimestamp": 1648868402411
   },
   "assets/scripts/framework/utils/functions.js": {
     "imports": {
@@ -1365,7 +1367,7 @@
       "__unresolved_2": "assets/scripts/framework/utils/Logger.js"
     },
     "physicalLocation": "fs/0/assets/scripts/framework/utils/functions.js",
-    "mTimestamp": 1648721759678
+    "mTimestamp": 1648868404899
   },
   "assets/scripts/app/views/loading/ResLoadingLayer.js": {
     "imports": {
@@ -1377,7 +1379,7 @@
       "__unresolved_2": "assets/scripts/framework/data/ResourcesLoader.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/loading/ResLoadingLayer.js",
-    "mTimestamp": 1648727117471
+    "mTimestamp": 1648868403709
   },
   "assets/scripts/app/views/loading/TransLoadingLayer.js": {
     "imports": {
@@ -1388,7 +1390,300 @@
       "__unresolved_3": "assets/scripts/framework/ui/LayerBase.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/loading/TransLoadingLayer.js",
-    "mTimestamp": 1648727117499
+    "mTimestamp": 1648868403822
+  },
+  "assets/scripts/app/views/fight/FightMainWorld.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/layer/BloodLayer.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/layer/DialogLayer.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/layer/FomationLayer.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/layer/RoleLayer.js",
+      "__unresolved_7": "assets/scripts/app/views/fight/layer/TopEffectLayer.js",
+      "__unresolved_1": "assets/scripts/framework/ui/UIWidget.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightMainWorld.js",
+    "mTimestamp": 1648868402914
+  },
+  "assets/scripts/app/views/fight/ui/FightDialogUI.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/ui/FightDialogUI.js",
+    "mTimestamp": 1648868403649
+  },
+  "assets/scripts/app/views/fight/action/ActionBase.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_1": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEventMgr.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionBase.js",
+    "mTimestamp": 1648868403012
+  },
+  "assets/scripts/app/views/fight/layer/DialogLayer.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/ui/FightDialogUI.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/DialogLayer.js",
+    "mTimestamp": 1648868403524
+  },
+  "assets/scripts/app/define/DataRegisterMgr.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_3": "assets/scripts/app/parser/Test_Parser.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js",
+      "__unresolved_2": "assets/scripts/framework/data/DataMgr.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/define/DataRegisterMgr.js",
+    "mTimestamp": 1648868401411
+  },
+  "assets/scripts/app/views/fight/action/ActionShow.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionShow.js",
+    "mTimestamp": 1648868403089
+  },
+  "assets/scripts/app/views/fight/action/ActionHide.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionHide.js",
+    "mTimestamp": 1648868403067
+  },
+  "assets/scripts/app/define/ViewRegisterMgr.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_12": "assets/scripts/app/common/GlobalFunction.js",
+      "__unresolved_6": "assets/scripts/app/define/define.js",
+      "__unresolved_11": "assets/scripts/app/views/chat/Creator.js",
+      "__unresolved_2": "assets/scripts/app/views/dialog/Creator.js",
+      "__unresolved_8": "assets/scripts/app/views/fight/Creator.js",
+      "__unresolved_9": "assets/scripts/app/views/formation/Creator.js",
+      "__unresolved_10": "assets/scripts/app/views/loading/Creator.js",
+      "__unresolved_3": "assets/scripts/app/views/login/Creator.js",
+      "__unresolved_5": "assets/scripts/app/views/maincity/Creator.js",
+      "__unresolved_4": "assets/scripts/app/views/pre_reward/Creator.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js",
+      "__unresolved_7": "assets/scripts/framework/ui/ViewCreatorManager.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/define/ViewRegisterMgr.js",
+    "mTimestamp": 1648868402797
+  },
+  "assets/scripts/app/views/fight/FightMainLayer.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_4": "assets/scripts/app/define/define.js",
+      "__unresolved_5": "assets/scripts/app/define/ViewRegisterMgr.js",
+      "__unresolved_10": "assets/scripts/app/views/fight/FightBloodMgr.js",
+      "__unresolved_11": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_12": "assets/scripts/app/views/fight/FightController.js",
+      "__unresolved_13": "assets/scripts/app/views/fight/FightMainWorld.js",
+      "__unresolved_14": "assets/scripts/app/views/fight/FightPlayer.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/action/FightActionMgr.js",
+      "__unresolved_7": "assets/scripts/app/views/fight/data/FightData.js",
+      "__unresolved_8": "assets/scripts/app/views/fight/data/FightDataMgr.js",
+      "__unresolved_9": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_1": "assets/scripts/framework/core/audio/AudioManager.js",
+      "__unresolved_2": "assets/scripts/framework/data/ResourcesLoader.js",
+      "__unresolved_3": "assets/scripts/framework/ui/LayerBase.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightMainLayer.js",
+    "mTimestamp": 1648868402845
+  },
+  "assets/scripts/app/views/fight/effect/EffectBase.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/effect/EffectBase.js",
+    "mTimestamp": 1648868403371
+  },
+  "assets/scripts/app/views/fight/action/ActionSpineAnim.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionSpineAnim.js",
+    "mTimestamp": 1648868403105
+  },
+  "assets/scripts/app/views/common/spine/SpineComponentBase.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/app/define/Protocol.js",
+      "__unresolved_3": "assets/scripts/app/define/YYNamespace.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/ui/FightBloodUI.js",
+      "__unresolved_1": "assets/scripts/framework/ui/ComponentBase.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/common/spine/SpineComponentBase.js",
+    "mTimestamp": 1648868402548
+  },
+  "assets/scripts/app/views/fight/layer/RoleLayer.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/app/define/YYNamespace.js",
+      "__unresolved_2": "assets/scripts/app/views/common/spine/RoleSpineFactory.js",
+      "__unresolved_3": "assets/scripts/app/views/common/spine/SpineNodeBase.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/data/FightData.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/data/FightDataMgr.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_7": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_8": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
+      "__unresolved_9": "assets/scripts/app/views/fight/layer/FomationLayer.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/RoleLayer.js",
+    "mTimestamp": 1648868403570
+  },
+  "assets/scripts/app/views/common/spine/SpineNodeBase.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_3": "assets/scripts/app/views/common/spine/SpineComponentBase.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/common/spine/SpineNodeBase.js",
+    "mTimestamp": 1648868402582
+  },
+  "assets/scripts/app/views/fight/ui/FightBloodUI.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/ui/FightBloodUI.js",
+    "mTimestamp": 1648868403613
+  },
+  "assets/scripts/app/views/fight/FightPlayer.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightPlayer.js",
+    "mTimestamp": 1648868402966
+  },
+  "assets/scripts/app/views/fight/action/FightActionMgr.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/action/Action.js",
+      "__unresolved_7": "assets/scripts/app/views/fight/action/ActionHide.js",
+      "__unresolved_8": "assets/scripts/app/views/fight/action/ActionShow.js",
+      "__unresolved_9": "assets/scripts/app/views/fight/action/AttackActionMgr.js",
+      "__unresolved_10": "assets/scripts/app/views/fight/action/ResultActionMgr.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/layer/RoleLayer.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/FightActionMgr.js",
+    "mTimestamp": 1648868403194
+  },
+  "assets/scripts/app/views/fight/action/AttackActionMgr.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/app/common/GlobalFunction.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/action/FightActionMgr.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/AttackActionMgr.js",
+    "mTimestamp": 1648868403137
+  },
+  "assets/scripts/app/views/fight/FightBloodMgr.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightBloodMgr.js",
+    "mTimestamp": 1648868402678
+  },
+  "assets/scripts/app/views/fight/action/ResultActionMgr.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/app/common/GlobalFunction.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/action/FightActionMgr.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ResultActionMgr.js",
+    "mTimestamp": 1648868403271
+  },
+  "assets/scripts/app/views/fight/event/FightEventDataType.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/event/FightEventDataType.js",
+    "mTimestamp": 1648868403779
+  },
+  "assets/scripts/app/views/fight/layer/BloodLayer.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/action/FightActionMgr.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/effect/Effect.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
+      "__unresolved_7": "assets/scripts/app/views/fight/layer/RoleLayer.js",
+      "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/BloodLayer.js",
+    "mTimestamp": 1648868403506
+  },
+  "assets/scripts/app/views/fight/action/ActionAddPrefab.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_4": "assets/scripts/app/views/fight/FightBloodMgr.js",
+      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_6": "assets/scripts/app/views/fight/action/Action.js",
+      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionAddPrefab.js",
+    "mTimestamp": 1648868403033
+  },
+  "assets/scripts/app/views/fight/FightConstant.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightConstant.js",
+    "mTimestamp": 1648868402705
   },
   "quick-pack:/cce/internal/x/cc.js": {
     "imports": {
@@ -1478,307 +1773,32 @@
       }
     },
     "physicalLocation": "cce/internal/x/cc.js",
-    "mTimestamp": 1648729164287,
+    "mTimestamp": 1648868400893,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/cc"
+  },
+  "assets/scripts/app/define/proto_mate.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/app/define/proto_mate.js",
+    "mTimestamp": 1648868402292
+  },
+  "assets/scripts/framework/net/BufferParser.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/scripts/app/define/proto_mate.js",
+      "__unresolved_3": "assets/scripts/framework/utils/Logger.js",
+      "__unresolved_2": "assets/scripts/framework/utils/functions.js"
+    },
+    "physicalLocation": "fs/0/assets/scripts/framework/net/BufferParser.js",
+    "mTimestamp": 1648868404476
   },
   "quick-pack:/cce/internal/code-quality/cr.js": {
     "imports": {},
     "physicalLocation": "cce/internal/code-quality/cr.js",
-    "mTimestamp": 1648729164421
-  },
-  "assets/scripts/app/views/fight/FightMainWorld.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/layer/BloodLayer.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/layer/DialogLayer.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/layer/FomationLayer.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/layer/RoleLayer.js",
-      "__unresolved_7": "assets/scripts/app/views/fight/layer/TopEffectLayer.js",
-      "__unresolved_1": "assets/scripts/framework/ui/UIWidget.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightMainWorld.js",
-    "mTimestamp": 1648730853353
-  },
-  "assets/scripts/app/views/fight/ui/FightDialogUI.js": {
-    "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/ui/FightDialogUI.js",
-    "mTimestamp": 1648730926504
-  },
-  "assets/scripts/app/views/fight/action/ActionBase.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_1": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEventMgr.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionBase.js",
-    "mTimestamp": 1648778722430
-  },
-  "assets/scripts/app/views/fight/layer/DialogLayer.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/ui/FightDialogUI.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/DialogLayer.js",
-    "mTimestamp": 1648778722564
-  },
-  "assets/scripts/app/define/DataRegisterMgr.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_3": "assets/scripts/app/parser/Test_Parser.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js",
-      "__unresolved_2": "assets/scripts/framework/data/DataMgr.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/define/DataRegisterMgr.js",
-    "mTimestamp": 1648778833045
-  },
-  "assets/scripts/app/views/fight/action/ActionShow.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionShow.js",
-    "mTimestamp": 1648780048227
-  },
-  "assets/scripts/app/views/fight/action/ActionHide.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionHide.js",
-    "mTimestamp": 1648780137675
-  },
-  "assets/scripts/app/define/ViewRegisterMgr.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_12": "assets/scripts/app/common/GlobalFunction.js",
-      "__unresolved_6": "assets/scripts/app/define/define.js",
-      "__unresolved_11": "assets/scripts/app/views/chat/Creator.js",
-      "__unresolved_2": "assets/scripts/app/views/dialog/Creator.js",
-      "__unresolved_8": "assets/scripts/app/views/fight/Creator.js",
-      "__unresolved_9": "assets/scripts/app/views/formation/Creator.js",
-      "__unresolved_10": "assets/scripts/app/views/loading/Creator.js",
-      "__unresolved_3": "assets/scripts/app/views/login/Creator.js",
-      "__unresolved_5": "assets/scripts/app/views/maincity/Creator.js",
-      "__unresolved_4": "assets/scripts/app/views/pre_reward/Creator.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js",
-      "__unresolved_7": "assets/scripts/framework/ui/ViewCreatorManager.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/define/ViewRegisterMgr.js",
-    "mTimestamp": 1648783581073
-  },
-  "assets/scripts/app/views/fight/FightMainLayer.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_4": "assets/scripts/app/define/define.js",
-      "__unresolved_5": "assets/scripts/app/define/ViewRegisterMgr.js",
-      "__unresolved_10": "assets/scripts/app/views/fight/FightBloodMgr.js",
-      "__unresolved_11": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_12": "assets/scripts/app/views/fight/FightController.js",
-      "__unresolved_13": "assets/scripts/app/views/fight/FightMainWorld.js",
-      "__unresolved_14": "assets/scripts/app/views/fight/FightPlayer.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/action/FightActionMgr.js",
-      "__unresolved_7": "assets/scripts/app/views/fight/data/FightData.js",
-      "__unresolved_8": "assets/scripts/app/views/fight/data/FightDataMgr.js",
-      "__unresolved_9": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_1": "assets/scripts/framework/core/audio/AudioManager.js",
-      "__unresolved_2": "assets/scripts/framework/data/ResourcesLoader.js",
-      "__unresolved_3": "assets/scripts/framework/ui/LayerBase.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightMainLayer.js",
-    "mTimestamp": 1648783581144
-  },
-  "assets/scripts/app/views/fight/effect/EffectBase.js": {
-    "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/effect/EffectBase.js",
-    "mTimestamp": 1648799164805
-  },
-  "assets/scripts/app/views/fight/action/ActionSpineAnim.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/app/views/fight/action/ActionBase.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionSpineAnim.js",
-    "mTimestamp": 1648801622164
-  },
-  "assets/scripts/app/views/common/spine/SpineComponentBase.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_2": "assets/scripts/app/define/Protocol.js",
-      "__unresolved_3": "assets/scripts/app/define/YYNamespace.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/ui/FightBloodUI.js",
-      "__unresolved_1": "assets/scripts/framework/ui/ComponentBase.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/common/spine/SpineComponentBase.js",
-    "mTimestamp": 1648801997831
-  },
-  "assets/scripts/app/views/fight/layer/RoleLayer.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/app/define/YYNamespace.js",
-      "__unresolved_2": "assets/scripts/app/views/common/spine/RoleSpineFactory.js",
-      "__unresolved_3": "assets/scripts/app/views/common/spine/SpineNodeBase.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/data/FightData.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/data/FightDataMgr.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_7": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_8": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
-      "__unresolved_9": "assets/scripts/app/views/fight/layer/FomationLayer.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/RoleLayer.js",
-    "mTimestamp": 1648802287568
-  },
-  "assets/scripts/app/views/common/spine/SpineNodeBase.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_3": "assets/scripts/app/views/common/spine/SpineComponentBase.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/common/spine/SpineNodeBase.js",
-    "mTimestamp": 1648807253151
-  },
-  "assets/scripts/app/views/fight/ui/FightBloodUI.js": {
-    "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/ui/FightBloodUI.js",
-    "mTimestamp": 1648807794198
-  },
-  "assets/scripts/app/views/fight/FightPlayer.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightPlayer.js",
-    "mTimestamp": 1648808277026
-  },
-  "assets/scripts/app/views/fight/action/FightActionMgr.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/action/Action.js",
-      "__unresolved_7": "assets/scripts/app/views/fight/action/ActionHide.js",
-      "__unresolved_8": "assets/scripts/app/views/fight/action/ActionShow.js",
-      "__unresolved_9": "assets/scripts/app/views/fight/action/AttackActionMgr.js",
-      "__unresolved_10": "assets/scripts/app/views/fight/action/ResultActionMgr.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/layer/RoleLayer.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/FightActionMgr.js",
-    "mTimestamp": 1648808277096
-  },
-  "assets/scripts/app/views/fight/action/AttackActionMgr.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_2": "assets/scripts/app/common/GlobalFunction.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/action/FightActionMgr.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/AttackActionMgr.js",
-    "mTimestamp": 1648808277139
-  },
-  "assets/scripts/app/views/fight/FightBloodMgr.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightBloodMgr.js",
-    "mTimestamp": 1648808277159
-  },
-  "assets/scripts/app/views/fight/action/ResultActionMgr.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_2": "assets/scripts/app/common/GlobalFunction.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/action/FightActionMgr.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_1": "assets/scripts/framework/components/Singleton.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ResultActionMgr.js",
-    "mTimestamp": 1648808277210
-  },
-  "assets/scripts/app/views/fight/event/FightEventDataType.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/event/FightEventDataType.js",
-    "mTimestamp": 1648808277223
-  },
-  "assets/scripts/app/views/fight/layer/BloodLayer.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/action/FightActionMgr.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/effect/Effect.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
-      "__unresolved_7": "assets/scripts/app/views/fight/layer/RoleLayer.js",
-      "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/layer/BloodLayer.js",
-    "mTimestamp": 1648862860031
-  },
-  "assets/scripts/app/views/fight/action/ActionAddPrefab.js": {
-    "imports": {
-      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
-      "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_4": "assets/scripts/app/views/fight/FightBloodMgr.js",
-      "__unresolved_5": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_6": "assets/scripts/app/views/fight/action/Action.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_3": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_1": "assets/scripts/framework/data/ResourcesLoader.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/action/ActionAddPrefab.js",
-    "mTimestamp": 1648863450364
-  },
-  "assets/scripts/app/views/fight/FightConstant.js": {
-    "imports": {
-      "cc": "quick-pack:/cce/internal/x/cc.js"
-    },
-    "physicalLocation": "fs/0/assets/scripts/app/views/fight/FightConstant.js",
-    "mTimestamp": 1648865152968
+    "mTimestamp": 1648868405175
   },
   "quick-pack:/cce/internal/x/prerequisite-imports.js": {
     "imports": {
@@ -1787,8 +1807,8 @@
       "__unresolved_2": "assets/scripts/app/EnterApp.js",
       "__unresolved_3": "assets/scripts/app/common/GlobalFunction.js",
       "__unresolved_4": "assets/scripts/app/common/animation/CameraLock.js",
-      "__unresolved_5": "assets/scripts/app/common/ui/CloseButton.js",
       "__unresolved_6": "assets/scripts/app/define/ConfigType.js",
+      "__unresolved_5": "assets/scripts/app/common/ui/CloseButton.js",
       "__unresolved_7": "assets/scripts/app/define/DataRegisterMgr.js",
       "__unresolved_8": "assets/scripts/app/define/ErrorCode.js",
       "__unresolved_9": "assets/scripts/app/define/FightConst.js",
@@ -1800,138 +1820,140 @@
       "__unresolved_15": "assets/scripts/app/define/ViewRegisterMgr.js",
       "__unresolved_16": "assets/scripts/app/define/YYNamespace.js",
       "__unresolved_17": "assets/scripts/app/define/define.js",
-      "__unresolved_18": "assets/scripts/app/model/ModelLogin.js",
-      "__unresolved_19": "assets/scripts/app/model/ModelRegisterMgr.js",
-      "__unresolved_20": "assets/scripts/app/model/model.js",
-      "__unresolved_21": "assets/scripts/app/parser/Test_Parser.js",
-      "__unresolved_22": "assets/scripts/app/views/chat/ChatMsgItemComp.js",
-      "__unresolved_23": "assets/scripts/app/views/chat/ChatMsgItemNode.js",
-      "__unresolved_24": "assets/scripts/app/views/chat/ChatScrollView.js",
-      "__unresolved_25": "assets/scripts/app/views/chat/Creator.js",
-      "__unresolved_26": "assets/scripts/app/views/common/MainEventTrigger.js",
-      "__unresolved_27": "assets/scripts/app/views/common/RedPoint.js",
-      "__unresolved_28": "assets/scripts/app/views/common/TouchEffect.js",
-      "__unresolved_29": "assets/scripts/app/views/common/TouchMain.js",
-      "__unresolved_30": "assets/scripts/app/views/common/spine/RoleSpineFactory.js",
-      "__unresolved_31": "assets/scripts/app/views/common/spine/SpineComponentBase.js",
-      "__unresolved_32": "assets/scripts/app/views/common/spine/SpineNodeBase.js",
-      "__unresolved_33": "assets/scripts/app/views/common/spine/effect/Jitter.js",
-      "__unresolved_34": "assets/scripts/app/views/dialog/Creator.js",
-      "__unresolved_35": "assets/scripts/app/views/dialog/DoubleBtnDialog.js",
-      "__unresolved_36": "assets/scripts/app/views/dialog/Tips.js",
-      "__unresolved_38": "assets/scripts/app/views/fight/FightBloodMgr.js",
-      "__unresolved_37": "assets/scripts/app/views/fight/Creator.js",
-      "__unresolved_39": "assets/scripts/app/views/fight/FightConstant.js",
-      "__unresolved_40": "assets/scripts/app/views/fight/FightController.js",
-      "__unresolved_41": "assets/scripts/app/views/fight/FightMainLayer.js",
-      "__unresolved_42": "assets/scripts/app/views/fight/FightMainUI.js",
-      "__unresolved_43": "assets/scripts/app/views/fight/FightMainWorld.js",
-      "__unresolved_44": "assets/scripts/app/views/fight/FightPlayer.js",
-      "__unresolved_45": "assets/scripts/app/views/fight/action/AcitonJump.js",
-      "__unresolved_46": "assets/scripts/app/views/fight/action/Action.js",
-      "__unresolved_47": "assets/scripts/app/views/fight/action/ActionAddPrefab.js",
-      "__unresolved_48": "assets/scripts/app/views/fight/action/ActionBase.js",
-      "__unresolved_49": "assets/scripts/app/views/fight/action/ActionColor.js",
-      "__unresolved_50": "assets/scripts/app/views/fight/action/ActionDelay.js",
-      "__unresolved_51": "assets/scripts/app/views/fight/action/ActionGoBack.js",
-      "__unresolved_52": "assets/scripts/app/views/fight/action/ActionHide.js",
-      "__unresolved_53": "assets/scripts/app/views/fight/action/ActionMove.js",
-      "__unresolved_54": "assets/scripts/app/views/fight/action/ActionShow.js",
-      "__unresolved_55": "assets/scripts/app/views/fight/action/ActionSpineAnim.js",
-      "__unresolved_56": "assets/scripts/app/views/fight/action/AttackActionMgr.js",
-      "__unresolved_57": "assets/scripts/app/views/fight/action/FightActionMgr.js",
-      "__unresolved_58": "assets/scripts/app/views/fight/action/ResultActionMgr.js",
-      "__unresolved_59": "assets/scripts/app/views/fight/data/FightData.js",
-      "__unresolved_60": "assets/scripts/app/views/fight/data/FightDataBase.js",
-      "__unresolved_61": "assets/scripts/app/views/fight/data/FightDataMgr.js",
-      "__unresolved_62": "assets/scripts/app/views/fight/effect/BloodEffect.js",
-      "__unresolved_63": "assets/scripts/app/views/fight/effect/Effect.js",
-      "__unresolved_64": "assets/scripts/app/views/fight/effect/EffectBase.js",
-      "__unresolved_65": "assets/scripts/app/views/fight/effect/FightEffectMgr.js",
-      "__unresolved_66": "assets/scripts/app/views/fight/event/FightEvent.js",
-      "__unresolved_67": "assets/scripts/app/views/fight/event/FightEventDataType.js",
-      "__unresolved_68": "assets/scripts/app/views/fight/event/FightEventMgr.js",
-      "__unresolved_69": "assets/scripts/app/views/fight/fightFormation/FightFormation.js",
-      "__unresolved_70": "assets/scripts/app/views/fight/fightFormation/GeneralIconShowComp.js",
-      "__unresolved_71": "assets/scripts/app/views/fight/layer/BloodLayer.js",
-      "__unresolved_72": "assets/scripts/app/views/fight/layer/DialogLayer.js",
-      "__unresolved_73": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
-      "__unresolved_74": "assets/scripts/app/views/fight/layer/FomationLayer.js",
-      "__unresolved_75": "assets/scripts/app/views/fight/layer/RoleLayer.js",
-      "__unresolved_76": "assets/scripts/app/views/fight/layer/TopEffectLayer.js",
-      "__unresolved_77": "assets/scripts/app/views/fight/ui/FightBloodUI.js",
-      "__unresolved_78": "assets/scripts/app/views/fight/ui/FightDialogUI.js",
-      "__unresolved_80": "assets/scripts/app/views/formation/Creator.js",
-      "__unresolved_81": "assets/scripts/app/views/formation/FormationView.js",
-      "__unresolved_82": "assets/scripts/app/views/loading/Creator.js",
-      "__unresolved_83": "assets/scripts/app/views/loading/ResLoadingLayer.js",
-      "__unresolved_84": "assets/scripts/app/views/loading/TransLoadingLayer.js",
-      "__unresolved_85": "assets/scripts/app/views/login/Creator.js",
-      "__unresolved_86": "assets/scripts/app/views/login/LoginAccountLayer.js",
-      "__unresolved_87": "assets/scripts/app/views/login/LoginLayer.js",
-      "__unresolved_88": "assets/scripts/app/views/login/NoticeView.js",
-      "__unresolved_89": "assets/scripts/app/views/login/UserAgreementAndPrivacyPolicy.js",
-      "__unresolved_90": "assets/scripts/app/views/maincity/Creator.js",
-      "__unresolved_91": "assets/scripts/app/views/maincity/MainCityLayer.js",
-      "__unresolved_92": "assets/scripts/app/views/maincity/MainCityUI.js",
-      "__unresolved_93": "assets/scripts/app/views/pre_reward/Creator.js",
-      "__unresolved_94": "assets/scripts/app/views/pre_reward/PreReward.js",
-      "__unresolved_95": "assets/scripts/framework/components/CameraControls.js",
-      "__unresolved_96": "assets/scripts/framework/components/Singleton.js",
-      "__unresolved_97": "assets/scripts/framework/components/SingletonMgr.js",
-      "__unresolved_98": "assets/scripts/framework/core/GameMgr.js",
-      "__unresolved_99": "assets/scripts/framework/core/SceneMgr.js",
-      "__unresolved_100": "assets/scripts/framework/core/audio/AudioEffect.js",
-      "__unresolved_101": "assets/scripts/framework/core/audio/AudioManager.js",
-      "__unresolved_102": "assets/scripts/framework/core/audio/AudioMusic.js",
-      "__unresolved_103": "assets/scripts/framework/core/storage/EncryptUtil.js",
-      "__unresolved_104": "assets/scripts/framework/core/storage/Md5.js",
-      "__unresolved_105": "assets/scripts/framework/core/storage/Storage.js",
-      "__unresolved_106": "assets/scripts/framework/data/DataBase.js",
-      "__unresolved_107": "assets/scripts/framework/data/DataMgr.js",
-      "__unresolved_108": "assets/scripts/framework/data/DataParserBase.js",
-      "__unresolved_109": "assets/scripts/framework/data/ModelBase.js",
-      "__unresolved_110": "assets/scripts/framework/data/ResourcesLoader.js",
-      "__unresolved_111": "assets/scripts/framework/language/Language.js",
-      "__unresolved_112": "assets/scripts/framework/language/LanguageLabel.js",
-      "__unresolved_113": "assets/scripts/framework/language/LanguageSprite.js",
-      "__unresolved_114": "assets/scripts/framework/language/code/en.js",
-      "__unresolved_115": "assets/scripts/framework/language/code/zh.js",
-      "__unresolved_116": "assets/scripts/framework/listener/EventMgr.js",
-      "__unresolved_117": "assets/scripts/framework/listener/Message.js",
-      "__unresolved_118": "assets/scripts/framework/net/HttpMgr.js",
-      "__unresolved_119": "assets/scripts/framework/net/NetLoadingMgr.js",
-      "__unresolved_120": "assets/scripts/framework/net/NetStateMgr.js",
-      "__unresolved_121": "assets/scripts/framework/net/SocketMgr.js",
-      "__unresolved_122": "assets/scripts/framework/translate/TranslateMgr.js",
-      "__unresolved_123": "assets/scripts/framework/ui/ComponentBase.js",
-      "__unresolved_124": "assets/scripts/framework/ui/DInertiaMove.js",
-      "__unresolved_125": "assets/scripts/framework/ui/LayerBase.js",
-      "__unresolved_126": "assets/scripts/framework/ui/ListView.js",
-      "__unresolved_127": "assets/scripts/framework/ui/LoadingIndicator.js",
-      "__unresolved_128": "assets/scripts/framework/ui/MulitMoveingBgs.js",
-      "__unresolved_129": "assets/scripts/framework/ui/TableContentLayer.js",
-      "__unresolved_130": "assets/scripts/framework/ui/TableLayer.js",
-      "__unresolved_131": "assets/scripts/framework/ui/TranslateLabel.js",
-      "__unresolved_132": "assets/scripts/framework/ui/UIWidget.js",
-      "__unresolved_133": "assets/scripts/framework/ui/ViewCreatorBase.js",
-      "__unresolved_134": "assets/scripts/framework/ui/ViewCreatorManager.js",
-      "__unresolved_135": "assets/scripts/framework/utils/Logger.js",
-      "__unresolved_136": "assets/scripts/framework/utils/MutableForwardIterator.js",
-      "__unresolved_137": "assets/scripts/framework/utils/SceneTriggerMgr.js",
-      "__unresolved_138": "assets/scripts/framework/utils/functions.js",
-      "__unresolved_139": "assets/scripts/hotUpdate/HotUpdate.js",
-      "__unresolved_140": "assets/skill_eitor/ActionOptionPanel.js",
-      "__unresolved_141": "assets/skill_eitor/ActionTypeSelItem.js",
-      "__unresolved_142": "assets/skill_eitor/ActionTypeSelPanel.js",
-      "__unresolved_143": "assets/skill_eitor/TimeLine.js",
-      "__unresolved_144": "assets/skill_eitor/TimeLineItem.js",
-      "__unresolved_145": "assets/skill_eitor/TimeSetPanel.js",
-      "__unresolved_146": "assets/skill_eitor/skill_edirot.js",
-      "__unresolved_79": "assets/scripts/app/views/fight/ui/FightEditorUI.js"
+      "__unresolved_18": "assets/scripts/app/define/proto_mate.js",
+      "__unresolved_19": "assets/scripts/app/model/ModelLogin.js",
+      "__unresolved_20": "assets/scripts/app/model/ModelRegisterMgr.js",
+      "__unresolved_21": "assets/scripts/app/model/model.js",
+      "__unresolved_22": "assets/scripts/app/parser/Test_Parser.js",
+      "__unresolved_23": "assets/scripts/app/views/chat/ChatMsgItemComp.js",
+      "__unresolved_24": "assets/scripts/app/views/chat/ChatMsgItemNode.js",
+      "__unresolved_25": "assets/scripts/app/views/chat/ChatScrollView.js",
+      "__unresolved_26": "assets/scripts/app/views/chat/Creator.js",
+      "__unresolved_27": "assets/scripts/app/views/common/MainEventTrigger.js",
+      "__unresolved_28": "assets/scripts/app/views/common/RedPoint.js",
+      "__unresolved_29": "assets/scripts/app/views/common/TouchEffect.js",
+      "__unresolved_30": "assets/scripts/app/views/common/TouchMain.js",
+      "__unresolved_31": "assets/scripts/app/views/common/spine/RoleSpineFactory.js",
+      "__unresolved_32": "assets/scripts/app/views/common/spine/SpineComponentBase.js",
+      "__unresolved_33": "assets/scripts/app/views/common/spine/SpineNodeBase.js",
+      "__unresolved_34": "assets/scripts/app/views/common/spine/effect/Jitter.js",
+      "__unresolved_35": "assets/scripts/app/views/dialog/Creator.js",
+      "__unresolved_36": "assets/scripts/app/views/dialog/DoubleBtnDialog.js",
+      "__unresolved_37": "assets/scripts/app/views/dialog/Tips.js",
+      "__unresolved_38": "assets/scripts/app/views/fight/Creator.js",
+      "__unresolved_39": "assets/scripts/app/views/fight/FightBloodMgr.js",
+      "__unresolved_40": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_41": "assets/scripts/app/views/fight/FightController.js",
+      "__unresolved_42": "assets/scripts/app/views/fight/FightMainLayer.js",
+      "__unresolved_43": "assets/scripts/app/views/fight/FightMainUI.js",
+      "__unresolved_44": "assets/scripts/app/views/fight/FightMainWorld.js",
+      "__unresolved_45": "assets/scripts/app/views/fight/FightPlayer.js",
+      "__unresolved_46": "assets/scripts/app/views/fight/action/AcitonJump.js",
+      "__unresolved_47": "assets/scripts/app/views/fight/action/Action.js",
+      "__unresolved_48": "assets/scripts/app/views/fight/action/ActionAddPrefab.js",
+      "__unresolved_49": "assets/scripts/app/views/fight/action/ActionBase.js",
+      "__unresolved_50": "assets/scripts/app/views/fight/action/ActionColor.js",
+      "__unresolved_51": "assets/scripts/app/views/fight/action/ActionDelay.js",
+      "__unresolved_52": "assets/scripts/app/views/fight/action/ActionGoBack.js",
+      "__unresolved_53": "assets/scripts/app/views/fight/action/ActionHide.js",
+      "__unresolved_54": "assets/scripts/app/views/fight/action/ActionMove.js",
+      "__unresolved_55": "assets/scripts/app/views/fight/action/ActionShow.js",
+      "__unresolved_56": "assets/scripts/app/views/fight/action/ActionSpineAnim.js",
+      "__unresolved_57": "assets/scripts/app/views/fight/action/AttackActionMgr.js",
+      "__unresolved_58": "assets/scripts/app/views/fight/action/FightActionMgr.js",
+      "__unresolved_59": "assets/scripts/app/views/fight/action/ResultActionMgr.js",
+      "__unresolved_60": "assets/scripts/app/views/fight/data/FightData.js",
+      "__unresolved_61": "assets/scripts/app/views/fight/data/FightDataBase.js",
+      "__unresolved_62": "assets/scripts/app/views/fight/data/FightDataMgr.js",
+      "__unresolved_63": "assets/scripts/app/views/fight/effect/BloodEffect.js",
+      "__unresolved_64": "assets/scripts/app/views/fight/effect/Effect.js",
+      "__unresolved_65": "assets/scripts/app/views/fight/effect/EffectBase.js",
+      "__unresolved_66": "assets/scripts/app/views/fight/effect/FightEffectMgr.js",
+      "__unresolved_67": "assets/scripts/app/views/fight/event/FightEvent.js",
+      "__unresolved_68": "assets/scripts/app/views/fight/event/FightEventDataType.js",
+      "__unresolved_69": "assets/scripts/app/views/fight/event/FightEventMgr.js",
+      "__unresolved_70": "assets/scripts/app/views/fight/fightFormation/FightFormation.js",
+      "__unresolved_71": "assets/scripts/app/views/fight/fightFormation/GeneralIconShowComp.js",
+      "__unresolved_72": "assets/scripts/app/views/fight/layer/BloodLayer.js",
+      "__unresolved_73": "assets/scripts/app/views/fight/layer/DialogLayer.js",
+      "__unresolved_74": "assets/scripts/app/views/fight/layer/FightLayerBase.js",
+      "__unresolved_75": "assets/scripts/app/views/fight/layer/FomationLayer.js",
+      "__unresolved_76": "assets/scripts/app/views/fight/layer/RoleLayer.js",
+      "__unresolved_77": "assets/scripts/app/views/fight/layer/TopEffectLayer.js",
+      "__unresolved_78": "assets/scripts/app/views/fight/ui/FightBloodUI.js",
+      "__unresolved_79": "assets/scripts/app/views/fight/ui/FightDialogUI.js",
+      "__unresolved_81": "assets/scripts/app/views/formation/Creator.js",
+      "__unresolved_82": "assets/scripts/app/views/formation/FormationView.js",
+      "__unresolved_83": "assets/scripts/app/views/loading/Creator.js",
+      "__unresolved_84": "assets/scripts/app/views/loading/ResLoadingLayer.js",
+      "__unresolved_85": "assets/scripts/app/views/loading/TransLoadingLayer.js",
+      "__unresolved_86": "assets/scripts/app/views/login/Creator.js",
+      "__unresolved_87": "assets/scripts/app/views/login/LoginAccountLayer.js",
+      "__unresolved_88": "assets/scripts/app/views/login/LoginLayer.js",
+      "__unresolved_89": "assets/scripts/app/views/login/NoticeView.js",
+      "__unresolved_90": "assets/scripts/app/views/login/UserAgreementAndPrivacyPolicy.js",
+      "__unresolved_91": "assets/scripts/app/views/maincity/Creator.js",
+      "__unresolved_92": "assets/scripts/app/views/maincity/MainCityLayer.js",
+      "__unresolved_93": "assets/scripts/app/views/maincity/MainCityUI.js",
+      "__unresolved_94": "assets/scripts/app/views/pre_reward/Creator.js",
+      "__unresolved_95": "assets/scripts/app/views/pre_reward/PreReward.js",
+      "__unresolved_96": "assets/scripts/framework/components/CameraControls.js",
+      "__unresolved_97": "assets/scripts/framework/components/Singleton.js",
+      "__unresolved_98": "assets/scripts/framework/components/SingletonMgr.js",
+      "__unresolved_99": "assets/scripts/framework/core/GameMgr.js",
+      "__unresolved_100": "assets/scripts/framework/core/SceneMgr.js",
+      "__unresolved_101": "assets/scripts/framework/core/audio/AudioEffect.js",
+      "__unresolved_102": "assets/scripts/framework/core/audio/AudioManager.js",
+      "__unresolved_103": "assets/scripts/framework/core/audio/AudioMusic.js",
+      "__unresolved_104": "assets/scripts/framework/core/storage/EncryptUtil.js",
+      "__unresolved_105": "assets/scripts/framework/core/storage/Md5.js",
+      "__unresolved_106": "assets/scripts/framework/core/storage/Storage.js",
+      "__unresolved_107": "assets/scripts/framework/data/DataBase.js",
+      "__unresolved_108": "assets/scripts/framework/data/DataMgr.js",
+      "__unresolved_109": "assets/scripts/framework/data/DataParserBase.js",
+      "__unresolved_110": "assets/scripts/framework/data/ModelBase.js",
+      "__unresolved_111": "assets/scripts/framework/data/ResourcesLoader.js",
+      "__unresolved_112": "assets/scripts/framework/language/Language.js",
+      "__unresolved_113": "assets/scripts/framework/language/LanguageLabel.js",
+      "__unresolved_114": "assets/scripts/framework/language/LanguageSprite.js",
+      "__unresolved_115": "assets/scripts/framework/language/code/en.js",
+      "__unresolved_116": "assets/scripts/framework/language/code/zh.js",
+      "__unresolved_117": "assets/scripts/framework/listener/EventMgr.js",
+      "__unresolved_118": "assets/scripts/framework/listener/Message.js",
+      "__unresolved_119": "assets/scripts/framework/net/BufferParser.js",
+      "__unresolved_120": "assets/scripts/framework/net/HttpMgr.js",
+      "__unresolved_121": "assets/scripts/framework/net/NetLoadingMgr.js",
+      "__unresolved_122": "assets/scripts/framework/net/NetStateMgr.js",
+      "__unresolved_123": "assets/scripts/framework/net/SocketMgr.js",
+      "__unresolved_124": "assets/scripts/framework/translate/TranslateMgr.js",
+      "__unresolved_125": "assets/scripts/framework/ui/ComponentBase.js",
+      "__unresolved_126": "assets/scripts/framework/ui/DInertiaMove.js",
+      "__unresolved_127": "assets/scripts/framework/ui/LayerBase.js",
+      "__unresolved_128": "assets/scripts/framework/ui/ListView.js",
+      "__unresolved_129": "assets/scripts/framework/ui/LoadingIndicator.js",
+      "__unresolved_130": "assets/scripts/framework/ui/MulitMoveingBgs.js",
+      "__unresolved_131": "assets/scripts/framework/ui/TableContentLayer.js",
+      "__unresolved_132": "assets/scripts/framework/ui/TableLayer.js",
+      "__unresolved_133": "assets/scripts/framework/ui/TranslateLabel.js",
+      "__unresolved_134": "assets/scripts/framework/ui/UIWidget.js",
+      "__unresolved_135": "assets/scripts/framework/ui/ViewCreatorBase.js",
+      "__unresolved_136": "assets/scripts/framework/ui/ViewCreatorManager.js",
+      "__unresolved_137": "assets/scripts/framework/utils/Logger.js",
+      "__unresolved_138": "assets/scripts/framework/utils/MutableForwardIterator.js",
+      "__unresolved_139": "assets/scripts/framework/utils/SceneTriggerMgr.js",
+      "__unresolved_140": "assets/scripts/framework/utils/functions.js",
+      "__unresolved_141": "assets/scripts/hotUpdate/HotUpdate.js",
+      "__unresolved_142": "assets/skill_eitor/ActionOptionPanel.js",
+      "__unresolved_143": "assets/skill_eitor/ActionTypeSelItem.js",
+      "__unresolved_144": "assets/skill_eitor/ActionTypeSelPanel.js",
+      "__unresolved_145": "assets/skill_eitor/TimeLine.js",
+      "__unresolved_146": "assets/skill_eitor/TimeLineItem.js",
+      "__unresolved_147": "assets/skill_eitor/TimeSetPanel.js",
+      "__unresolved_148": "assets/skill_eitor/skill_edirot.js",
+      "__unresolved_80": "assets/scripts/app/views/fight/ui/FightEditorUI.js"
     },
     "physicalLocation": "cce/internal/x/prerequisite-imports.js",
-    "mTimestamp": 1648866143745,
+    "mTimestamp": 1648869897050,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/prerequisite-imports"
   },
@@ -1939,10 +1961,10 @@
     "imports": {
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/scripts/framework/ui/ListView.js",
-      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js"
+      "__unresolved_2": "assets/scripts/app/views/fight/FightConstant.js",
+      "__unresolved_1": "assets/scripts/framework/ui/ListView.js"
     },
     "physicalLocation": "fs/0/assets/scripts/app/views/fight/ui/FightEditorUI.js",
-    "mTimestamp": 1648866143794
+    "mTimestamp": 1648869897160
   }
 }

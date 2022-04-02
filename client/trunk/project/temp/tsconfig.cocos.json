@@ -6,16 +6,16 @@
     "strict": true,
     "types": [
       "./temp/declarations/jsb",
-      "./temp/declarations/cc",
       "./temp/declarations/cc.env",
-      "./temp/declarations/cc.custom-macro"
+      "./temp/declarations/cc.custom-macro",
+      "./temp/declarations/cc"
     ],
     "paths": {
       "db://internal/*": [
         "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine/editor/assets/*"
       ],
       "db://assets/*": [
-        "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/*"
+        "/Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/*"
       ]
     },
     "experimentalDecorators": true,
