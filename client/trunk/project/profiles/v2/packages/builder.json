@@ -6,24 +6,22 @@
     "outputName": "android",
     "mainBundleCompressionType": "merge_dep",
     "platform": "android",
-    "name": "GameDemo",
-    "debug": true,
-    "sourceMaps": true
+    "debug": true
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1648522770490": {
-        "id": "1648522770490",
+      "1648534258017": {
+        "id": "1648534258017",
         "progress": 1,
-        "state": "failure",
-        "message": "2022-3-29 11:39 make package /Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android failed!",
+        "state": "success",
+        "message": "2022-3-29 14:11 Build success in 5895 ms!",
         "options": {
-          "name": "GameDemo",
+          "name": "NewProject",
           "platform": "android",
           "buildPath": "project://build",
           "debug": true,
           "md5Cache": false,
-          "sourceMaps": true,
+          "sourceMaps": false,
           "replaceSplashScreen": false,
           "mainBundleCompressionType": "merge_dep",
           "mainBundleIsRemote": false,
@@ -62,7 +60,7 @@
           "outputName": "android",
           "packages": {
             "android": {
-              "packageName": "com.yy.game.test",
+              "packageName": "com.android.demo",
               "orientation": {
                 "portrait": true,
                 "upsideDown": false,
@@ -71,8 +69,7 @@
               },
               "apiLevel": "android-26",
               "appABIs": [
-                "arm64-v8a",
-                "armeabi-v7a"
+                "arm64-v8a"
               ],
               "useDebugKeystore": true,
               "keystorePath": "",
@@ -95,7 +92,7 @@
                 "asyncFunctions": true
               },
               "encrypted": false,
-              "xxteaKey": "b7RLzjkKZNArfYzS",
+              "xxteaKey": "1ehoAIqGZGKq5QAQ",
               "compressZip": false,
               "makeAfterBuild": false,
               "JobSystem": "tbb"
@@ -107,7 +104,7 @@
             "hot-update": null
           }
         },
-        "time": "2022-3-29 10:59",
+        "time": "2022-3-29 14:10",
         "dirty": false
       }
     }

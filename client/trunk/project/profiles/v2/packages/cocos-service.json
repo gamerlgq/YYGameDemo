@@ -4,17 +4,23 @@
       "configID": "f09b61",
       "services": []
     },
+    "android": {
+      "configID": "f09b61",
+      "services": [],
+      "__version__": "3.0.2"
+    },
     "mac": {
       "configID": "f09b61",
       "services": []
     },
-    "android": {
+    "ios": {
       "configID": "f09b61",
       "services": []
     }
   },
   "builder-options": {
     "configID": "f09b61",
-    "services": []
+    "services": [],
+    "__version__": "3.0.2"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "options": {
+    "ios": {
+      "orientation": {
+        "landscapeRight": true,
+        "landscapeLeft": true
+      },
+      "renderBackEnd": {
+        "metal": true
+      },
+      "skipUpdateXcodeProject": false,
+      "targetVersion": "12.0"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "options": {
+    "mac": {
+      "packageName": "com.yingyou.demo",
+      "targetVersion": "12.2"
+    }
+  }
+}

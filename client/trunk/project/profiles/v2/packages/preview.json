@@ -3,7 +3,7 @@
     "start_scene": "0a8bad5c-e515-477d-b81a-8021f2c3fa7f"
   },
   "preview": {
-    "simulator_resolution": 0,
-    "simulator_orientation": "portrait"
+    "simulator_orientation": "portrait",
+    "simulator_resolution": 1
   }
 }

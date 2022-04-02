@@ -1,1 +1,0 @@
-{"version":3,"sources":["file:///Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/scripts/app/views/fight/effect/Effect.ts"],"names":["BloodEffect","EffectBase"],"mappings":";;;;;;;;;0CAAQA,W;;0CACAC,U","sourcesContent":["export {BloodEffect} from \"./BloodEffect\"\nexport {EffectBase} from \"./EffectBase\""]}
