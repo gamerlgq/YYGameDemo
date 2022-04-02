@@ -1,0 +1,64 @@
+{
+  "buildFiles": [
+    "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/CMakeLists.txt",
+    "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/CMakeLists.txt",
+    "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/android/CMakeLists.txt",
+    "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/sources/CMakeLists.txt",
+    "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/sources/pvmp3dec/CMakeLists.txt",
+    "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/sources/tremolo/CMakeLists.txt",
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/android/CMakeLists.txt",
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/common/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/steven/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/steven/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "vorbisidec::@6890427a1f51a3e7e1df": {
+      "artifactName": "vorbisidec",
+      "abi": "arm64-v8a",
+      "output": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/libvorbisidec.a",
+      "runtimeFiles": []
+    },
+    "android_platform::@6890427a1f51a3e7e1df": {
+      "artifactName": "android_platform",
+      "abi": "arm64-v8a",
+      "output": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/libandroid_platform.a",
+      "runtimeFiles": []
+    },
+    "cocos::@6890427a1f51a3e7e1df": {
+      "artifactName": "cocos",
+      "abi": "arm64-v8a",
+      "output": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/GameDemo/intermediates/cxx/Debug/3z323c33/obj/arm64-v8a/libcocos.so",
+      "runtimeFiles": []
+    },
+    "cocos2d_jni::@6890427a1f51a3e7e1df": {
+      "artifactName": "cocos2d_jni",
+      "abi": "arm64-v8a",
+      "output": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/libcocos2d_jni.a",
+      "runtimeFiles": []
+    },
+    "pvmp3dec::@6890427a1f51a3e7e1df": {
+      "artifactName": "pvmp3dec",
+      "abi": "arm64-v8a",
+      "output": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/libpvmp3dec.a",
+      "runtimeFiles": []
+    },
+    "cocos2d::@6890427a1f51a3e7e1df": {
+      "artifactName": "cocos2d",
+      "abi": "arm64-v8a",
+      "output": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/libcocos2d.a",
+      "runtimeFiles": []
+    }
+  }
+}

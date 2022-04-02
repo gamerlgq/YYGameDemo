@@ -1,0 +1,101 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "main",
+    "deps": [
+        "resources"
+    ],
+    "uuids": [
+        "0139cc900",
+        "09aabe194",
+        "0a8bad5c-e515-477d-b81a-8021f2c3fa7f",
+        "0ce828c7-b29e-4eb9-8878-9a53dc66bfb1@f9941",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "2b81f2ad-8543-4618-a9ff-6e9cd5a208d3",
+        "53c5aae0-986d-4354-8ef6-e31064035148@f9941",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "584c2808-c208-46db-a27c-a82efb5399b0@f9941",
+        "74a8284f-f62f-403c-be68-5a86f1858c13@f9941",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "7ea9edbe-7f2a-4a7a-9559-9adbcd66019c",
+        "80b8f0af-42dc-415f-99f0-65c9bd8d3a07",
+        "8600169e-2642-44de-ba6d-da7953ac0a92",
+        "8cb6bfc6-9f27-471e-b88c-e76e7537f72c",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "a22f26c8-4a8f-4451-8239-14dfc553db78",
+        "af96776c-b1ff-4df3-a258-900b4547ce21",
+        "afc47931-f066-46b0-90be-9fe61f213428@f9941",
+        "b730527c-3233-41c2-aaf7-7cdab58f9749@f9941",
+        "bd1bcaba-bd7d-4a71-b143-997c882383e4",
+        "bd1bcaba-bd7d-4a71-b143-997c882383e4@6c48a",
+        "bd1bcaba-bd7d-4a71-b143-997c882383e4@f9941",
+        "cf54f5fe-27e6-4408-bbf9-bbc14689fffc",
+        "d79845e7-b177-4c4c-9374-566e40f019ad",
+        "da596df4-c724-4a4d-849e-250c99e8fa93",
+        "fab8b621-c118-4946-84e8-795b6d2e6d28",
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8",
+        "ffa24347-cf8f-4026-9a76-7f33ddcf26ba",
+        "ffb88a8f-af62-48f4-8f1d-3cb606443a43@f9941"
+    ],
+    "paths": {
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8": [
+            "db:/internal/default_renderpipeline/builtin-forward",
+            "cc.RenderPipeline"
+        ]
+    },
+    "scenes": {
+        "db://assets/scenes/Launch.scene": "0a8bad5c-e515-477d-b81a-8021f2c3fa7f",
+        "db://assets/scenes/loading.scene": "8cb6bfc6-9f27-471e-b88c-e76e7537f72c",
+        "db://assets/scenes/SkillEditor.scene": "a22f26c8-4a8f-4451-8239-14dfc553db78",
+        "db://assets/scenes/main.scene": "af96776c-b1ff-4df3-a258-900b4547ce21",
+        "db://assets/scenes/hotUpdate.scene": "fab8b621-c118-4946-84e8-795b6d2e6d28"
+    },
+    "packs": {
+        "09aabe194": [
+            "0a8bad5c-e515-477d-b81a-8021f2c3fa7f",
+            "80b8f0af-42dc-415f-99f0-65c9bd8d3a07"
+        ],
+        "0139cc900": [
+            "2b81f2ad-8543-4618-a9ff-6e9cd5a208d3",
+            "7ea9edbe-7f2a-4a7a-9559-9adbcd66019c",
+            "a22f26c8-4a8f-4451-8239-14dfc553db78",
+            "bd1bcaba-bd7d-4a71-b143-997c882383e4@f9941",
+            "cf54f5fe-27e6-4408-bbf9-bbc14689fffc",
+            "d79845e7-b177-4c4c-9374-566e40f019ad",
+            "da596df4-c724-4a4d-849e-250c99e8fa93",
+            "ffa24347-cf8f-4026-9a76-7f33ddcf26ba"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [
+        "0ce828c7-b29e-4eb9-8878-9a53dc66bfb1@f9941",
+        "0",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "0",
+        "53c5aae0-986d-4354-8ef6-e31064035148@f9941",
+        "0",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "0",
+        "584c2808-c208-46db-a27c-a82efb5399b0@f9941",
+        "0",
+        "74a8284f-f62f-403c-be68-5a86f1858c13@f9941",
+        "0",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "0",
+        "8600169e-2642-44de-ba6d-da7953ac0a92",
+        "0",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "0",
+        "afc47931-f066-46b0-90be-9fe61f213428@f9941",
+        "0",
+        "b730527c-3233-41c2-aaf7-7cdab58f9749@f9941",
+        "0",
+        "ffb88a8f-af62-48f4-8f1d-3cb606443a43@f9941",
+        "0"
+    ],
+    "debug": true,
+    "extensionMap": {}
+}

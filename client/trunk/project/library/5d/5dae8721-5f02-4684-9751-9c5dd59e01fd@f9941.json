@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zhu_55",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 0,
+      "width": 117,
+      "height": 108
+    },
+    "offset": {
+      "x": 0.5,
+      "y": 1
+    },
+    "originalSize": {
+      "width": 118,
+      "height": 110
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "5dae8721-5f02-4684-9751-9c5dd59e01fd@6c48a",
+    "packable": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tongyong_jindutiao_016",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 21,
+      "height": 26
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 21,
+      "height": 26
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "584c2808-c208-46db-a27c-a82efb5399b0@6c48a",
+    "packable": true
+  }
+}

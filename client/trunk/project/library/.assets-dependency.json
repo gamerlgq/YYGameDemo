@@ -1,0 +1,142 @@
+{
+  "path": {
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_001.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_001.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_enemy_004.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/common_ui/fonts/doublehit.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/common_ui/fonts/doublehit.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/common_ui/fonts/decrease.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/common_ui/fonts/decrease.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_enemy_005.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_enemy_005.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/hero_new_atelisi.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/hero_new_atelisi.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/effect/mix-and-match-pro.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/effect/mix-and-match-pro.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/hero_new_tangyun.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/common_ui/fonts/decrease.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/common_ui/fonts/decrease.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/common_ui/fonts/doublehit.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/common_ui/fonts/doublehit.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/hero_new_atelisi.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/hero_new_atelisi.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/hero_new_tangyun.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/man_enemy_004.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/fight/pics/effect/embattled/hit_eff01.plist": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/fight/pics/effect/embattled/embattled_1.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/fight/pics/effect/embattled/hit_eff01.plist": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/fight/pics/effect/embattled/embattled_1.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/common_ui/fonts/decrease.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/common_ui/fonts/decrease.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/common_ui/fonts/doublehit.fnt": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/common_ui/fonts/doublehit.png"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/hero_new_atelisi.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/hero_new_atelisi.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/hero_new_tangyun.atlas"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/man_enemy_004.atlas"
+    ]
+  },
+  "uuid": {
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "4f35261d-fbd4-49e1-8b4c-e4a38c3f6b19@6c48a",
+      "31360ba5-59c8-4ae2-859d-52dedaf40661@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_001.json": [
+      "4f35261d-fbd4-49e1-8b4c-e4a38c3f6b19@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/hero_new_atelisi.json": [
+      "a2dd8ab4-5728-4eff-942c-2829d1e42749@6c48a",
+      "3ec6e2f5-b908-4de6-bd6f-f28009cc3d9f@6c48a",
+      "7d171518-ef97-487b-88ec-3d6b8c84f74f@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "7cbbc66f-1bf1-4f25-9e85-f9ff8ddbafc7@6c48a",
+      "f99ab618-5c28-40dc-8723-7423bd95a170@6c48a",
+      "69f2ecd3-ca8b-4c37-83b3-05ff8f03c0b2@6c48a",
+      "dffcad28-b700-4d82-9037-bbc2e2b8d5f3@6c48a",
+      "faa8eae7-d386-403e-bcb0-3258296eaf0b@6c48a",
+      "79210a55-e958-4a1b-a4a8-30be6be7d456@6c48a",
+      "2587cc38-bc84-4f0e-89ea-b03c00aebdd7@6c48a",
+      "80783d69-24bf-413a-8f3e-9635c937a446@6c48a",
+      "3b4111e5-3b58-4069-a779-b6a69d362959@6c48a",
+      "e2923475-f419-4370-ae29-7b25967db9ca@6c48a",
+      "5f25da3b-c728-4056-ba00-4d7d0bec65fd@6c48a",
+      "ad6f37b0-3532-4544-b89d-da42dc4f8c4f@6c48a",
+      "58f1c3b6-fd47-421d-89fc-77c0f968dac3@6c48a",
+      "8aa9300d-690b-40a7-bb75-7e31f2cdb135@6c48a",
+      "21ea7594-1c63-42de-bfc6-a0bc675bdfb1@6c48a",
+      "6898c174-c4b5-435f-a1a4-4eefb3406abc@6c48a",
+      "4c438c7a-3a9f-498a-b5f0-0e99243de5fd@6c48a",
+      "0bd864f9-abbb-46dd-b497-8136fdb2965e@6c48a",
+      "da9498a4-b63f-40db-9927-1dab8865d82a@6c48a",
+      "a2e0fc4e-04c5-4a4a-b602-b7885c3e194b@6c48a",
+      "def15dcf-4f16-46a9-a9ed-b0e1c31348a9@6c48a",
+      "2789d213-a004-469a-9afb-7ef596f1b7c0@6c48a",
+      "1da658d8-54b5-40b5-a6e9-7aae8ae383a3@6c48a",
+      "85373794-ee7f-45b7-be7e-a06b870b4979@6c48a",
+      "acea6b14-d6d7-4497-86e6-c8c5393d4b6c@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/hero/man_enemy_005.json": [
+      "31360ba5-59c8-4ae2-859d-52dedaf40661@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/effect/mix-and-match-pro.skel": [
+      "d301c0b8-f232-449c-bb74-6665f1767846@6c48a",
+      "d7bcc138-c66f-49b7-b4c6-09749e54f00c@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/hero/pics/effect/mix-and-match-pro.json": [
+      "c8cad915-d9c6-4d06-9680-6fa961fd4dca@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/Demo/assets/resources/fight/pics/effect/mix-and-match-pro.json": [
+      "c8cad915-d9c6-4d06-9680-6fa961fd4dca@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/hero_new_atelisi.json": [
+      "7d171518-ef97-487b-88ec-3d6b8c84f74f@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "2789d213-a004-469a-9afb-7ef596f1b7c0@6c48a",
+      "1da658d8-54b5-40b5-a6e9-7aae8ae383a3@6c48a",
+      "85373794-ee7f-45b7-be7e-a06b870b4979@6c48a",
+      "acea6b14-d6d7-4497-86e6-c8c5393d4b6c@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemo/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "31360ba5-59c8-4ae2-859d-52dedaf40661@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/hero_new_atelisi.json": [
+      "7d171518-ef97-487b-88ec-3d6b8c84f74f@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/hero_new_tangyun.json": [
+      "2789d213-a004-469a-9afb-7ef596f1b7c0@6c48a",
+      "1da658d8-54b5-40b5-a6e9-7aae8ae383a3@6c48a",
+      "85373794-ee7f-45b7-be7e-a06b870b4979@6c48a",
+      "acea6b14-d6d7-4497-86e6-c8c5393d4b6c@6c48a"
+    ],
+    "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/resources/hero/pics/hero/man_enemy_004.json": [
+      "31360ba5-59c8-4ae2-859d-52dedaf40661@6c48a"
+    ]
+  }
+}

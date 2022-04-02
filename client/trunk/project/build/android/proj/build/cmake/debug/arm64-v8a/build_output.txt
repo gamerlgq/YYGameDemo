@@ -1,0 +1,46 @@
+CMake Warning at /Users/steven/Env/Android/ndk/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /Users/steven/Env/Android/ndk/android-ndk-r16b
+Call Stack (most recent call first):
+  /Users/steven/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:4 (project)
+
+
+Check for working CXX compiler: /Users/steven/Env/Android/ndk/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+Check for working CXX compiler: /Users/steven/Env/Android/ndk/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+Detecting CXX compiler ABI info
+Detecting CXX compiler ABI info - done
+Detecting CXX compile features
+Detecting CXX compile features - done
+The ASM compiler identification is Clang
+Found assembler: /Users/steven/Env/Android/ndk/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+Check for working C compiler: /Users/steven/Env/Android/ndk/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+Check for working C compiler: /Users/steven/Env/Android/ndk/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+Detecting C compiler ABI info
+Detecting C compiler ABI info - done
+Detecting C compile features
+Detecting C compile features - done
+Ignore NO_WERROR
+OPTION USE_MODULES:	OFF
+OPTION CC_USE_METAL:	OFF
+OPTION CC_USE_GLES3:	ON
+OPTION CC_USE_GLES2:	ON
+OPTION CC_USE_VULKAN:	OFF
+OPTION USE_SE_V8:	ON
+OPTION USE_V8_DEBUGGER:	ON
+OPTION USE_SOCKET:	ON
+OPTION USE_AUDIO:	ON
+OPTION USE_EDIT_BOX:	ON
+OPTION USE_SE_JSC:	OFF
+OPTION USE_VIDEO:	ON
+OPTION USE_WEBVIEW:	ON
+OPTION USE_MIDDLEWARE:	ON
+OPTION USE_DRAGONBONES:	ON
+OPTION USE_SPINE:	ON
+OPTION USE_WEBSOCKET_SERVER:	OFF
+OPTION USE_SE_V8:	ON
+OPTION USE_V8_DEBUGGER:	ON
+OPTION USE_PHYSICS_PHYSX:	OFF
+OPTION USE_JOB_SYSTEM_TBB:	ON
+OPTION USE_JOB_SYSTEM_TASKFLOW:	OFF
+Configuring done

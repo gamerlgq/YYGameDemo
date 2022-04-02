@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "6b55c8ce-610d-4043-a32a-79193f4739d9@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "tongyong_ui_db_020",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "width": 40,
+                "height": 40
+            },
+            "offset": {
+                "x": 0,
+                "y": 0
+            },
+            "originalSize": {
+                "width": 40,
+                "height": 40
+            },
+            "rotated": false,
+            "capInsets": [
+                10,
+                10,
+                10,
+                10
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

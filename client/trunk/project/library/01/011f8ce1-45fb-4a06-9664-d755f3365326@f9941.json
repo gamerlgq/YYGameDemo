@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_jia",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 34,
+      "height": 34
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 36,
+      "height": 36
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "011f8ce1-45fb-4a06-9664-d755f3365326@6c48a",
+    "packable": true
+  }
+}

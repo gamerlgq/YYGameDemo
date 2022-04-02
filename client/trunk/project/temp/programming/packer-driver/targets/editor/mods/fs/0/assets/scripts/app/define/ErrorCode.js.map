@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/assets/scripts/app/define/ErrorCode.ts"],"names":["ErrorCode"],"mappings":";;;;;;;;;;;;;;;;iBAAYA,S;AAAAA,QAAAA,S,CAAAA,S;AAAAA,QAAAA,S,CAAAA,S;SAAAA,S,yBAAAA,S","sourcesContent":["export enum ErrorCode {\n    OK = 0,\n    TIME_OUT = 1\n}"]}

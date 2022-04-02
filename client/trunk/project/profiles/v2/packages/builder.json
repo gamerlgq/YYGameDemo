@@ -1,0 +1,115 @@
+{
+  "log": {
+    "level": 4
+  },
+  "common": {
+    "outputName": "android",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "android",
+    "name": "GameDemo",
+    "debug": true,
+    "sourceMaps": true
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1648522770490": {
+        "id": "1648522770490",
+        "progress": 1,
+        "state": "failure",
+        "message": "2022-3-29 11:39 make package /Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android failed!",
+        "options": {
+          "name": "GameDemo",
+          "platform": "android",
+          "buildPath": "project://build",
+          "debug": true,
+          "md5Cache": false,
+          "sourceMaps": true,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "0a8bad5c-e515-477d-b81a-8021f2c3fa7f",
+          "scenes": [
+            {
+              "url": "db://assets/scenes/Launch.scene",
+              "uuid": "0a8bad5c-e515-477d-b81a-8021f2c3fa7f",
+              "inBundle": false
+            },
+            {
+              "url": "db://assets/scenes/SkillEditor.scene",
+              "uuid": "a22f26c8-4a8f-4451-8239-14dfc553db78",
+              "inBundle": false
+            },
+            {
+              "url": "db://assets/scenes/hotUpdate.scene",
+              "uuid": "fab8b621-c118-4946-84e8-795b6d2e6d28",
+              "inBundle": false
+            },
+            {
+              "url": "db://assets/scenes/loading.scene",
+              "uuid": "8cb6bfc6-9f27-471e-b88c-e76e7537f72c",
+              "inBundle": false
+            },
+            {
+              "url": "db://assets/scenes/main.scene",
+              "uuid": "af96776c-b1ff-4df3-a258-900b4547ce21",
+              "inBundle": false
+            }
+          ],
+          "outputName": "android",
+          "packages": {
+            "android": {
+              "packageName": "com.yy.game.test",
+              "orientation": {
+                "portrait": true,
+                "upsideDown": false,
+                "landscapeRight": false,
+                "landscapeLeft": false
+              },
+              "apiLevel": "android-26",
+              "appABIs": [
+                "arm64-v8a",
+                "armeabi-v7a"
+              ],
+              "useDebugKeystore": true,
+              "keystorePath": "",
+              "keystorePassword": "",
+              "keystoreAlias": "",
+              "keystoreAliasPassword": "",
+              "appBundle": false,
+              "androidInstant": false,
+              "remoteUrl": "",
+              "sdkPath": "",
+              "ndkPath": "",
+              "renderBackEnd": {
+                "vulkan": false,
+                "gles3": true,
+                "gles2": true
+              }
+            },
+            "native": {
+              "polyfills": {
+                "asyncFunctions": true
+              },
+              "encrypted": false,
+              "xxteaKey": "b7RLzjkKZNArfYzS",
+              "compressZip": false,
+              "makeAfterBuild": false,
+              "JobSystem": "tbb"
+            },
+            "cocos-service": {
+              "configID": "f09b61",
+              "services": []
+            },
+            "hot-update": null
+          }
+        },
+        "time": "2022-3-29 10:59",
+        "dirty": false
+      }
+    }
+  }
+}

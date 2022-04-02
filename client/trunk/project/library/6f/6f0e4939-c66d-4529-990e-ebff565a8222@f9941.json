@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_tbk",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 104,
+      "height": 104
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 106,
+      "height": 106
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "6f0e4939-c66d-4529-990e-ebff565a8222@6c48a",
+    "packable": true
+  }
+}

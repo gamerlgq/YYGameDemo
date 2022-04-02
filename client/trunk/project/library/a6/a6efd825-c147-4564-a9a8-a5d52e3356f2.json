@@ -1,0 +1,14 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "skill_1",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "name": "物理攻击",
+    "skillAnimation": "1",
+    "embattledAnimation": "1",
+    "dodgeAnimation": "1",
+    "blockAnimation": "1",
+    "hitbackAnimation": "1"
+  }
+}

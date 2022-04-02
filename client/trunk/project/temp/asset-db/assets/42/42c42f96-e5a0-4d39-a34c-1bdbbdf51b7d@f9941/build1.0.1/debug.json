@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "42c42f96-e5a0-4d39-a34c-1bdbbdf51b7d@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "a2_h5_zhna",
+            "rect": {
+                "x": 1,
+                "y": 1,
+                "width": 146,
+                "height": 47
+            },
+            "offset": {
+                "x": 0,
+                "y": 0.5
+            },
+            "originalSize": {
+                "width": 148,
+                "height": 50
+            },
+            "rotated": false,
+            "capInsets": [
+                40,
+                14,
+                25,
+                21
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

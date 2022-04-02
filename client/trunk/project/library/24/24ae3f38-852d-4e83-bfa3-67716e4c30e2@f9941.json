@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_qizhi",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 72,
+      "height": 70
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 74,
+      "height": 72
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "24ae3f38-852d-4e83-bfa3-67716e4c30e2@6c48a",
+    "packable": true
+  }
+}

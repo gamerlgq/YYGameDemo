@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "formation_attack",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 468,
+      "height": 317
+    },
+    "offset": {
+      "x": 0,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 470,
+      "height": 320
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "a203276f-e8f6-4e14-8618-4c9f1588c25c@6c48a",
+    "packable": true
+  }
+}

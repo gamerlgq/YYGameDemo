@@ -1,0 +1,265 @@
+{
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 21,
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "cmake": {
+    "cmakeArtifactsBaseFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/arm64-v8a",
+    "cmakeServerLogFile": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/arm64-v8a/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cxx/debug/arm64-v8a",
+    "effectiveConfiguration": {
+      "name": "traditional-android-studio-cmake-environment",
+      "description": "Composite reified CMakeSettings configuration",
+      "generator": "Ninja",
+      "inheritEnvironments": [
+        "ndk"
+      ],
+      "buildRoot": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/arm64-v8a",
+      "cmakeToolchain": "/Users/steven/Env/Android/ndk/android-ndk-r16b/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/Users/steven/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+      "variables": [
+        {
+          "name": "CMAKE_CXX_FLAGS",
+          "value": "-frtti -fexceptions -fsigned-char"
+        },
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/prefab/arm64-v8a/prefab"
+        },
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Debug"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/Users/steven/Env/Android/ndk/android-ndk-r16b/build/cmake/android.toolchain.cmake"
+        },
+        {
+          "name": "ANDROID_ABI",
+          "value": "arm64-v8a"
+        },
+        {
+          "name": "ANDROID_NDK",
+          "value": "/Users/steven/Env/Android/ndk/android-ndk-r16b"
+        },
+        {
+          "name": "ANDROID_PLATFORM",
+          "value": "android-21"
+        },
+        {
+          "name": "CMAKE_ANDROID_ARCH_ABI",
+          "value": "arm64-v8a"
+        },
+        {
+          "name": "CMAKE_ANDROID_NDK",
+          "value": "/Users/steven/Env/Android/ndk/android-ndk-r16b"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON"
+        },
+        {
+          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+          "value": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/GameDemo/intermediates/cmake/debug/obj/arm64-v8a"
+        },
+        {
+          "name": "CMAKE_MAKE_PROGRAM",
+          "value": "/Users/steven/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+        },
+        {
+          "name": "CMAKE_SYSTEM_NAME",
+          "value": "Android"
+        },
+        {
+          "name": "CMAKE_SYSTEM_VERSION",
+          "value": "21"
+        },
+        {
+          "name": "RES_DIR",
+          "value": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android"
+        },
+        {
+          "name": "COCOS_X_PATH",
+          "value": "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native"
+        },
+        {
+          "name": "ANDROID_STL",
+          "value": "c++_static"
+        },
+        {
+          "name": "ANDROID_TOOLCHAIN",
+          "value": "clang"
+        },
+        {
+          "name": "ANDROID_ARM_NEON",
+          "value": "TRUE"
+        },
+        {
+          "name": "ANDROID_LD",
+          "value": "gold"
+        }
+      ]
+    }
+  },
+  "cxxBuildFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/arm64-v8a",
+  "info": {
+    "abi": "ARM64_V8A",
+    "bitness": 64,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/arm64-v8a",
+  "variant": {
+    "buildSystemArgumentList": [
+      "-DRES_DIR\u003d/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android",
+      "-DCOCOS_X_PATH\u003d/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native",
+      "-DANDROID_STL\u003dc++_static",
+      "-DANDROID_TOOLCHAIN\u003dclang",
+      "-DANDROID_ARM_NEON\u003dTRUE",
+      "-DANDROID_LD\u003dgold"
+    ],
+    "buildTargetSet": [
+      "cocos"
+    ],
+    "implicitBuildTargetSet": [],
+    "cFlagsList": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "cppFlagsList": [
+      "-frtti -fexceptions -fsigned-char"
+    ],
+    "isDebuggableEnabled": true,
+    "module": {
+      "buildStagingFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build",
+      "buildSystem": "CMAKE",
+      "cmake": {
+        "cmakeExe": "/Users/steven/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+        "minimumCmakeVersion": "3.10.2",
+        "ninjaExe": "/Users/steven/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+      },
+      "cmakeToolchainFile": "/Users/steven/Env/Android/ndk/android-ndk-r16b/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build",
+      "gradleModulePathName": ":GameDemo",
+      "intermediatesFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/GameDemo/intermediates",
+      "makeFile": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/android/CMakeLists.txt",
+      "moduleBuildFile": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/android/app/build.gradle",
+      "moduleRootFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/android/app",
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkFolder": "/Users/steven/Env/Android/ndk/android-ndk-r16b",
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI",
+          "bitness": 32,
+          "deprecated": true,
+          "default": false
+        },
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "MIPS",
+          "bitness": 32,
+          "deprecated": true,
+          "default": false
+        },
+        {
+          "abi": "MIPS64",
+          "bitness": 64,
+          "deprecated": true,
+          "default": false
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "GNUSTL_STATIC",
+      "ndkVersion": "16.1.4479499",
+      "project": {
+        "compilerSettingsCacheFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/.cxx",
+        "cxxFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/.cxx",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "rootBuildGradleFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj",
+        "sdkFolder": "/Users/steven/Library/Android/sdk",
+        "isPrefabEnabled": false
+      },
+      "splitsAbiFilterSet": [],
+      "stlSharedObjectMap": {
+        "GNUSTL_SHARED": {
+          "ARMEABI": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/libgnustl_shared.so",
+          "ARMEABI_V7A": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/libgnustl_shared.so",
+          "ARM64_V8A": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/libgnustl_shared.so",
+          "MIPS": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips/libgnustl_shared.so",
+          "MIPS64": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/mips64/libgnustl_shared.so",
+          "X86": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/libgnustl_shared.so",
+          "X86_64": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86_64/libgnustl_shared.so"
+        },
+        "GNUSTL_STATIC": {},
+        "LIBCXX_SHARED": {
+          "ARMEABI": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/armeabi/libc++_shared.so",
+          "ARMEABI_V7A": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++_shared.so",
+          "ARM64_V8A": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/arm64-v8a/libc++_shared.so",
+          "MIPS": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/mips/libc++_shared.so",
+          "MIPS64": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/mips64/libc++_shared.so",
+          "X86": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/x86/libc++_shared.so",
+          "X86_64": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/libs/x86_64/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "STLPORT_SHARED": {
+          "ARMEABI": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/armeabi/libstlport_shared.so",
+          "ARMEABI_V7A": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/armeabi-v7a/libstlport_shared.so",
+          "ARM64_V8A": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/arm64-v8a/libstlport_shared.so",
+          "MIPS": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/mips/libstlport_shared.so",
+          "MIPS64": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/mips64/libstlport_shared.so",
+          "X86": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/x86/libstlport_shared.so",
+          "X86_64": "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/stlport/libs/x86_64/libstlport_shared.so"
+        },
+        "STLPORT_STATIC": {},
+        "SYSTEM": {}
+      }
+    },
+    "objFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/GameDemo/intermediates/cmake/debug/obj",
+    "variantName": "debug",
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A"
+    ],
+    "prefabDirectory": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/cmake/debug/prefab/arm64-v8a"
+}

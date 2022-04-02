@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tongyong_ui_db_001",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 14,
+      "height": 15
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 14,
+      "height": 15
+    },
+    "rotated": false,
+    "capInsets": [
+      5,
+      5,
+      5,
+      5
+    ],
+    "texture": "840b720c-b159-4e2c-a83b-964f977cc4f2@6c48a",
+    "packable": true
+  }
+}

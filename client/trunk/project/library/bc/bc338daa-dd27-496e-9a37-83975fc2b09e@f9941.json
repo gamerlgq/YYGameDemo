@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_xing",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 23,
+      "height": 22
+    },
+    "offset": {
+      "x": -0.5,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 26,
+      "height": 24
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "bc338daa-dd27-496e-9a37-83975fc2b09e@6c48a",
+    "packable": true
+  }
+}

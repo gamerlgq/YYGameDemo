@@ -1,0 +1,330 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libcocos2d_jni.a"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/CMakeLists.txt",
+			"/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/common/CMakeLists.txt",
+			"CMakeLists.txt",
+			"/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cmake/predefine.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 38,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1934,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1940,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 50,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 47,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 49,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 46,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 45,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 44,
+				"parent" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 52,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 1935,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-isystem /Users/steven/Env/Android/ndk/android-ndk-r16b/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -fsigned-char -O0 -fno-limit-debug-info  -fPIC"
+				},
+				{
+					"fragment" : "-std=c++14"
+				},
+				{
+					"fragment" : ""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 9,
+					"define" : "CC_PLATFORM=3"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "CC_PLATFORM_ANDROID=3"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "CC_PLATFORM_EMSCRIPTEN=6"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "CC_PLATFORM_MAC_IOS=1"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "CC_PLATFORM_MAC_OSX=4"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "CC_PLATFORM_OHOS=5"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "CC_PLATFORM_WINDOWS=2"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 16,
+					"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cmake/../external/sources"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/android/cpufeatures"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/android/native_app_glue"
+				},
+				{
+					"isSystem" : true,
+					"path" : "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++/include"
+				},
+				{
+					"isSystem" : true,
+					"path" : "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/android/support/include"
+				},
+				{
+					"isSystem" : true,
+					"path" : "/Users/steven/Env/Android/ndk/android-ndk-r16b/sources/cxx-stl/llvm-libc++abi/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				8
+			],
+			"sysroot" : 
+			{
+				"path" : "/Users/steven/Env/Android/ndk/android-ndk-r16b/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "android_platform::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "cocos2d_jni::@6890427a1f51a3e7e1df",
+	"name" : "cocos2d_jni",
+	"nameOnDisk" : "libcocos2d_jni.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				8
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				7,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/android/jni/JniCocosActivity.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/android/jni/JniCocosActivity.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniCocosTouchHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniCocosKeyCodeHandler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/android/jni/JniCocosSurfaceView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniCocosOrientationHelper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniHelper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniHelper.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniImp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"path" : "/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/cocos/platform/java/jni/JniImp.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

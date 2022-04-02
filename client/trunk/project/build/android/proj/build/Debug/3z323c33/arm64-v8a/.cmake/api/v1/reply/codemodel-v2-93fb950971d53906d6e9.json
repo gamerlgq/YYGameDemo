@@ -1,0 +1,104 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OFF",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "android_platform::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-android_platform-Debug-b7b707ae0c5e2d863d5f.json",
+					"name" : "android_platform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cocos::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cocos-Debug-09d4e68b363dd827bfce.json",
+					"name" : "cocos",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cocos2d::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cocos2d-Debug-87d36a18b28b3007f8d4.json",
+					"name" : "cocos2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cocos2d_jni::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cocos2d_jni-Debug-f6abdd5c153e47f4852d.json",
+					"name" : "cocos2d_jni",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pvmp3dec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pvmp3dec-Debug-5b086e901813c575ae96.json",
+					"name" : "pvmp3dec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vorbisidec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vorbisidec-Debug-0f3e2d56adcdbf6c1587.json",
+					"name" : "vorbisidec",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a",
+		"source" : "/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/android"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

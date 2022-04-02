@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "decrease",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 287,
+      "height": 29
+    },
+    "offset": {
+      "x": -45.5,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 380,
+      "height": 32
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "4b1e910e-78af-4c04-947a-521382b4d9d8@6c48a",
+    "packable": true
+  }
+}

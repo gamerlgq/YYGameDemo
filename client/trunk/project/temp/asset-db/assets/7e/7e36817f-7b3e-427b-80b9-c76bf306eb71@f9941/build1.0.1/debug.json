@@ -1,0 +1,53 @@
+[
+    1,
+    [
+        "7e36817f-7b3e-427b-80b9-c76bf306eb71@6c48a"
+    ],
+    [
+        "_textureSource"
+    ],
+    [
+        "cc.SpriteFrame"
+    ],
+    0,
+    [
+        {
+            "name": "a2_h5_ch",
+            "rect": {
+                "x": 1,
+                "y": 1,
+                "width": 618,
+                "height": 141
+            },
+            "offset": {
+                "x": 0,
+                "y": 0.5
+            },
+            "originalSize": {
+                "width": 620,
+                "height": 144
+            },
+            "rotated": false,
+            "capInsets": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "packable": true
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [
+        0
+    ],
+    [
+        0
+    ],
+    [
+        0
+    ]
+]

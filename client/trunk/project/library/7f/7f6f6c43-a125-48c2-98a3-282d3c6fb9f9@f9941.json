@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dao2",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 392,
+      "height": 751
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 394,
+      "height": 753
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "7f6f6c43-a125-48c2-98a3-282d3c6fb9f9@6c48a",
+    "packable": true
+  }
+}

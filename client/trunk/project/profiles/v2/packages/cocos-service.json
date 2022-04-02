@@ -1,0 +1,20 @@
+{
+  "options": {
+    "web-desktop": {
+      "configID": "f09b61",
+      "services": []
+    },
+    "mac": {
+      "configID": "f09b61",
+      "services": []
+    },
+    "android": {
+      "configID": "f09b61",
+      "services": []
+    }
+  },
+  "builder-options": {
+    "configID": "f09b61",
+    "services": []
+  }
+}

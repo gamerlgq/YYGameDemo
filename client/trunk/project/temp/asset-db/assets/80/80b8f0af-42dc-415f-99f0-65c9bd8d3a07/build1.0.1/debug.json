@@ -1,0 +1,43 @@
+[
+    1,
+    0,
+    0,
+    [
+        [
+            "cc.JsonAsset",
+            [
+                "_name",
+                "json"
+            ],
+            1
+        ]
+    ],
+    [
+        [
+            0,
+            0,
+            1,
+            3
+        ]
+    ],
+    [
+        [
+            0,
+            "ServerConfig",
+            {
+                "PartitionKey": "demo",
+                "QDKey": "0000010000",
+                "QDName": "赢游网络",
+                "SDKLogin": false,
+                "ServerUrl": "http://10.20.202.226:8081",
+                "ServerListUrl": "http://10.20.202.226:8080",
+                "BigUpdateType": 1
+            }
+        ]
+    ],
+    0,
+    0,
+    [],
+    [],
+    []
+]

@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_mutiao",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 720,
+      "height": 54
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 722,
+      "height": 56
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "a57c0a3e-3768-4536-b5ed-13234e8b98f1@6c48a",
+    "packable": true
+  }
+}

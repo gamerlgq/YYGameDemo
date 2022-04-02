@@ -1,0 +1,14 @@
+{
+  "general": {
+    "designResolution": {
+      "width": 720,
+      "height": 1280
+    }
+  },
+  "layer": [
+    {
+      "name": "UI",
+      "value": 1
+    }
+  ]
+}

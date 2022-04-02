@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_di2",
+    "atlas": "",
+    "rect": {
+      "x": 2,
+      "y": 1,
+      "width": 16,
+      "height": 21
+    },
+    "offset": {
+      "x": 0,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 20,
+      "height": 24
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "30fc14f4-09ee-4083-876e-2119d64cac5a@6c48a",
+    "packable": true
+  }
+}

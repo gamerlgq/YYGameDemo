@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "a2_h5_kuang",
+    "atlas": "",
+    "rect": {
+      "x": 1,
+      "y": 1,
+      "width": 45,
+      "height": 45
+    },
+    "offset": {
+      "x": -0.5,
+      "y": 0.5
+    },
+    "originalSize": {
+      "width": 48,
+      "height": 48
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "293ee564-c5cf-471e-a5b2-6b0360c4544f@6c48a",
+    "packable": true
+  }
+}

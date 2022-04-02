@@ -1,0 +1,35 @@
+[
+    1,
+    0,
+    0,
+    [
+        "cc.SpriteAtlas"
+    ],
+    0,
+    [
+        {
+            "name": "hit_eff01",
+            "spriteFrames": [
+                "embattled_00",
+                "dd8f30ba-8b92-42df-8c97-ccc4d58a66a7@59721",
+                "embattled_01",
+                "dd8f30ba-8b92-42df-8c97-ccc4d58a66a7@973e7",
+                "embattled_02",
+                "dd8f30ba-8b92-42df-8c97-ccc4d58a66a7@b4a9e",
+                "embattled_03",
+                "dd8f30ba-8b92-42df-8c97-ccc4d58a66a7@92601",
+                "embattled_04",
+                "dd8f30ba-8b92-42df-8c97-ccc4d58a66a7@c9a5d",
+                "embattled_05",
+                "dd8f30ba-8b92-42df-8c97-ccc4d58a66a7@5f5c8"
+            ]
+        }
+    ],
+    [
+        0
+    ],
+    0,
+    [],
+    [],
+    []
+]

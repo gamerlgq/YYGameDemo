@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zhucheng_ci",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 852,
+      "height": 1560
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 852,
+      "height": 1560
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "0371d3fb-be8c-465f-a7e5-594f77adfab0@6c48a",
+    "packable": true
+  }
+}
