@@ -1,8 +1,0 @@
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/edit_cache.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/cocos.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/vorbisidec.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/android_platform.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/cocos2d_jni.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/cocos2d.dir
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/build/android/proj/build/Debug/3z323c33/arm64-v8a/CMakeFiles/pvmp3dec.dir

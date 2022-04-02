@@ -1,8 +1,0 @@
-/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/CMakeLists.txt
-/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/CMakeLists.txt
-/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/android/CMakeLists.txt
-/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/sources/CMakeLists.txt
-/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/sources/pvmp3dec/CMakeLists.txt
-/Applications/CocosCreator/Creator/3.4.2/CocosCreator.app/Contents/Resources/resources/3d/engine-native/external/sources/tremolo/CMakeLists.txt
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/android/CMakeLists.txt
-/Users/steven/Workspaces/CocosCreatorProjects/3D/GameDemoReal/native/engine/common/CMakeLists.txt
