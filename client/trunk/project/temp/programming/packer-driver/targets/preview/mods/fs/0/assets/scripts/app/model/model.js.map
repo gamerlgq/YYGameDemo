@@ -1,1 +1,0 @@
-{"version":3,"sources":["file:///Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/scripts/app/model/model.ts"],"names":["ModelLogin"],"mappings":";;;;;;;;;yCAASA,U","sourcesContent":["export { ModelLogin } from \"./ModelLogin\""]}

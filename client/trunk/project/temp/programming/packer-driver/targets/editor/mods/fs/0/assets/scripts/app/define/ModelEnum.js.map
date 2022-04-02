@@ -1,1 +1,0 @@
-{"version":3,"sources":["file:///Users/steven/Workspaces/CocosCreatorProjects/3D/YYGameDemo/client/trunk/project/assets/scripts/app/define/ModelEnum.ts"],"names":["ModelEnum"],"mappings":";;;;;;;;;;;;;;;;iBAAYA,S;AAAAA,QAAAA,S;SAAAA,S,yBAAAA,S","sourcesContent":["export enum ModelEnum {\n    LoginModel = \"LoginModel\"\n}"]}
