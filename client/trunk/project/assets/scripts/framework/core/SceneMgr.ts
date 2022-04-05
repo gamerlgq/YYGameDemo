@@ -777,21 +777,14 @@ class SceneMgr extends Singleton implements IRerunApp{
         this._initTouchGroup()
     }
 
-    clear() {
+    public clear() {
         this.clearAllScence();
         sceneMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        sceneMgr = create()();
+    static recreate(): void {
+        sceneMgr = SceneMgr.getInstance<SceneMgr>();
     }
 }
 
-function create() {
-    return (() => {
-        return SceneMgr.getInstance<SceneMgr>();
-    })
-}
-
-export let sceneMgr = create()();
+export let sceneMgr = SceneMgr.getInstance<SceneMgr>();

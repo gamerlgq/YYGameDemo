@@ -1,5 +1,4 @@
 import { error, log, sys, warn } from "cc";
-import { Singleton } from "../components/Singleton";
 
 export default class Logger {
     private static _lv: number = 4;

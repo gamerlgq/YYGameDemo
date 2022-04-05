@@ -74,4 +74,8 @@ export class FightPlayer extends Singleton{
     public clear(){
         fightPlayer = null;
     }
+
+    public isSigned(){
+        return false;
+    }
 }

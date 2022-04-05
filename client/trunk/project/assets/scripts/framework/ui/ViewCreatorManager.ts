@@ -23,20 +23,13 @@ class ViewCreatorManager extends Singleton implements IRerunApp{
         });
     }
 
-    clear(){
+    public clear(){
         viewCreatorMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        viewCreatorMgr = create()();
+    static recreate(): void {
+        viewCreatorMgr = ViewCreatorManager.getInstance<ViewCreatorManager>();
     }
 }
 
-function create() {
-    return (()=>{
-        return ViewCreatorManager.getInstance<ViewCreatorManager>();
-    })
-}
-
-export let viewCreatorMgr = create()();
+export let viewCreatorMgr = ViewCreatorManager.getInstance<ViewCreatorManager>();

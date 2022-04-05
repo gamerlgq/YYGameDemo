@@ -25,21 +25,13 @@ export class ModelRegisterMgr extends Singleton implements IRerunApp{
         }
     }
 
-    clear(){
+    public clear(){
         modelRegisterMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        modelRegisterMgr = create()();
+    static recreate(): void {
+        modelRegisterMgr = ModelRegisterMgr.getInstance<ModelRegisterMgr>();
     }
 }
 
-function create() {
-    return (()=>{
-        return ModelRegisterMgr.getInstance<ModelRegisterMgr>();
-    })
-}
-
-// ()();
-export let modelRegisterMgr = create()();
+export let modelRegisterMgr:ModelRegisterMgr = ModelRegisterMgr.getInstance<ModelRegisterMgr>();

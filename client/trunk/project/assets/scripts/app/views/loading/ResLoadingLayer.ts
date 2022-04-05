@@ -2,8 +2,8 @@
 import { _decorator, Component, Node, ProgressBar, Label, log } from 'cc';
 import { sceneMgr } from '../../../framework/core/SceneMgr';
 import { ResourcesLoader } from '../../../framework/data/ResourcesLoader';
+import { G } from '../../common/GlobalFunction';
 import { ViewProtocol } from '../../define/ViewProtocol';
-import { viewRegisterMgr } from '../../define/ViewRegisterMgr';
 const { ccclass, property } = _decorator;
 
 @ccclass('ResLoadingLayer')
@@ -25,7 +25,20 @@ export class ResLoadingLayer extends Component {
     }
 
     private _getLoadingList() {
-        this._loadingResList = viewRegisterMgr.getMaincityPreloadList();
+        this._loadingResList = this._getMaincityPreloadList();
+    }
+
+        // 在编辑器中右键添加resources下的预加载资源,自动保存到maincity/datas/preload.json文件中
+    private _getMaincityPreloadList():Array<string>{
+        let list:Array<string> = new Array();
+        let config = G.getConfig("MaincityPreload");
+        if (config){
+            const keys = Object.keys(config);
+            keys.forEach(key=>{
+                list.push(key);
+            })
+        }
+        return list;
     }
     
     private _startPreload() {

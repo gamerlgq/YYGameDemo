@@ -42,13 +42,12 @@ class TranslateMgr extends Singleton implements IRerunApp{
         return this._translateCfg[key] || key;
     }
 
-    clear(){
+    public clear(){
         translateMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        translateMgr = create()();
+    static recreate(): void {
+        translateMgr = TranslateMgr.getInstance<TranslateMgr>();
     }
 }
 
@@ -67,11 +66,4 @@ class TranslateMgr extends Singleton implements IRerunApp{
 //     return TranslateMgr.getInstance().getExStr("e" + id);
 // }
 
-function create() {
-    return (()=>{
-        return TranslateMgr.getInstance<TranslateMgr>();
-    })
-}
-
-// ()();
-export let translateMgr = create()();
+export let translateMgr = TranslateMgr.getInstance<TranslateMgr>();

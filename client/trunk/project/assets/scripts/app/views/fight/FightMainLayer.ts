@@ -125,13 +125,13 @@ export class FightMainLayer extends LayerBase {
     }
 
     onDestroy(){
-        fightController.destory();
-        fightDataMgr.destory();
-        fightPlayer.destory();
-        fightActionMgr.destory();
-        fightBloodMgr.destory();
-        fightEventMgr.destory();
-        audioMgr.popMusic();
+        fightController?.destory();
+        fightDataMgr?.destory();
+        fightPlayer?.destory();
+        fightActionMgr?.destory();
+        fightBloodMgr?.destory();
+        fightEventMgr?.destory();
+        audioMgr?.popMusic();
     }
 
     private _setSpeed(event:Message) {

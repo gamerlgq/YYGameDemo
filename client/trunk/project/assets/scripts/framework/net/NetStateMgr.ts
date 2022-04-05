@@ -79,7 +79,7 @@ class NetStateMgr extends Singleton implements IRerunApp{
 
     // 返回登录界面
     redirectLoginView() {
-        gameMgr.reRun();
+        gameMgr.rerun();
     }
 
     // 重新链接
@@ -152,21 +152,13 @@ class NetStateMgr extends Singleton implements IRerunApp{
         this.requestServerInfo();
     }
 
-    clear() {
+    public clear() {
         netStateMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        netStateMgr = create()();
+    static recreate(): void {
+        netStateMgr = NetStateMgr.getInstance<NetStateMgr>();
     }
 }
 
-function create() {
-    return (()=>{
-        return NetStateMgr.getInstance<NetStateMgr>();
-    })
-}
-
-// ()();
-export let netStateMgr = create()();
+export let netStateMgr = NetStateMgr.getInstance<NetStateMgr>();

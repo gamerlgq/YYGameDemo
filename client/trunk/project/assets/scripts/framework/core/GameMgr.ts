@@ -21,6 +21,7 @@ export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     // ISchedulable
     id?: string;
     uuid?: string;
+
     private _modelMapName: Map<string, any>;
 
     private _slowTickList: Array<tickFunc>;
@@ -39,6 +40,8 @@ export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
 
     // 构造函数
     private constructor() {
+
+        log("===>gameMgr:1212121212")
         super();
         // camera
         this._cameraMap = new Map();
@@ -89,6 +92,10 @@ export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
         this._innerMessageQueue.push(msg);
     }
 
+    public addFastTick(func:tickFunc){
+        this._fastTickList.push(func);
+    }
+
     public addSlowTick(func: tickFunc) {
         this._slowTickList.push(func);
     }
@@ -122,14 +129,14 @@ export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
         return this._cameraMap.get(key);
     }
 
-    public reRun() {
+    public rerun() {
         log("GameMgr reRunRun0");
         sceneMgr.removeAllTableLayer();
         sceneMgr.setSystemOpenLayer(null);
         sceneMgr.setNewGuideLayer(null);
         if (this._app) {
             log("GameMgr reRunRun1");
-            this._app.reRun();
+            this._app.rerun();
         } else {
             log("GameMgr reRunRun2");
             director.loadScene("Launch");
@@ -232,20 +239,13 @@ export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
         // SFRedGuideMgr.dispatchEvent(msg);
     }
 
-    clear(){
+    public clear(){
         gameMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        gameMgr = create()();
+    static recreate(){
+        gameMgr = GameMgr.getInstance<GameMgr>();
     }
 }
 
-function create() {
-    return  (()=>{
-        return GameMgr.getInstance<GameMgr>();
-    })
-}
-// ()();
-export let gameMgr = create()();
+export let gameMgr:GameMgr = GameMgr.getInstance<GameMgr>();

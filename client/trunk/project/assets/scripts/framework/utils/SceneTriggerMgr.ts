@@ -142,22 +142,15 @@ export class SceneTriggerMgr extends Singleton implements IRerunApp{
     }
 
     // 覆盖销毁
-    clear() {
+    public clear() {
         this._listeners.clear();
         this._listenerHandleIndex = 0;
         sceneTriggerMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        sceneTriggerMgr = create()();
+    static recreate(): void {
+        sceneTriggerMgr = SceneTriggerMgr.getInstance<SceneTriggerMgr>();
     }
 }
 
-function create() {
-    return (() => {
-        return SceneTriggerMgr.getInstance<SceneTriggerMgr>();
-    })
-}
-
-export let sceneTriggerMgr = create()();
+export let sceneTriggerMgr = SceneTriggerMgr.getInstance<SceneTriggerMgr>();
