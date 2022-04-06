@@ -1,7 +1,7 @@
 import { Camera, director, find, game, input, log, sys } from "cc";
 import { singletonMgr } from "../framework/components/SingletonMgr";
 import { audioMgr } from "../framework/core/audio/AudioManager";
-import { gameMgr } from "../framework/core/GameMgr";
+import { GameMgr, gameMgr } from "../framework/core/GameMgr";
 import { sceneMgr } from "../framework/core/SceneMgr";
 import { languageManager, LanguageManager } from "../framework/language/Language";
 import { netLoadingMgr } from "../framework/net/NetLoadingMgr";
@@ -30,10 +30,10 @@ export class EnterApp {
         this.initSDKHelper();
     }
 
-    reRun() {
+    rerun() {
         singletonMgr.destoryAll();
         let scene = director.getScene();
-        audioMgr.stopAll()
+        audioMgr.stopAllAndClear()
         // let main = scene.getComponentInChildren("Main");
         // gameMgr.setCamera("default", main.defaultCamera);
         // gameMgr.setCamera("fight", main.fightCamera);
@@ -43,7 +43,7 @@ export class EnterApp {
     }
 
     init() {
-        
+        singletonMgr.init();
         sceneMgr.init();
         gameMgr.setApp(this);
         audioMgr.init();

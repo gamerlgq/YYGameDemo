@@ -167,4 +167,7 @@ export class FightController extends Singleton{
         fightController = null;
     }
     
+    public isSigned(){
+        return false;
+    }
 }

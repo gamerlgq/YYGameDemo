@@ -33,15 +33,16 @@ class AudioManager extends Node {
      * init
      */
     public init() {
-        game.addPersistRootNode(AudioManager._instance);
+        // game.addPersistRootNode(AudioManager._instance);
+        if (!this.music && !this.effect){
+            AudioManager._instance.addComponent(AudioMusic);
+            this.music = AudioManager._instance.getComponent(AudioMusic);
 
-        AudioManager._instance.addComponent(AudioMusic);
-        this.music = AudioManager._instance.getComponent(AudioMusic);
+            AudioManager._instance.addComponent(AudioEffect);
+            this.effect = AudioManager._instance.getComponent(AudioEffect);
 
-        AudioManager._instance.addComponent(AudioEffect);
-        this.effect = AudioManager._instance.getComponent(AudioEffect);
-
-        AudioManager._instance.__init();
+            AudioManager._instance.__init();
+        }
     }
 
     private __init() {
@@ -154,24 +155,25 @@ class AudioManager extends Node {
     }
 
     public resumeAll() {
-        if (this.music) {
+        if (this.music && this.effect) {
             this.music.play();
             this.effect.play();
         }
     }
 
     public pauseAll() {
-        if (this.music) {
+        if (this.music && this.effect) {
             this.music.pause();
             this.effect.pause();
         }
     }
 
-    public stopAll() {
-        if (this.music) {
+    public stopAllAndClear() {
+        if (this.music && this.effect) {
             this.music.stop();
             this.effect.stop();
         }
+        this._musicQueue.length = 0;
     }
 
     public save() {

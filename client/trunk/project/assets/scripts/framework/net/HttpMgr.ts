@@ -126,21 +126,13 @@ export class HttpMessage {
         return serializeParams;
     }
 
-    clear() {
+    public clear() {
         httpMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        httpMgr = create()();
+    static recreate(): void {
+        httpMgr = HttpMgr.getInstance<HttpMgr>();
     }
 }
 
-function create() {
-    return (()=>{
-        return HttpMgr.getInstance<HttpMgr>();
-    })
-}
-
-// ()();
-export let httpMgr = create()();
+export let httpMgr = HttpMgr.getInstance<HttpMgr>();

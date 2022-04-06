@@ -55,21 +55,13 @@ export class DataRegisterMgr extends Singleton implements IRerunApp{
         }
     }
 
-    clear(){
+    public clear(){
         dataRegisterMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        dataRegisterMgr = create()();
+    static recreate(): void {
+        dataRegisterMgr = DataRegisterMgr.getInstance<DataRegisterMgr>();
     }
 }
 
-function create() {
-    return (() => {
-        return DataRegisterMgr.getInstance<DataRegisterMgr>();
-    })
-}
-
-// ()();
-export let dataRegisterMgr = create()();
+export let dataRegisterMgr:DataRegisterMgr = DataRegisterMgr.getInstance<DataRegisterMgr>();

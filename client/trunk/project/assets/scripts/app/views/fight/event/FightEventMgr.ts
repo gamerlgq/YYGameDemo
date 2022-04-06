@@ -108,4 +108,8 @@ export class FightEventMgr extends Singleton{
     public clear(){
         fightEventMgr = null;
     }
+
+    public isSigned(){
+        return false;
+    }
 }

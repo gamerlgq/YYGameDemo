@@ -69,9 +69,9 @@ export class ComponentBase extends Component {
      */
     removeAllMsgListener() {
         this._eventMsgListeners.forEach((value, key) => {
-            msgEventMgr.removeEventListener(value, key);
+            msgEventMgr?.removeEventListener(value, key);
             this._eventMsgListeners.delete(key);
         });
-        this._eventMsgListeners.clear;
+        this._eventMsgListeners.clear();
     }
 }

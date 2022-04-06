@@ -89,20 +89,13 @@ class DataMgr extends Singleton implements IRerunApp{
         }
     }
 
-    clear() {
+    public clear() {
         dataMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        dataMgr = create()();
+    static recreate(): void {
+        dataMgr = DataMgr.getInstance<DataMgr>();
     }
 }
 
-function create() {
-    return (()=>{
-        return DataMgr.getInstance<DataMgr>();
-    })
-}
-// ()();
-export let dataMgr = create()();
+export let dataMgr = DataMgr.getInstance<DataMgr>();

@@ -1,5 +1,4 @@
 import { log } from "cc";
-import { Module } from "module";
 
 /*
  * @Author: liuguoqing
@@ -9,47 +8,73 @@ import { Module } from "module";
  * @Description: file content
  */
 class SingletonMgr {
+
     static _instance: any;
 
-    private _index: number = 0;
-    private _singletonList: Array<any>;
-
-    static getInstance<T>() {
+    static getInstance<T>():T {
         if (this._instance == null) {
             this._instance = new SingletonMgr();
         }
         return this._instance;
     }
+    
+    // private _index: number = 0;
+
+    private _singletonMap: Map<string,any>;
 
     private constructor() {
-        this._singletonList = [];
+        this._singletonMap = new Map();
     }
 
     sign(T: any) {
-        this._index++;
-        T.sIndex = this._index;
-        this._singletonList.push(T);
+        // this._index++;
+        // T.sIndex = this._index;
+        this._singletonMap.set(T.name,T);
     }
 
-    unSign(T: any) {
-        for (let i = 0; i < this._singletonList.length; i++) {
-            let s = this._singletonList[i];
-            if (s._sIndex == T.sIndex) {
-                this._singletonList.splice(i, 1);
-                i--;
-                break;
-            }
+    unsign(T: any) {
+        let singleton = this._singletonMap.get(T.name);
+        if (singleton){
+            this._singletonMap.delete(T.name);
         }
+
+        // for (let i = 0; i < this._singletonMap.length; i++) {
+        //     let s = this._singletonMap[i];
+        //     if (s.sIndex == T.sIndex) {
+        //         this._singletonMap.splice(i, 1);
+        //         i--;
+        //         break;
+        //     }
+        // }
+    }
+
+    init(){
+        let i = 0;
+        this._singletonMap.forEach((T:any)=>{
+            log(i,T,"T");
+            T?.recreate();
+            i+=1;
+        })
+        // for (let i = 0; i < this._singletonMap.length; i++) {
+        //     let ctor = this._singletonMap[i];
+        //     log(i,ctor,"ctor");
+        //     ctor?.recreate();
+        // }
     }
 
     destoryAll() {
-        while (this._singletonList.length > 0) {
-            let singleton = this._singletonList.pop();
-            log("===>destoryAll",singleton.instance);
-            singleton?.destoryInstance();
-            singleton.instance?.clear()
-            singleton.instance = null;
-        }
+        this._singletonMap.forEach((T:any)=>{
+            T?.destoryInstance();
+            T?.instance?.clear();
+        })
+        // for (let i = 0; i < this._singletonMap.length; i++) {
+        //     let singleton = this._singletonMap[i];
+        //     log("===>destoryAll",singleton.instance);
+        //     singleton?.destoryInstance();
+        //     singleton.instance?.clear()
+        //     singleton.instance = null;
+        // }
+        log(this._singletonMap,"this._singletonMap");
     }
 
     clear(){

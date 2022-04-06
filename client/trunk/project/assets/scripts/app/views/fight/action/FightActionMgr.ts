@@ -205,4 +205,7 @@ export class FightActionMgr extends Singleton{
     public clear(){
         fightActionMgr = null;
     }
+    public isSigned(){
+        return false;
+    }
 }

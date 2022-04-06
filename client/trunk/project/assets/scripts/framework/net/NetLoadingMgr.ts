@@ -6,15 +6,6 @@ import { gameMgr } from "../core/GameMgr";
 import { sceneMgr } from "../core/SceneMgr";
 import { Message } from "../listener/Message";
 
-
-const { ccclass, property } = _decorator;
-@ccclass('NetLoadindComp')
-class NetLoadindComp extends Component {
-    update(dt) {
-        netLoadingMgr?.tick(dt)
-    }
-}
-
 interface IMsg {
     id:string;
     endTime:number;
@@ -27,9 +18,7 @@ class NetLoadingMgr extends Singleton implements IRerunApp{
     private _time:number = 0; 
 
     init() {
-        let node = new Node("NetLoadingMgr")
-        node.addComponent(NetLoadindComp)
-        game.addPersistRootNode(node)
+        gameMgr.addFastTick(this.tick.bind(this));
     }
 
     tick(dt:number) {
@@ -38,6 +27,7 @@ class NetLoadingMgr extends Singleton implements IRerunApp{
         let index = 0
         while (this._msgList[index]) {
             let msg = this._msgList[index]
+            log(msg,this._time,msg.endTime);
             if (msg.endTime > 0 && this._time >= msg.endTime) {
                 this._msgList.splice(index)
                 this.removeMsgLoading(msg.id)
@@ -79,20 +69,13 @@ class NetLoadingMgr extends Singleton implements IRerunApp{
         }
     }
 
-    clear() {
+    public clear() {
         netLoadingMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        netLoadingMgr = create()();
+    static recreate(): void {
+        netLoadingMgr = NetLoadingMgr.getInstance<NetLoadingMgr>();
     }
 }
 
-function create() {
-    return (() => {
-        return NetLoadingMgr.getInstance<NetLoadingMgr>();
-    })
-}
-
-export let netLoadingMgr = create()();
+export let netLoadingMgr = NetLoadingMgr.getInstance<NetLoadingMgr>();

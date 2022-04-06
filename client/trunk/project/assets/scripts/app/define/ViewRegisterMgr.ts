@@ -20,7 +20,6 @@ import { ViewInfoType } from "./ConfigType";
 import { LoadingCreator } from "../views/loading/Creator";
 import ChatCreator from "../views/chat/Creator";
 import { log } from "cc";
-import { G } from "../common/GlobalFunction";
 
 type ViewConfig = {
     path: string;//预制体路径
@@ -99,12 +98,12 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
         dialog: {
             prefab: {
                 "DoubleBtnDialog": {
-                    path: 'common_ui/prefabs/double_btn_dialog',
+                    path: 'common_ui/prefabs/ui/double_btn_dialog',
                     isShowBg: true,
                     isCache: true
                 },
                 "Tips": {
-                    path: "common_ui/prefabs/tips",
+                    path: "common_ui/prefabs/ui/tips",
                     isShowBg: true,
                     isCache: true
                 }
@@ -221,21 +220,6 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
         })
     }
 
-    // 在编辑器中右键添加resources下的预加载资源,自动保存到maincity/datas/preload.json文件中
-    getMaincityPreloadList():Array<string>{
-        let list:Array<string> = new Array();
-        let config = G.getConfig("MaincityPreload");
-        if (config){
-            const keys = Object.keys(config);
-            keys.forEach(key=>{
-                let pair:Array<string>=new Array();
-                list.push(key);
-            })
-        }
-        return list;
-    }
-
-
     // 各个系统中获取页面预制的都路径 返回 ViewInfoType
     getViewInfo<TMoudleName extends yy.types.ViewModuleName,
         TPrefabName = keyof ViewRegisterMgr['ViewType'][TMoudleName]['prefab']>
@@ -253,26 +237,19 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
 
     // enter app call this method,register all view creator
     public registerAllCreator() {
+        log("register all creator")
         this.Cretors.forEach((ctor) => {
             viewCreatorMgr.registeredCreator(new ctor());
         })
     }
 
-    clear(){
+    public clear(){
         viewRegisterMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        viewRegisterMgr = create()();
+    static recreate(): void {
+        viewRegisterMgr = ViewRegisterMgr.getInstance<ViewRegisterMgr>();
     }
 }
 
-function create() {
-    return (() => {
-        return ViewRegisterMgr.getInstance<ViewRegisterMgr>();
-    })
-}
-
-// ()();
-export let viewRegisterMgr = create()();
+export let viewRegisterMgr:ViewRegisterMgr = ViewRegisterMgr.getInstance<ViewRegisterMgr>();

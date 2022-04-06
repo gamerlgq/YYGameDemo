@@ -212,4 +212,8 @@ export class ResultActionMgr extends Singleton{
     public clear(){
         resultActionMgr = null;
     }
+
+    public isSigned(){
+        return false;
+    }
 }

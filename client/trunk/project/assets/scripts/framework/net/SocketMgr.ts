@@ -163,21 +163,13 @@ class SocketMgr extends Singleton implements IRerunApp{
         }
     }
 
-    clear() {
+    public clear() {
         socketMgr = null;
-        this.recreate();
     }
 
-    recreate(): void {
-        socketMgr = create()();
+    static recreate(): void {
+        socketMgr = SocketMgr.getInstance<SocketMgr>();
     }
 }
 
-function create() {
-    return (() => {
-        return SocketMgr.getInstance<SocketMgr>();
-    })
-}
-
-// ()();
-export let socketMgr = create()();
+export let socketMgr = SocketMgr.getInstance<SocketMgr>();
