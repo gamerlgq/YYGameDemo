@@ -23,6 +23,7 @@ export namespace Protocol {
 
     //内部协议
     export enum Inner {
+        ViewChange = -10000,
         ReloginSuccess,
         FightPause,
         FightResume,

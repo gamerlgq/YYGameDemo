@@ -1,6 +1,6 @@
 
 import { Asset, find, instantiate, log, Node, Prefab, resources, UIOpacity, UITransform, Widget, widgetManager } from "cc";
-import { ViewProtocol } from "../../app/define/define";
+import { Protocol, ViewProtocol } from "../../app/define/define";
 import { ShowBackgroundMgr } from "../../app/define/ShowBackgroundMgr";
 import { viewRegisterMgr } from "../../app/define/ViewRegisterMgr";
 import { MainEventTrigger } from "../../app/views/common/MainEventTrigger";
@@ -10,6 +10,7 @@ import { IRerunApp, Singleton } from "../components/Singleton";
 import { ResourcesLoader } from "../data/ResourcesLoader";
 import { viewEventMgr } from "../listener/EventMgr";
 import { Message } from "../listener/Message";
+import { socketMgr } from "../net/SocketMgr";
 import { TableLayer } from "../ui/TableLayer";
 import { setNodeVisible } from "../utils/functions";
 import { sceneTriggerMgr } from "../utils/SceneTriggerMgr";
@@ -658,6 +659,8 @@ class SceneMgr extends Singleton implements IRerunApp{
                 const tableElement = tableElementList[k];
                 // 检查是否有屏蔽下一层标志
                 // if (this._skipHiddenBackground[tableElement.name]) {
+                    log("===>tableElement.name",tableElement.name);
+                    log(ShowBackgroundMgr.checkIsShowBlackground(tableElement.name));
                 if (ShowBackgroundMgr.checkIsShowBlackground(tableElement.name)) {
                     nextCanVisible = 1;
                 }
@@ -699,12 +702,13 @@ class SceneMgr extends Singleton implements IRerunApp{
             }
         }
 
-        // let msg = new SFMessage(-9999999, {
-        //     topShow: topLayerName,
-        //     lastShow: showLayerName,
-        //     layerList: LayerData,
-        // });
+        let msg = {
+            topShow: topLayerName,
+            lastShow: showLayerName,
+            layerList: LayerData,
+        };
         // MsgEventMgr.getInstance().dispatchEvent(msg);
+        socketMgr.sendInnerMsg(Protocol.Inner.ViewChange,msg);
     }
 
     private getCellLayer(tableLayer: Node, tableList, zOrderIndex: number) {

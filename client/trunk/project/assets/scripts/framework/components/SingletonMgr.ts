@@ -37,15 +37,6 @@ class SingletonMgr {
         if (singleton){
             this._singletonMap.delete(T.name);
         }
-
-        // for (let i = 0; i < this._singletonMap.length; i++) {
-        //     let s = this._singletonMap[i];
-        //     if (s.sIndex == T.sIndex) {
-        //         this._singletonMap.splice(i, 1);
-        //         i--;
-        //         break;
-        //     }
-        // }
     }
 
     init(){
@@ -55,11 +46,6 @@ class SingletonMgr {
             T?.recreate();
             i+=1;
         })
-        // for (let i = 0; i < this._singletonMap.length; i++) {
-        //     let ctor = this._singletonMap[i];
-        //     log(i,ctor,"ctor");
-        //     ctor?.recreate();
-        // }
     }
 
     destoryAll() {
@@ -67,13 +53,6 @@ class SingletonMgr {
             T?.destoryInstance();
             T?.instance?.clear();
         })
-        // for (let i = 0; i < this._singletonMap.length; i++) {
-        //     let singleton = this._singletonMap[i];
-        //     log("===>destoryAll",singleton.instance);
-        //     singleton?.destoryInstance();
-        //     singleton.instance?.clear()
-        //     singleton.instance = null;
-        // }
         log(this._singletonMap,"this._singletonMap");
     }
 

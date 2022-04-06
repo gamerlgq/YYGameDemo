@@ -6,7 +6,6 @@
  * @Description: file content
  */
 
-
 import { G } from "../../app/common/GlobalFunction";
 import { DoubleBtnDialogArgsType } from "../../app/define/ConfigType";
 import { Protocol } from "../../app/define/define";
@@ -25,6 +24,7 @@ class NetStateMgr extends Singleton implements IRerunApp{
     // 构造函数;
     private constructor() {
         super()
+
         msgEventMgr.addEventListener(
             Protocol.Login.identify,
             this.loginCheck.bind(this)
@@ -32,8 +32,10 @@ class NetStateMgr extends Singleton implements IRerunApp{
         msgEventMgr.addEventListener(
             Protocol.Login.login,
             this.loginHandler.bind(this)
-        );
+        );        
+    }
 
+    init(){
         gameMgr.addSlowTick(this.slowTickHandler.bind(this));
     }
 

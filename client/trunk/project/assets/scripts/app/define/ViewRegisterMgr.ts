@@ -211,9 +211,9 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
             let module = this.ViewType[system];
             Object.keys(module.prefab).forEach((view: string) => {
                 let arr = <ViewConfig>module.prefab[<string><unknown>view];
-                let isHidden = arr.isShowBg ?? false;
+                let isShowBg = arr.isShowBg ?? false;
                 // log("ViewRegisterMgr:ctor() view [ %s ] [ %s ]",view,isHidden.toString());
-                if (isHidden) {
+                if (isShowBg) {
                     ShowBackgroundMgr.regShowBackgroundView(view);
                 }
             })

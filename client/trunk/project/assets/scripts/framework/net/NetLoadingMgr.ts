@@ -1,6 +1,5 @@
-import { Component, error, game, log, Node, Pool, Tween, tween, _decorator } from "cc"
+import { error, log } from "cc"
 import { ErrorCode } from "../../app/define/ErrorCode";
-import { Protocol } from "../../app/define/Protocol";
 import { IRerunApp, Singleton } from "../components/Singleton"
 import { gameMgr } from "../core/GameMgr";
 import { sceneMgr } from "../core/SceneMgr";

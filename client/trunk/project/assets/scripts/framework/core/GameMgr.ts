@@ -17,7 +17,7 @@ import { sceneMgr } from "./SceneMgr";
  */
 type tickFunc = (hdl: number) => void;
 
-export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
+class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     // ISchedulable
     id?: string;
     uuid?: string;
@@ -40,9 +40,8 @@ export class GameMgr extends Singleton implements ISchedulable,IRerunApp {
 
     // 构造函数
     private constructor() {
-
-        log("===>gameMgr:1212121212")
         super();
+        
         // camera
         this._cameraMap = new Map();
 
