@@ -55,7 +55,7 @@ export namespace G {
     //   "end": 1626767612 // 结束时间
     //  }
     // httpMgr.get((msg) => {
-        // log(msg)
+        // Logger.i(msg)
         // if (msg.code == 0) {
             // if (msg.data.start) {
             //     var date = new Date();

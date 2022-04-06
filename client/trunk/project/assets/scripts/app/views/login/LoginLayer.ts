@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, Label, Prefab, instantiate, log, EventTouch, AnimationClip, Animation } from 'cc';
+import { _decorator, Component, Node, Label, Prefab, instantiate, EventTouch, AnimationClip, Animation } from 'cc';
 import { gameMgr } from '../../../framework/core/GameMgr';
 import { sceneMgr } from '../../../framework/core/SceneMgr';
 import { storage } from '../../../framework/core/storage/Storage';
@@ -7,6 +7,7 @@ import { ResourcesLoader } from '../../../framework/data/ResourcesLoader';
 import { httpMgr } from '../../../framework/net/HttpMgr';
 import { socketMgr } from '../../../framework/net/SocketMgr';
 import { LayerBase } from '../../../framework/ui/LayerBase';
+import Logger from '../../../framework/utils/Logger';
 import { G } from '../../common/GlobalFunction';
 import { Protocol } from '../../define/Protocol';
 import { ViewProtocol } from '../../define/ViewProtocol';
@@ -31,7 +32,7 @@ export class LoginLayer extends LayerBase {
         // set version
         if (this.versionLbl) {
             // FileHelper.load("Txt/showVer", (data) => {
-            //     cc.log("showVer txt:", data.text);
+            //     cc.Logger.i("showVer txt:", data.text);
             //     let showVer = data.text || "1.0";
             //     let realVer = GameConfig.realVer || "0.0";
             //     this.versionLbl.string = "ver " + showVer.toString() + "." + realVer.toString();
@@ -140,7 +141,7 @@ export class LoginLayer extends LayerBase {
             //                 serverData.address,
             //                 serverData.port,
                             (event:Event) => {
-                                log("openFunc:",event);
+                                Logger.i("openFunc:",event);
             //                     //打点
             //                     let param: any = {};
             //                     let serverInfo: any = {};
@@ -151,7 +152,7 @@ export class LoginLayer extends LayerBase {
                                 this._loginServer();
                             },
                             (event:Event) => {
-                                log("errorFunc:",event);
+                                Logger.i("errorFunc:",event);
                             }
                         );
             //         } else {

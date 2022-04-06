@@ -1,7 +1,7 @@
-import { Asset, assetManager, AssetManager, error, game, log, resources, __private } from "cc";
+import { Asset, assetManager, AssetManager, game, resources, __private } from "cc";
 import { ViewInfoType } from "../../app/define/ConfigType";
-import { sceneMgr } from "../core/SceneMgr";
 import { netLoadingMgr } from "../net/NetLoadingMgr";
+import Logger from "../utils/Logger";
 
 /*
  * @Author: liuguoqing
@@ -28,7 +28,7 @@ export class ResourcesLoader {
     static preload(path: string | string[], doneFunc: FileCallback<UnionAsset>) {
         resources.preload(path, (err, dataAsset) => {
             if (err) {
-                error("ResourcesLoader preload error:", err.message);
+                Logger.e("ResourcesLoader preload error:", err.message);
             }
             doneFunc(dataAsset);
         });
@@ -41,7 +41,7 @@ export class ResourcesLoader {
         if (type == undefined) {
             resources.load(path, (err, dataAsset) => {
                 if (err) {
-                    error("ResourcesLoader load error:", err.message);
+                    Logger.e("ResourcesLoader load error:", err.message);
                 }
                 doneFunc(dataAsset, err);
             });
@@ -50,7 +50,7 @@ export class ResourcesLoader {
 
         resources.load(path, type, (err, dataAsset) => {
             if (err) {
-                error("ResourcesLoader load error:", err.message);
+                Logger.e("ResourcesLoader load error:", err.message);
             }
             doneFunc(dataAsset, err);
         });
@@ -73,7 +73,7 @@ export class ResourcesLoader {
         if (type == undefined) {
             resources.load(path, (err, dataAsset) => {
                 if (err) {
-                    error("ResourcesLoader load error:", err.message);
+                    Logger.e("ResourcesLoader load error:", err.message);
                 }
 
                 // 添加自动释放
@@ -88,7 +88,7 @@ export class ResourcesLoader {
 
         resources.load(path, type, (err, dataAsset) => {
             if (err) {
-                error("ResourcesLoader load error:", err.message);
+                Logger.e("ResourcesLoader load error:", err.message);
             }
 
             // 添加自动释放

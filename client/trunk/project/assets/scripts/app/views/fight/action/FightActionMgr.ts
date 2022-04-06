@@ -176,7 +176,6 @@ export class FightActionMgr extends Singleton{
             let names = [];
             values.filter(v=>{
                 if (Number.isNaN(Number(v))) {
-                    log(v,"v");
                     names.push(v);
                 }
             })

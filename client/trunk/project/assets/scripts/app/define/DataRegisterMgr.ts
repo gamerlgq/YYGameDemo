@@ -5,9 +5,11 @@
  * @LastEditTime: 2022-03-06 15:24:31
  * @Description: file content
  */
-import { error, log } from "cc";
+
+import { js } from "cc";
 import { IRerunApp, Singleton } from "../../framework/components/Singleton";
 import { dataMgr } from "../../framework/data/DataMgr";
+import Logger from "../../framework/utils/Logger";
 import { Test_Parser } from "../parser/Test_Parser";
 
 export class DataRegisterMgr extends Singleton implements IRerunApp{
@@ -40,13 +42,13 @@ export class DataRegisterMgr extends Singleton implements IRerunApp{
                 dataMgr.registerDataFile(dataHandlerName,path,parser);
                 dataMgr.loadData(dataHandlerName,pair,(isDone:boolean)=>{
                     if (!isDone) {
-                        error("DataRegisterMgr loadData error:[ %s ]",dataHandlerName);
+                        Logger.e("DataRegisterMgr loadData error:[ %s ]",dataHandlerName);
                     }
                     length--;
                     if (length == 0){
                         if (doneFunc) {
                             let endTS = new Date().getMilliseconds();
-                            log("Load all date file cost [ %s ]ms",endTS - startTS);
+                            Logger.i(js.formatStr("Load all date file cost [ %s ]ms",endTS - startTS));
                             doneFunc();
                         }
                     }

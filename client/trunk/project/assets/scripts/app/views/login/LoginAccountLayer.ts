@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, EditBox, log, sys, game, UITransform } from 'cc';
+import { _decorator, Component, Node, EditBox, sys, game, UITransform } from 'cc';
 import { gameMgr } from '../../../framework/core/GameMgr';
 import { sceneMgr } from '../../../framework/core/SceneMgr';
 import { storage } from '../../../framework/core/storage/Storage';
@@ -71,9 +71,9 @@ export class LoginAccountLayer extends LayerBase {
         // let url = GameConfig.ServerUrl + "/client/login";
         // httpMgr.post(
         //     (msg) => {
-        //         log(msg);
+                // Logger.i(msg);
         //         if (msg.code == 0) {
-        //             log(msg.data);
+        //             Logger.i(msg.data);
         //             if (msg.data.result_code == 0) {
                         storage.set("LoginUserName", userName);
                         storage.set("LoginPassWord", passWord);
@@ -112,7 +112,7 @@ export class LoginAccountLayer extends LayerBase {
         //@ts-ignore
         // let url = GameConfig.ServerUrl + "/client/is_verify?youai_id=" + userId;
         // httpMgr.get((msg) => {
-        //     log(msg);
+            // Logger.i(msg);
         //     let code = msg.data.code;
         //     if (code == 1) {
         //         // 1提交了没出结果

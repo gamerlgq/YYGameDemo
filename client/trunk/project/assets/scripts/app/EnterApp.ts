@@ -1,4 +1,4 @@
-import { Camera, director, find, game, input, log, sys } from "cc";
+import { Camera, director, find, game, input, sys } from "cc";
 import { singletonMgr } from "../framework/components/SingletonMgr";
 import { audioMgr } from "../framework/core/audio/AudioManager";
 import { gameMgr } from "../framework/core/GameMgr";
@@ -7,6 +7,7 @@ import { languageManager, LanguageManager } from "../framework/language/Language
 import { netLoadingMgr } from "../framework/net/NetLoadingMgr";
 import { netStateMgr } from "../framework/net/NetStateMgr";
 import { translateMgr } from "../framework/translate/TranslateMgr";
+import Logger from "../framework/utils/Logger";
 import { GameConfig } from "../GameConfig";
 import { dataRegisterMgr } from "./define/DataRegisterMgr";
 import { ViewProtocol } from "./define/ViewProtocol";
@@ -65,10 +66,10 @@ export class EnterApp {
     }
 
     loadAllDataFile() {
-        log("loading config..");
+        Logger.i("loading config..");
         // logDot(DotIDS.configLoadingStart);
         dataRegisterMgr.loadAllData(() => {
-            log("loading config is done");
+            Logger.i("loading config is done");
             // logDot(DotIDS.configLoadingFinish);
             this.loadAllModel();
             this.loadAllRedGuide();
@@ -91,7 +92,7 @@ export class EnterApp {
         
         game.frameRate = 60;
         input.setAccelerometerEnabled(true);
-        log("进入游戏");
+        Logger.i("进入游戏");
         
         sceneMgr.sendCreateView(ViewProtocol.LoginLayer);
     }

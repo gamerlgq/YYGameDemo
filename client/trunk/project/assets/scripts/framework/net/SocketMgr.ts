@@ -1,4 +1,5 @@
-import { log, sys } from "cc";
+import { sys } from "cc";
+import { Protocol } from "../../app/define/Protocol";
 import { Proto } from "../../app/define/proto_mate";
 import { IRerunApp, Singleton } from "../components/Singleton";
 import { gameMgr } from "../core/GameMgr";
@@ -27,6 +28,8 @@ class SocketMgr extends Singleton implements IRerunApp{
     private _StateChangeCallback: SocketCallback;
     private _ip: string;
     private _port: string;
+
+    private _tempInnerEventNameMap:Map<number,string> = null;
 
     private constructor() {
         super();
@@ -62,7 +65,7 @@ class SocketMgr extends Singleton implements IRerunApp{
                 errorFunc(event);
             };
         } catch (error) {
-            log("connect error: ", error);
+            Logger.e("connect error: ", error);
         }
     }
 
@@ -72,7 +75,7 @@ class SocketMgr extends Singleton implements IRerunApp{
                 this._ip,
                 this._port,
                 (event) => { },
-                (event) => { log(event); }
+                (event) => { Logger.i(event); }
             );
         }
     }
@@ -87,7 +90,7 @@ class SocketMgr extends Singleton implements IRerunApp{
     // send(msgId: number, data: Object = {}) {
     //     data["proto"] = msgId;
     //     data = JSON.stringify(data);
-    //     log("[WS] Send:", msgId, data);
+    //     Logger.i("[WS] Send:", msgId, data);
     //     this._ws.send(<string>data);
 
     //     netLoadingMgr.addMsgLoading(msgId)
@@ -102,14 +105,40 @@ class SocketMgr extends Singleton implements IRerunApp{
         }
 
         this._ws.send(arrbuffSend);
-        Logger.net("====>msg:" + msgId + " [" + sendParams + "]")
+        netLoadingMgr.addMsgLoading(msgId)
+        Logger.net("[WS] Send Msg: ===>" + msgId + " [" + sendParams + "]")
     }
 
 
     sendInnerMsg(msgId: number, data: Object = {}) {
         let msg = new Message(msgId, data);
-        log("[WS] Send Inner:", msgId, data);
+        Logger.net("Send Inner: ===>", this._getInnerEventName(msgId), data);
         gameMgr.addInnerMessage(msg);
+    }
+
+    private _getInnerEventName(eventId:number) {
+        if (!this._tempInnerEventNameMap){
+            this._tempInnerEventNameMap = new Map();
+            let values = Object.values(Protocol.Inner);
+            let eventIds:number[] = [];
+            let eventNames:string[] = [];
+            for (let index = 0; index < values.length; index++) {
+                let value = values[index];
+                if (index % 2 == 0) {
+                    eventIds.push(Number(value));
+                }else{
+                    eventNames.push(value.toString());
+                }
+            }
+
+            for (let index = 0; index < eventIds.length; index++) {
+                const eventId = eventIds[index];
+                const eventName = eventNames[index];
+                this._tempInnerEventNameMap.set(eventId,eventName);
+            }
+        }
+
+        return this._tempInnerEventNameMap.get(eventId);
     }
 
     registerCallbackHandler(params) {
@@ -124,8 +153,8 @@ class SocketMgr extends Singleton implements IRerunApp{
     }
 
     private _onopen(event) {
-        log("Send Text WS was opened.");
-        log(event);
+        Logger.i("Send Text WS was opened.");
+        Logger.i(event);
         if (this._StateChangeCallback) {
             this._StateChangeCallback(event);
         }
@@ -135,7 +164,7 @@ class SocketMgr extends Singleton implements IRerunApp{
     private _onmessage(event: any) {
         let data = event.data;
         if (data == null) {
-            log(event);
+            Logger.i(event);
             return;
         }
 
@@ -145,19 +174,19 @@ class SocketMgr extends Singleton implements IRerunApp{
         gameMgr.addNetMessage(msg);
 
         netLoadingMgr.removeMsgLoading(msg.msgId)
-        Logger.net("<==== msgId:" + bufferParser.msgId + '['+dataParse+']')
+        Logger.net("[WS] Receive Msg: <===:" + bufferParser.msgId + '['+dataParse+']')
     }
 
     private _onerror(event) {
-        log("Send Text fired an error");
+        Logger.e("Send Text fired an error");
         if (this._StateChangeCallback) {
             this._StateChangeCallback(event);
         }
     }
 
     private _onclose(event) {
-        log(event);
-        log("WebSocket instance closed.");
+        Logger.i(event);
+        Logger.i("WebSocket instance closed.");
         if (this._StateChangeCallback) {
             this._StateChangeCallback(event);
         }

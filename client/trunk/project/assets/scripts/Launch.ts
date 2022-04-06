@@ -6,8 +6,9 @@
  * @Description: file content
  */
 
-import { _decorator, Component, JsonAsset, log, sys, director, dynamicAtlasManager } from 'cc';
+import { _decorator, Component, JsonAsset,  sys, director, dynamicAtlasManager } from 'cc';
 import { ResourcesLoader } from './framework/data/ResourcesLoader';
+import Logger from './framework/utils/Logger';
 import { GameConfig } from './GameConfig';
 const { ccclass, property } = _decorator;
  
@@ -20,7 +21,7 @@ export class Launch extends Component {
     onLoad(){
         if (this.serverConfig) {
             let config = this.serverConfig.json;
-            log("ServerConfig.json",JSON.stringify(config));
+            Logger.i("ServerConfig.json",JSON.stringify(config));
             Object.keys(config).forEach((key)=>{
                 let value = config[key];
                 GameConfig[key] = value;

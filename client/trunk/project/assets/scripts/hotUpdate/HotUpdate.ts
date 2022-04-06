@@ -1,6 +1,7 @@
 
 import { _decorator, Component, Node, js, director, Label, sys, assetManager, log, ProgressBar, game } from 'cc';
 import { EnterApp } from '../app/EnterApp';
+import Logger from '../framework/utils/Logger';
 const { ccclass, property } = _decorator;
 
 /**
@@ -45,14 +46,14 @@ export class HotUpdate extends Component {
             return;
         }
         this._storagePath = ((jsb.fileUtils ? jsb.fileUtils.getWritablePath() : '/') + 'hotupdate');
-        console.log('Storage path for remote asset : ' + this._storagePath);
+        Logger.i('Storage path for remote asset : ' + this._storagePath);
 
         // Setup your own version compare handler, versionA and B is versions in string
         // if the return value greater than 0, versionA is greater than B,
         // if the return value equals 0, versionA equals to B,
         // if the return value smaller than 0, versionA is smaller than B.
         let versionCompareHandle = function (versionA: string, versionB: string) {
-            console.log("JS Custom Version Compare: version A is " + versionA + ', version B is ' + versionB);
+            Logger.i("JS Custom Version Compare: version A is " + versionA + ', version B is ' + versionB);
             var vA = versionA.split('.');
             var vB = versionB.split('.');
             for (var i = 0; i < vA.length; ++i) {
@@ -86,16 +87,16 @@ export class HotUpdate extends Component {
             var size = asset.size;
 
             if (compressed) {
-                log("Verification passed : " + relativePath)
+                Logger.i("Verification passed : " + relativePath)
                 return true
             }
 
             let data = jsb.fileUtils.getDataFromFile(path);
             let md5Str = MD5_2(data)
 
-            log("expectedMD5:" + expectedMD5 + "  md5Str:" + md5Str)
+            Logger.i("expectedMD5:" + expectedMD5 + "  md5Str:" + md5Str)
             if (expectedMD5 != md5Str) {
-                log("验证失败")
+                Logger.e("验证失败")
                 return false
             }
 
@@ -104,7 +105,7 @@ export class HotUpdate extends Component {
     }
 
     checkCb(event: any) {
-        console.log('Code: ' + event.getEventCode());
+        Logger.i('Code: ' + event.getEventCode());
         switch (event.getEventCode()) {
             case jsb.EventAssetsManager.ERROR_NO_LOCAL_MANIFEST:
                 this.tipsLabel.string = "No local manifest file found, hot update skipped.";
@@ -164,7 +165,7 @@ export class HotUpdate extends Component {
             case jsb.EventAssetsManager.UPDATE_PROGRESSION:
                 let downloadByte: number = event.getDownloadedBytes()
                 let totalByte: number = event.getTotalBytes()
-                log("updateing... ", downloadByte, " "+ totalByte)
+                Logger.i("updateing... ", downloadByte, " "+ totalByte)
                 this.tipsLabel.string = this.getDownloadByteStr(downloadByte) + "/" + this.getDownloadByteStr(totalByte)
                 this.progressBar.progress = downloadByte/totalByte
                 break;
@@ -204,7 +205,7 @@ export class HotUpdate extends Component {
             // Prepend the manifest's search path
             var searchPaths = jsb.fileUtils.getSearchPaths();
             var newPaths = this._am.getLocalManifest().getSearchPaths();
-            console.log(JSON.stringify(newPaths));
+            Logger.i(JSON.stringify(newPaths));
             Array.prototype.unshift.apply(searchPaths, newPaths);
             // This value will be retrieved and appended to the default search path during game startup,
             // please refer to samples/js-tests/main.js for detailed usage.
@@ -217,7 +218,7 @@ export class HotUpdate extends Component {
     }
 
     hotUpdate() {
-        log("hotupdate start...")
+        Logger.i("hotupdate start...")
         this._am.setEventCallback(this.updateCb.bind(this));
         this._am.update();
     }

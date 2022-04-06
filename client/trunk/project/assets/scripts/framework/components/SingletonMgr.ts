@@ -1,4 +1,4 @@
-import { log } from "cc";
+import Logger from "../utils/Logger";
 
 /*
  * @Author: liuguoqing
@@ -17,8 +17,6 @@ class SingletonMgr {
         }
         return this._instance;
     }
-    
-    // private _index: number = 0;
 
     private _singletonMap: Map<string,any>;
 
@@ -27,8 +25,6 @@ class SingletonMgr {
     }
 
     sign(T: any) {
-        // this._index++;
-        // T.sIndex = this._index;
         this._singletonMap.set(T.name,T);
     }
 
@@ -42,7 +38,7 @@ class SingletonMgr {
     init(){
         let i = 0;
         this._singletonMap.forEach((T:any)=>{
-            log(i,T,"T");
+            Logger.i("SingletonMgr:init()",i,T.name);
             T?.recreate();
             i+=1;
         })
@@ -53,7 +49,7 @@ class SingletonMgr {
             T?.destoryInstance();
             T?.instance?.clear();
         })
-        log(this._singletonMap,"this._singletonMap");
+        // Logger.i(this._singletonMap,"this._singletonMap");
     }
 
     clear(){

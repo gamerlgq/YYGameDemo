@@ -10,6 +10,7 @@
 import { log } from "cc";
 import { IRerunApp, Singleton } from "../components/Singleton";
 import { sceneMgr } from "../core/SceneMgr";
+import Logger from "./Logger";
 
 //  监听 使用范例
 //  @参数
@@ -67,7 +68,7 @@ export class SceneTriggerMgr extends Singleton implements IRerunApp{
 
             let handle = event[0];
             let listener = event[1];
-            log(" ==========  SceneTriggerMgr go   " + pSceneName + handle);
+            Logger.i(" ==========  SceneTriggerMgr go   " + pSceneName + handle);
             let ret = listener(event, pSceneName);
             if (ret == false) {
                 break;

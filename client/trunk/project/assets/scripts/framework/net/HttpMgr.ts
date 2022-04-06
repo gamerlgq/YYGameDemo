@@ -8,6 +8,7 @@
 
 import { log, sys } from "cc";
 import { IRerunApp, Singleton } from "../components/Singleton";
+import Logger from "../utils/Logger";
 import { netStateMgr } from "./NetStateMgr";
 
 export type HttpCallback = {
@@ -31,7 +32,7 @@ export class HttpMessage {
     }
    
     get(callback:HttpCallback,url:string,needLoading?: boolean){
-        log("[Http] Get", url);
+        Logger.net("[Http] Get", url);
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 500) {
@@ -55,7 +56,7 @@ export class HttpMessage {
     }
 
     post(callback:HttpCallback,url:string,data:any,needLoading?: boolean){
-        log("[Http] Post", url);
+        Logger.net("[Http] Post", url);
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
             if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 500) {

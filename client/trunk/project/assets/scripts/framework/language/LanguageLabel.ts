@@ -1,10 +1,11 @@
 /**
  * 所有文本用这一个组件,用于多语言切换
  */
-import { CCString, Component, Enum, error, Label, log, RichText, warn, _decorator } from "cc";
+import { CCString, Component, Enum, Label, RichText, _decorator } from "cc";
 import { EDITOR } from "cc/env";
 import { Protocol } from "../../app/define/Protocol";
 import { ComponentBase } from "../ui/ComponentBase";
+import Logger from "../utils/Logger";
 import { languageManager } from "./Language";
 
 const { ccclass, property, menu, executeInEditMode} = _decorator;
@@ -77,7 +78,7 @@ export class LanguageLabel extends ComponentBase {
             if (!spcomp) {
                 spcomp = this.getComponent(RichText);
                 if (!spcomp) {
-                    warn("[LanguageLabel], 该节点没有cc.Label || cc.RichText组件");
+                    Logger.w("[LanguageLabel], 该节点没有cc.Label || cc.RichText组件");
                     break;
                 }
             }
@@ -98,7 +99,7 @@ export class LanguageLabel extends ComponentBase {
 
         // this._needUpdate = true;
         if (!this.getComponent(Label) && !this.getComponent(RichText)) {
-            error(this.node.name, this._dataID);
+            Logger.e(this.node.name, this._dataID);
             return;
         }
 

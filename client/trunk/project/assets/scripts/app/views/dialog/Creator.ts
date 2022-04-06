@@ -27,7 +27,6 @@ export class DialogCreator extends ViewCreatorBase {
             let node = instantiate(data);
             let com = node.getComponent(DoubleBtnDialog);
             com.updateDialog(event.getRawData());
-            sceneMgr.pushNewTableLayer();
             sceneMgr.replaceDialog(node);
         })
     }

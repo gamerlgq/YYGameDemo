@@ -4,6 +4,7 @@
  */
 import { sys } from "cc";
 import { PREVIEW } from "cc/env";
+import Logger from "../../utils/Logger";
 import { EncryptUtil } from "./EncryptUtil";
 import { md5 } from "./Md5";
 
@@ -40,19 +41,19 @@ export module storage {
         key = `${key}_${_id}`;
 
         if (null == key) {
-            console.error("存储的key不能为空");
+            Logger.e("存储的key不能为空");
             return;
         }
         if (!PREVIEW) {
             key = md5(key);
         }
         if (null == value) {
-            console.warn("存储的值为空，则直接移除该存储");
+            Logger.w("存储的值为空，则直接移除该存储");
             remove(key);
             return;
         }
         if (typeof value === 'function') {
-            console.error("储存的值不能为方法");
+            Logger.e("储存的值不能为方法");
             return;
         }
         if (typeof value === 'object') {
@@ -60,7 +61,7 @@ export module storage {
                 value = JSON.stringify(value);
             }
             catch (e) {
-                console.error(`解析失败，str = ${value}`);
+                Logger.e(`解析失败，str = ${value}`);
                 return;
             }
         }
@@ -86,7 +87,7 @@ export module storage {
      */
     export function get(key: string, defaultValue?: any) {
         if (null == key) {
-            console.error("存储的key不能为空");
+            Logger.e("存储的key不能为空");
             return;
         }
 
@@ -122,7 +123,7 @@ export module storage {
                 return JSON.parse(str);
             }
             catch (e) {
-                console.error("解析数据失败,str=" + str);
+                Logger.e("解析数据失败,str=" + str);
                 return defaultValue;
             }
 
@@ -137,7 +138,7 @@ export module storage {
      */
     export function remove(key: string) {
         if (null == key) {
-            console.error("存储的key不能为空");
+            Logger.e("存储的key不能为空");
             return;
         }
 

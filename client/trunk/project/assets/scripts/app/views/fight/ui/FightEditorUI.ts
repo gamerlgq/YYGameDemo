@@ -1,7 +1,7 @@
 
-import { _decorator, Component, Node, ScrollView, Button, Label, EventTouch, ProgressBar, log } from 'cc';
-import { sceneMgr } from '../../../../framework/core/SceneMgr';
+import { _decorator, Component, Node, ScrollView, Label, EventTouch, ProgressBar } from 'cc';
 import { ListView, ListViewDelegate } from '../../../../framework/ui/ListView';
+import Logger from '../../../../framework/utils/Logger';
 import { G } from '../../../common/GlobalFunction';
 import { DoubleBtnDialogArgsType } from '../../../define/ConfigType';
 import { HeroSpineNode, MonsterSpineNode } from '../../common/spine/SpineNodeBase';
@@ -76,7 +76,7 @@ export class FightEditorUI extends Component {
 
     onUnitActionBtnClick(event:EventTouch,customEventData:string){
         let node = event.getCurrentTarget();
-        log(node);
+        Logger.i(node);
     }
 
     onClickAttacker(event:EventTouch,customEventData:string){

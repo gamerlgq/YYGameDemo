@@ -1,5 +1,6 @@
 
 import { Component, instantiate, Node, NodePool, ScrollView, UITransform, Vec3, _decorator } from 'cc';
+import Logger from '../utils/Logger';
 const { ccclass, property } = _decorator;
 
 export interface ListViewDelegate<T>{
@@ -31,7 +32,7 @@ export class ListView extends Component {
     this.visibleHeight = this.node.getComponent(UITransform).height;
     this.spawnCount = Math.round(this.visibleHeight / this.itemHeight) + 1;
     this.ensure(this.spawnCount);
-    console.log('ListView visibleHeight:', this.visibleHeight, 'spawnCount:', this.spawnCount, 'itemHeight:', this.itemHeight);
+    Logger.i('ListView visibleHeight:', this.visibleHeight, 'spawnCount:', this.spawnCount, 'itemHeight:', this.itemHeight);
   }
 
   setDelegate<T>(delegate:ListViewDelegate<T>) {
@@ -50,7 +51,7 @@ export class ListView extends Component {
     this.scrollView.stopAutoScroll();
     this.scrollView.scrollToTop(0, false);
     this.lastY = Number.MIN_SAFE_INTEGER;
-    console.log('ListView reload totalCount:', this.dataSource.length);
+    Logger.i('ListView reload totalCount:', this.dataSource.length);
   }
 
   ensure(count: number) {

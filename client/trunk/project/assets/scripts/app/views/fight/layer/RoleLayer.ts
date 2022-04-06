@@ -5,7 +5,8 @@
  * @LastEditTime: 2022-03-20 16:14:40
  * @Description: file content
  */
-import { error, js, log, v3, Vec3 } from "cc";
+import { js, v3, Vec3 } from "cc";
+import Logger from "../../../../framework/utils/Logger";
 import { yy } from "../../../define/YYNamespace";
 import { RoleSpineFactory } from "../../common/spine/RoleSpineFactory";
 import { HeroSpineNode, MonsterSpineNode } from "../../common/spine/SpineNodeBase";
@@ -61,7 +62,7 @@ export class RoleLayer extends FightLayerBase {
             let attackInfo = attackers[index];
             let heroId = attackInfo.getHeroId();
             if (heroId == -1){
-                return error(js.formatStr("RoleLayer:_loadAttackers heroId = -1 index:[%d]",index));
+                return Logger.e(js.formatStr("RoleLayer:_loadAttackers heroId = -1 index:[%d]",index));
             }
       
             let node = await RoleSpineFactory.create(HeroSpineNode,heroId);
@@ -80,7 +81,7 @@ export class RoleLayer extends FightLayerBase {
             let defenderInfo = defenders[index];
             let heroId = defenderInfo.getHeroId();
             if (heroId == -1){
-                return error(js.formatStr("RoleLayer:_loadDefenders heroId = -1 index:[%d]",index));
+                return Logger.e(js.formatStr("RoleLayer:_loadDefenders heroId = -1 index:[%d]",index));
             }
 
             let node = await RoleSpineFactory.create(MonsterSpineNode,heroId);

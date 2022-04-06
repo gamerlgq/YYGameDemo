@@ -42,7 +42,7 @@ export default class BufferParser {
 
         let msgParams = Proto.send[msgId]
         if (!msgParams) {
-            Logger.e("没有此协议：" + msgId)
+            Logger.net("没有此协议：" + msgId)
             return 
         }
 
@@ -57,7 +57,7 @@ export default class BufferParser {
         }
 
         if (this._length > BUFF_SIZE) {
-            Logger.e("NET: 发送长度超出buffer缓冲区")
+            Logger.net("NET: 发送长度超出buffer缓冲区")
             return
         }
 
@@ -100,7 +100,7 @@ export default class BufferParser {
                 this._writeData(element.fields, value)
             }
             else {
-                Logger.e("未知发送类型: " + typeStr)
+                Logger.net("未知发送类型: " + typeStr)
             }
         }
     }
@@ -114,7 +114,7 @@ export default class BufferParser {
 
         let msgParams = Proto.recv[msgId]
         if (!msgParams) {
-            Logger.e("Net <====: 没有此id的协议[" + msgId + "]")
+            Logger.net("Net <====: 没有此id的协议[" + msgId + "]")
             return
         }
 
@@ -179,7 +179,7 @@ export default class BufferParser {
                 dataParse = this._parseData(element.fields, arrayBuffer, dataParse)
             }
             else {
-                Logger.e("未知发送类型: " + typeStr)
+                Logger.net("未知发送类型: " + typeStr)
                 return 0
             }
         }

@@ -1,9 +1,10 @@
-import { error, log } from "cc"
+import { error } from "cc"
 import { ErrorCode } from "../../app/define/ErrorCode";
 import { IRerunApp, Singleton } from "../components/Singleton"
 import { gameMgr } from "../core/GameMgr";
 import { sceneMgr } from "../core/SceneMgr";
 import { Message } from "../listener/Message";
+import Logger from "../utils/Logger";
 
 interface IMsg {
     id:string;
@@ -26,27 +27,26 @@ class NetLoadingMgr extends Singleton implements IRerunApp{
         let index = 0
         while (this._msgList[index]) {
             let msg = this._msgList[index]
-            log(msg,this._time,msg.endTime);
             if (msg.endTime > 0 && this._time >= msg.endTime) {
                 this._msgList.splice(index)
                 this.removeMsgLoading(msg.id)
                 this.timeup(msg)
             }
             else {
-                index++
+                index++;
             }
         }
     }
 
     timeup(msg:IMsg) {
         //超时
-        error("<====time up==== msgId: " + msg.id)
+        Logger.net("<====time up==== msgId: " + msg.id)
         let msgId = Number(msg.id)
         let msgEvent = new Message(msgId, {code:ErrorCode.TIME_OUT})
         gameMgr.addInnerMessage(msgEvent)
     }
 
-    addMsgLoading(id:number | string,  timeout:number = 10) {
+    addMsgLoading(id:number | string,  timeout:number=10) {
         let idStr = id + ""
         let endTime = timeout > 0 ? this._time + timeout : 0
         this._msgList.push({id:idStr, endTime: endTime})

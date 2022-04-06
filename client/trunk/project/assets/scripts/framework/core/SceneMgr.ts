@@ -13,6 +13,7 @@ import { Message } from "../listener/Message";
 import { socketMgr } from "../net/SocketMgr";
 import { TableLayer } from "../ui/TableLayer";
 import { setNodeVisible } from "../utils/functions";
+import Logger from "../utils/Logger";
 import { sceneTriggerMgr } from "../utils/SceneTriggerMgr";
 // import { functions, ShowBackgroundMgr, Message, TableLayer, viewEventMgr } from "../yy";
 
@@ -658,9 +659,6 @@ class SceneMgr extends Singleton implements IRerunApp{
             for (let k = 0; k < tableElementList.length; k++) {
                 const tableElement = tableElementList[k];
                 // 检查是否有屏蔽下一层标志
-                // if (this._skipHiddenBackground[tableElement.name]) {
-                    log("===>tableElement.name",tableElement.name);
-                    log(ShowBackgroundMgr.checkIsShowBlackground(tableElement.name));
                 if (ShowBackgroundMgr.checkIsShowBlackground(tableElement.name)) {
                     nextCanVisible = 1;
                 }
@@ -751,7 +749,7 @@ class SceneMgr extends Singleton implements IRerunApp{
 
     public sendCreateView(UiFlag: number, data?: any) {
         let values = Object.values(ViewProtocol)
-        log("send create view:" + values[UiFlag]);
+        Logger.i("Send Create View:" + values[UiFlag]);
         let msg = new Message(UiFlag, data);
         viewEventMgr.dispatchEvent(msg);
     }

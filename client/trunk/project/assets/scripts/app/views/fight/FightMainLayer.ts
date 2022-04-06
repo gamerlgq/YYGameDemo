@@ -6,11 +6,12 @@
  * @Description: file content
  */
 
-import { _decorator, Prefab, instantiate, Node, js, sys, JsonAsset, log, director, TweenSystem, AnimationManager } from 'cc';
+import { _decorator, Prefab, instantiate, Node, JsonAsset, director, TweenSystem, AnimationManager } from 'cc';
 import { audioMgr } from '../../../framework/core/audio/AudioManager';
 import { ResourcesLoader } from '../../../framework/data/ResourcesLoader';
 import { Message } from '../../../framework/listener/Message';
 import { LayerBase } from '../../../framework/ui/LayerBase';
+import Logger from '../../../framework/utils/Logger';
 import { Protocol } from '../../define/define';
 import { viewRegisterMgr } from '../../define/ViewRegisterMgr';
 import { fightActionMgr, FightActionMgr } from './action/FightActionMgr';
@@ -34,6 +35,7 @@ export class FightMainLayer extends LayerBase {
     private _content:Node = null;
     private _rootNode:Node = null;
     private _gameSpeed:number = 1;
+    private _pauseFormView:boolean = false;
 
     onLoad () {
         super.onLoad();
@@ -101,6 +103,7 @@ export class FightMainLayer extends LayerBase {
     private _addListeners() {
         fightEventMgr.addEventListener(FightConstant.FightEvent.Game_Star,this._startGame.bind(this));
         this.addMsgListener(Protocol.Inner.SetAnimationSpeed,this._setSpeed.bind(this));
+        this.addMsgListener(Protocol.Inner.ViewChange, this._viewChange.bind(this));
     }
 
     private _startGame(event:FightEvent) {
@@ -137,5 +140,40 @@ export class FightMainLayer extends LayerBase {
     private _setSpeed(event:Message) {
         let data = event.getRawData();
         this._gameSpeed = data;
+    }
+
+    private _viewChange(event:Message) {
+        let data = event.getRawData();
+        let topShowLayerName = data.topShow;
+        Logger.i("viewChange", topShowLayerName);
+        if (topShowLayerName != "FightMainLayer" && topShowLayerName != "SettingLayer") {
+            if (!this._pauseFormView) {
+                if (fightPlayer) {
+                    fightPlayer.pause();
+                    this._pauseFormView = true;
+                    // sdk埋点
+                    // if (window["SDKHelper"]) {
+                    //     let data: any = {};
+                    //     data.id = this._mapId;
+                    //     data.rt = SDKDotMapType.pause;
+                    //     window["SDKHelper"].trackBattleMapEvent(data);
+                    // }
+                }
+            }
+        } else {
+            if (this._pauseFormView) {
+                if (fightPlayer) {
+                    fightPlayer.resume();
+                    this._pauseFormView = false;
+                    // sdk埋点
+                    // if (window["SDKHelper"]) {
+                    //     let data: any = {};
+                    //     data.id = this._mapId;
+                    //     data.rt = SDKDotMapType.resume;
+                    //     window["SDKHelper"].trackBattleMapEvent(data);
+                    // }
+                }
+            }
+        }
     }
 }
