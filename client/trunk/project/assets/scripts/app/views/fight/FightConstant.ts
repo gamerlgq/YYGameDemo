@@ -122,4 +122,10 @@ export namespace FightConstant {
         Blood_Change,//血条变化
         Show_Dialog//显示对话
     }
+
+    // 编辑器事件
+    export enum FightEditorEvent {
+        Show_Unit_Action_View=100,
+        Add_Unit_Action
+    }
 }

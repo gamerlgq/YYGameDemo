@@ -5,8 +5,8 @@
  * @LastEditTime: 2022-03-06 15:21:23
  * @Description: file content
  */
-import { error, log } from "cc";
 import { IRerunApp, Singleton } from "../components/Singleton";
+import Logger from "../utils/Logger";
 import { DataBase, DataCallback } from "./DataBase";
 import { DataParserBase } from "./DataParserBase";
 
@@ -39,7 +39,7 @@ class DataMgr extends Singleton implements IRerunApp{
         if (data){
             return data.getData(key);
         } else {
-            error("Calling getData() fail! Data can't Find ! [ %s ] [ %s ] ", dataHandlerName, key);
+            Logger.e("Calling getData() fail! Data can't Find ! [ %s ] [ %s ] ", dataHandlerName, key);
         }
     }
 
@@ -49,17 +49,17 @@ class DataMgr extends Singleton implements IRerunApp{
         if (data){
             return data.delData(key);
         } else {
-            error("Calling delData() fail! Data can't Find ! [ %s ] [ %s ] ", dataHandlerName, key);
+            Logger.e("Calling delData() fail! Data can't Find ! [ %s ] [ %s ] ", dataHandlerName, key);
         }
     }
 
     showAll() {
-        log(this._dataMap);
+        Logger.i(this._dataMap);
     }
 
     private _getDataCache(dataHandlerName:string):DataBase | null {
         if (!this._dataMap.has(dataHandlerName)) {
-            error("Data does not be registered[ %s ]", dataHandlerName);
+            Logger.e("Data does not be registered[ %s ]", dataHandlerName);
             return null
         }
 

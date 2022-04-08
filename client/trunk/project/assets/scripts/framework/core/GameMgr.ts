@@ -6,6 +6,7 @@ import { IRerunApp, Singleton } from "../components/Singleton";
 import { ModelBase } from "../data/ModelBase";
 import { modelEventMgr, msgEventMgr } from "../listener/EventMgr";
 import { Message } from "../listener/Message";
+import Logger from "../utils/Logger";
 import { sceneMgr } from "./SceneMgr";
 
 /*
@@ -129,15 +130,15 @@ class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     }
 
     public rerun() {
-        log("GameMgr reRunRun0");
+        Logger.i("GameMgr reRunRun0");
         sceneMgr.removeAllTableLayer();
         sceneMgr.setSystemOpenLayer(null);
         sceneMgr.setNewGuideLayer(null);
         if (this._app) {
-            log("GameMgr reRunRun1");
+            Logger.i("GameMgr reRunRun1");
             this._app.rerun();
         } else {
-            log("GameMgr reRunRun2");
+            Logger.i("GameMgr reRunRun2");
             director.loadScene("Launch");
         }
     }
@@ -180,7 +181,7 @@ class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     }
 
     private _enterForeground() {
-        console.log("游戏进入前台");
+        Logger.i("游戏进入前台");
         // NotifyHelper.getInstance().gameEnterForeground();
         if (this._curTimeoutID) {
             clearTimeout(this._curTimeoutID);
@@ -188,7 +189,7 @@ class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     }
 
     private _enterBackground() {
-        console.log("游戏进入后台");
+        Logger.i("游戏进入后台");
         // NotifyHelper.getInstance().gameEnterBackground();
         //5分钟后埋点登出
         this._curTimeoutID = setTimeout(() => {
@@ -231,11 +232,11 @@ class GameMgr extends Singleton implements ISchedulable,IRerunApp {
 
     private _dispatchMsgEvent(msg: Message) {
         // model msg
-        modelEventMgr.dispatchEvent(msg);
+        modelEventMgr?.dispatchEvent(msg);
         // view msg
-        msgEventMgr.dispatchEvent(msg);
+        msgEventMgr?.dispatchEvent(msg);
         // redGuide msg
-        // SFRedGuideMgr.dispatchEvent(msg);
+        // SFRedGuideMgr?.dispatchEvent(msg);
     }
 
     public clear(){

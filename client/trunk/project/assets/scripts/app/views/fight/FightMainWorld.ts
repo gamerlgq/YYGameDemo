@@ -1,5 +1,6 @@
-import { Component, error, log, Node, UITransform } from "cc";
+import { Component, Node, UITransform } from "cc";
 import { UIWidget } from "../../../framework/ui/UIWidget";
+import Logger from "../../../framework/utils/Logger";
 import { FightConstant } from './FightConstant';
 import { BloodLayer } from "./layer/BloodLayer";
 import { DialogLayer } from "./layer/DialogLayer";
@@ -93,7 +94,7 @@ export class FightMainWorld extends Node{
      */
     public getLayer(index:number):Node | null {
         if (!this._layerMap.get(index)){
-            error("There is not exist layer in FightMainWorld! index:[ %s ]",index.toString());
+            Logger.e("There is not exist layer in FightMainWorld! index:[ %s ]",index.toString());
             return null;
         }
         return this._layerMap.get(index);

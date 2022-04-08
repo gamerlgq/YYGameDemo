@@ -1,5 +1,6 @@
 
-import { _decorator, Component, Node, ScrollView, log, Prefab, UITransform, math } from 'cc';
+import { _decorator, Component, ScrollView, Prefab, UITransform } from 'cc';
+import Logger from '../../../framework/utils/Logger';
 import { ChatMsgItemNode } from './ChatMsgItemNode';
 const { ccclass, property, requireComponent } = _decorator;
 
@@ -69,7 +70,7 @@ export class ChatScrollView extends Component {
             if (!itemIndex.has(idx)) {
                 node.unuse()
                 this.visibleNodes.delete(idx);
-                // console.log("丢弃:",idx );
+                // console.Logger.i("丢弃:",idx );
             }
         });
         itemIndex.forEach((idx) => {
@@ -96,7 +97,7 @@ export class ChatScrollView extends Component {
     }
 
     onDestory(){
-        log("ChatScrollView clear")
+        Logger.i("ChatScrollView clear")
         ChatMsgItemNode.chatMsgNodePool.clear()
     }
 

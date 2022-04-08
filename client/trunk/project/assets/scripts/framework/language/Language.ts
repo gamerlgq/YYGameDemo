@@ -79,7 +79,7 @@ export class LanguageManager {
     //     language = language.toLowerCase();
     //     let index = this.languages.indexOf(language);
     //     if (index < 0) {
-    //         warn("当前不支持该语种" + language + " 将自动切换到 zh 语种!");
+    //         Logger.w("当前不支持该语种" + language + " 将自动切换到 zh 语种!");
     //         language = DEFAULT_LANGUAGE;
     //     }
     //     if (language === LanguageData.current) {
@@ -89,7 +89,7 @@ export class LanguageManager {
 
     //     this.loadLanguageAssets(language, (err: any, lang: string) => {
     //         if (err) {
-    //             error("语言资源包下载失败", err);
+    //             Logger.e("语言资源包下载失败", err);
     //             callback(false);
     //             return;
     //         }

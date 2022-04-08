@@ -1,5 +1,6 @@
 import { log } from "cc";
 import { IRerunApp, Singleton } from "../components/Singleton";
+import Logger from "../utils/Logger";
 import { Message } from "./Message";
 /*
  * @Author: liuguoqing
@@ -62,7 +63,7 @@ class EventMgr extends Singleton implements IRerunApp{
         let iterator = cellMap.entries();
         let r: IteratorResult<[string, EventCallback]>;
         while (((r = iterator.next()), !r.done)) {
-            // cc.log(r);
+            // cc.Logger.i(r);
             let v = r.value;
             let handle = v[0];
             let listener = v[1];
@@ -87,7 +88,7 @@ class EventMgr extends Singleton implements IRerunApp{
         let iterator = cellMap.entries();
         let r: IteratorResult<[string, EventCallback]>;
         while (((r = iterator.next()), !r.done)) {
-            // cc.log(r);
+            // cc.Logger.i(r);
             let v = r.value;
             let handle = v[0];
             let listener = v[1];
@@ -96,7 +97,7 @@ class EventMgr extends Singleton implements IRerunApp{
             if (this._waitDelListeners.get(handle) == null) {
                 let ret = listener(event);
                 if (ret == false) {
-                    log("Break: handle ", handle, "  eventName", eventName);
+                    Logger.i("Break: handle ", handle, "  eventName", eventName);
                     break;
                 } else if (ret == "__REMOVE__") {
                     cellMap.delete(handle);

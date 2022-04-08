@@ -1,5 +1,6 @@
-import { log, tween, Tween } from "cc";
+import { tween, Tween } from "cc";
 import { Singleton } from "../../../../framework/components/Singleton";
+import Logger from "../../../../framework/utils/Logger";
 import { G } from "../../../common/GlobalFunction";
 import { FightEvent } from "../event/FightEvent";
 import { FightEventDataType } from "../event/FightEventDataType";
@@ -186,7 +187,7 @@ export class ResultActionMgr extends Singleton{
 
     private _endCallback(data:FightEventDataType.Action_Data) {
         if (this._checkIsEnd(data)){
-            log("result action finished!")
+            Logger.i("result action finished!")
             // 结果结束
             fightEventMgr.send(new FightEvent(FightConstant.FightEvent.Result_End,data));
         }

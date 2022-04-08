@@ -1,5 +1,6 @@
 import { log, tween, Tween } from "cc";
 import { Singleton } from "../../../../framework/components/Singleton";
+import Logger from "../../../../framework/utils/Logger";
 import { G } from "../../../common/GlobalFunction";
 import { FightEvent } from "../event/FightEvent";
 import { FightEventDataType } from "../event/FightEventDataType";
@@ -82,14 +83,14 @@ export class AttackActionMgr extends Singleton{
         if (allTimeLine.length > 1){
             let parallel = tween(ownUnit).parallel(...allTimeLine);
             parallel.call(()=>{
-                log("attack action finished!")
+                Logger.i("attack action finished!")
                 // 攻击结束
                 fightEventMgr.send(new FightEvent(FightConstant.FightEvent.Attack_End,data));
             }).start();
         }else{
             let t = allTimeLine[0];
             t.target(ownUnit).call(()=>{
-                log("attack action finished!")
+                Logger.i("attack action finished!")
                 // 攻击结束
                 fightEventMgr.send(new FightEvent(FightConstant.FightEvent.Attack_End,data));
             }).start();
@@ -125,14 +126,14 @@ export class AttackActionMgr extends Singleton{
         if (allTimeLine.length > 1){
             let parallel = tween(ownUnit).parallel(...allTimeLine);
             parallel.call(()=>{
-                log("attack action finished!")
+                Logger.i("attack action finished!")
                 // 攻击结束
                 fightEventMgr.send(new FightEvent(FightConstant.FightEvent.Attack_End,data));
             }).start();
         }else{
             let t = allTimeLine[0];
             t.target(ownUnit).call(()=>{
-                log("attack action finished!")
+                Logger.i("attack action finished!")
                 // 攻击结束
                 fightEventMgr.send(new FightEvent(FightConstant.FightEvent.Attack_End,data));
             }).start();

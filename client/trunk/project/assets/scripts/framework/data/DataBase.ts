@@ -1,4 +1,5 @@
-import { error, JsonAsset, log, resources } from "cc";
+import { JsonAsset, resources } from "cc";
+import Logger from "../utils/Logger";
 import { DataParserBase } from "./DataParserBase";
 import { ResourcesLoader } from "./ResourcesLoader";
 
@@ -41,7 +42,7 @@ export class DataBase {
         if (this._data.has(namekey)) {
             return this._data.get(namekey);
         }
-        return error("Can't Find Json File:", this._fileName + namekey);
+        return Logger.e("Can't Find Json File:", this._fileName + namekey);
     }
 
     public delData(namekey: string): void {
@@ -56,7 +57,7 @@ export class DataBase {
     }
 
     public showAll(): void {
-        log(this._data);
+        Logger.i(this._data);
     }
 
     private _parseFileName(namekey: string, func?:DataCallback) {

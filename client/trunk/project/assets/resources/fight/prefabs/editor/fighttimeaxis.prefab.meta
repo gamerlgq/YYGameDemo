@@ -2,12 +2,12 @@
   "ver": "1.1.35",
   "importer": "prefab",
   "imported": true,
-  "uuid": "0ec5ad09-0d38-4046-83ae-e1faf33805d2",
+  "uuid": "be424551-42d8-4e5e-baf3-b12342a0b18e",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "double_btn_dialog_1"
+    "syncNodeName": "fighttimeaxis"
   }
 }

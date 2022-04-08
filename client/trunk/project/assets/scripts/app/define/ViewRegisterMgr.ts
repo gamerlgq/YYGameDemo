@@ -19,7 +19,7 @@ import { yy } from "./YYNamespace";
 import { ViewInfoType } from "./ConfigType";
 import { LoadingCreator } from "../views/loading/Creator";
 import ChatCreator from "../views/chat/Creator";
-import { log } from "cc";
+import Logger from "../../framework/utils/Logger";
 
 type ViewConfig = {
     path: string;//预制体路径
@@ -51,7 +51,7 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
                     isCache: true
                 },
                 "netloading": {
-                    path: "common_ui/prefabs/netinstable",
+                    path: "common_ui/prefabs/ui/netinstable",
                     isCache: true
                 },
                 "TouchEffect": {
@@ -143,7 +143,7 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
                     path: "fight/prefabs/changjing/mainfightui"
                 },
                 "FightEditorUI": {
-                    path: "fight/prefabs/changjing/fighteditorui"
+                    path: "fight/prefabs/editor/fighteditorui"
                 },
                 "FightFormation": {
                     path: "fight/prefabs/changjing/FightFormation"
@@ -189,6 +189,14 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
                     isShowBg: true,
                 }
             }
+        },
+
+        newguide:{
+            prefab:{
+                "Finger":{
+                    path:"newguide/prefabs/finger"
+                }
+            }
         }
     }
 
@@ -207,12 +215,12 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
     private constructor() {
         super();
         Object.keys(this.ViewType).forEach((system: string) => {
-            // log("ViewRegisterMgr:ctor() system [ %s ]",system);
+            // Logger.i("ViewRegisterMgr:ctor() system [ %s ]",system);
             let module = this.ViewType[system];
             Object.keys(module.prefab).forEach((view: string) => {
                 let arr = <ViewConfig>module.prefab[<string><unknown>view];
                 let isShowBg = arr.isShowBg ?? false;
-                // log("ViewRegisterMgr:ctor() view [ %s ] [ %s ]",view,isHidden.toString());
+                // Logger.i("ViewRegisterMgr:ctor() view [ %s ] [ %s ]",view,isHidden.toString());
                 if (isShowBg) {
                     ShowBackgroundMgr.regShowBackgroundView(view);
                 }
@@ -237,7 +245,7 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
 
     // enter app call this method,register all view creator
     public registerAllCreator() {
-        log("register all creator")
+        Logger.i("register all creator")
         this.Cretors.forEach((ctor) => {
             viewCreatorMgr.registeredCreator(new ctor());
         })

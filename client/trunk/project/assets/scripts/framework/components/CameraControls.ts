@@ -186,7 +186,7 @@ export default class CameraControls extends Component {
             }
             if (this.startFollow) {
                 let cameraPos = this.node.parent.getComponent(UITransform).convertToNodeSpaceAR(targetPos);
-                // log("===>cameraPos",cameraPos,targetPos);
+                // Logger.i("===>cameraPos",cameraPos,targetPos);
                 this.node.position = this.node.position.lerp(cameraPos,this.followRatio);
                 if (Vec2.distance(targetPos, this.node.position) <= this.minFollowDist) {
                     this.startFollow = false;

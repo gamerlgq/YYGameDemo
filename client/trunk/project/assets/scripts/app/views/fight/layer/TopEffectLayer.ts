@@ -1,5 +1,5 @@
-import { error, Node, tween } from "cc";
-import { warn } from "console";
+import { Node } from "cc";
+import Logger from "../../../../framework/utils/Logger";
 import { FightLayerBase } from "./FightLayerBase";
 
 export class TopEffectLayer extends FightLayerBase {
@@ -15,7 +15,7 @@ export class TopEffectLayer extends FightLayerBase {
 
     public popActionNode():Node{
         if (this._isPlayerTween){
-            error("this._actionNode:isPlayerTween return null!")
+            Logger.e("this._actionNode:isPlayerTween return null!")
             return null
         }
         this._isPlayerTween = true;

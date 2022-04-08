@@ -1,4 +1,4 @@
-import { log, Node, Tween, Vec3 } from "cc";
+import { Node, Tween, Vec3 } from "cc";
 import { Singleton } from "../../../../framework/components/Singleton";
 import { HeroSpineNode, MonsterSpineNode, SpineNodeBase } from "../../common/spine/SpineNodeBase";
 import { FightEvent } from "../event/FightEvent";
@@ -176,7 +176,6 @@ export class FightActionMgr extends Singleton{
             let names = [];
             values.filter(v=>{
                 if (Number.isNaN(Number(v))) {
-                    log(v,"v");
                     names.push(v);
                 }
             })

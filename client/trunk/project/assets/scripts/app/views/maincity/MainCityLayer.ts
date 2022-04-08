@@ -5,6 +5,7 @@ import { sceneMgr } from '../../../framework/core/SceneMgr';
 import { DInertiaMove } from '../../../framework/ui/DInertiaMove';
 import { LayerBase } from '../../../framework/ui/LayerBase';
 import { MulitMoveingBgs } from '../../../framework/ui/MulitMoveingBgs';
+import Logger from '../../../framework/utils/Logger';
 import { sceneTriggerMgr } from '../../../framework/utils/SceneTriggerMgr';
 import { viewRegisterMgr, ViewRegisterMgr } from '../../define/ViewRegisterMgr';
 const { ccclass, property } = _decorator;
@@ -56,7 +57,7 @@ export class MainCityLayer extends LayerBase {
     }
 
     private onTrigger() {
-        log("main city trigger")
+        Logger.i("main city trigger")
     }
 
     private _initBgTouch() {

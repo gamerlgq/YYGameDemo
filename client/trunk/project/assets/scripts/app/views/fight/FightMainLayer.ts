@@ -6,16 +6,18 @@
  * @Description: file content
  */
 
-import { _decorator, Prefab, instantiate, Node, js, sys, JsonAsset, log, director, TweenSystem, AnimationManager } from 'cc';
+import { _decorator, Prefab, instantiate, Node, JsonAsset, director, TweenSystem, AnimationManager } from 'cc';
 import { audioMgr } from '../../../framework/core/audio/AudioManager';
 import { ResourcesLoader } from '../../../framework/data/ResourcesLoader';
 import { Message } from '../../../framework/listener/Message';
 import { LayerBase } from '../../../framework/ui/LayerBase';
+import Logger from '../../../framework/utils/Logger';
 import { Protocol } from '../../define/define';
 import { viewRegisterMgr } from '../../define/ViewRegisterMgr';
 import { fightActionMgr, FightActionMgr } from './action/FightActionMgr';
 import { FightData } from './data/FightData';
 import { fightDataMgr, FightDataMgr } from './data/FightDataMgr';
+import { FightEditorUI } from './editor/FightEditorUI';
 import { FightEvent } from './event/FightEvent';
 import { fightEventMgr,FightEventMgr } from './event/FightEventMgr';
 import { fightBloodMgr, FightBloodMgr } from './FightBloodMgr';
@@ -34,6 +36,7 @@ export class FightMainLayer extends LayerBase {
     private _content:Node = null;
     private _rootNode:Node = null;
     private _gameSpeed:number = 1;
+    private _pauseFormView:boolean = false;
 
     onLoad () {
         super.onLoad();
@@ -90,7 +93,13 @@ export class FightMainLayer extends LayerBase {
         ResourcesLoader.loadWithViewInfo(viewInfo,(data:Prefab)=>{
             let uiNode = instantiate(data);
             this._content.addChild(uiNode);
-            this._fightMainUI = uiNode.getComponentInChildren("FightMainUI") as FightMainUI;
+            if (FightConstant.Open_Fight_Editor){
+                const _editorUI = uiNode.getComponent("FightEditorUI") as FightEditorUI;
+                Logger.i(_editorUI);
+                _editorUI.setMainLayer(this);
+            }else{
+                this._fightMainUI = uiNode.getComponentInChildren("FightMainUI") as FightMainUI;
+            }
         })
     }
 
@@ -101,11 +110,12 @@ export class FightMainLayer extends LayerBase {
     private _addListeners() {
         fightEventMgr.addEventListener(FightConstant.FightEvent.Game_Star,this._startGame.bind(this));
         this.addMsgListener(Protocol.Inner.SetAnimationSpeed,this._setSpeed.bind(this));
+        this.addMsgListener(Protocol.Inner.ViewChange, this._onViewChange.bind(this));
     }
 
     private _startGame(event:FightEvent) {
-        this._fightMainWorld.startGame();
-        this._fightMainUI.startGame();
+        this._fightMainWorld?.startGame();
+        this._fightMainUI?.startGame();
     }
 
     /**
@@ -137,5 +147,40 @@ export class FightMainLayer extends LayerBase {
     private _setSpeed(event:Message) {
         let data = event.getRawData();
         this._gameSpeed = data;
+    }
+
+    private _onViewChange(event:Message) {
+        let data = event.getRawData();
+        let topShowLayerName = data.topShow;
+        Logger.i("viewChange", topShowLayerName);
+        if (topShowLayerName != "FightMainLayer" && topShowLayerName != "SettingLayer") {
+            if (!this._pauseFormView) {
+                if (fightPlayer) {
+                    fightPlayer.pause();
+                    this._pauseFormView = true;
+                    // sdk埋点
+                    // if (window["SDKHelper"]) {
+                    //     let data: any = {};
+                    //     data.id = this._mapId;
+                    //     data.rt = SDKDotMapType.pause;
+                    //     window["SDKHelper"].trackBattleMapEvent(data);
+                    // }
+                }
+            }
+        } else {
+            if (this._pauseFormView) {
+                if (fightPlayer) {
+                    fightPlayer.resume();
+                    this._pauseFormView = false;
+                    // sdk埋点
+                    // if (window["SDKHelper"]) {
+                    //     let data: any = {};
+                    //     data.id = this._mapId;
+                    //     data.rt = SDKDotMapType.resume;
+                    //     window["SDKHelper"].trackBattleMapEvent(data);
+                    // }
+                }
+            }
+        }
     }
 }

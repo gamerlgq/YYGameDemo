@@ -7,6 +7,7 @@
  */
 
 import { log } from "cc";
+import Logger from "../utils/Logger";
 import { singletonMgr } from "./SingletonMgr";
 
 // 全局单实例需要实现次接口
@@ -53,7 +54,7 @@ export class Singleton implements IRerunApp{
     static destoryInstance() {
         if ((<any>this).instance) {
             (<any>this).instance.clear();
-            log((<any>this).instance,"(<any>this).instance");
+            Logger.i((<any>this).instance,"(<any>this).instance");
             let isUnsigned:boolean = (<any>this).instance.isSigned();
             if (!isUnsigned){
                 singletonMgr.unsign(<any>this);
