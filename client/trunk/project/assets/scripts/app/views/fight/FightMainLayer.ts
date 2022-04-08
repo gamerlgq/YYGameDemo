@@ -17,6 +17,7 @@ import { viewRegisterMgr } from '../../define/ViewRegisterMgr';
 import { fightActionMgr, FightActionMgr } from './action/FightActionMgr';
 import { FightData } from './data/FightData';
 import { fightDataMgr, FightDataMgr } from './data/FightDataMgr';
+import { FightEditorUI } from './editor/FightEditorUI';
 import { FightEvent } from './event/FightEvent';
 import { fightEventMgr,FightEventMgr } from './event/FightEventMgr';
 import { fightBloodMgr, FightBloodMgr } from './FightBloodMgr';
@@ -92,7 +93,13 @@ export class FightMainLayer extends LayerBase {
         ResourcesLoader.loadWithViewInfo(viewInfo,(data:Prefab)=>{
             let uiNode = instantiate(data);
             this._content.addChild(uiNode);
-            this._fightMainUI = uiNode.getComponentInChildren("FightMainUI") as FightMainUI;
+            if (FightConstant.Open_Fight_Editor){
+                const _editorUI = uiNode.getComponent("FightEditorUI") as FightEditorUI;
+                Logger.i(_editorUI);
+                _editorUI.setMainLayer(this);
+            }else{
+                this._fightMainUI = uiNode.getComponentInChildren("FightMainUI") as FightMainUI;
+            }
         })
     }
 
@@ -103,12 +110,12 @@ export class FightMainLayer extends LayerBase {
     private _addListeners() {
         fightEventMgr.addEventListener(FightConstant.FightEvent.Game_Star,this._startGame.bind(this));
         this.addMsgListener(Protocol.Inner.SetAnimationSpeed,this._setSpeed.bind(this));
-        this.addMsgListener(Protocol.Inner.ViewChange, this._viewChange.bind(this));
+        this.addMsgListener(Protocol.Inner.ViewChange, this._onViewChange.bind(this));
     }
 
     private _startGame(event:FightEvent) {
-        this._fightMainWorld.startGame();
-        this._fightMainUI.startGame();
+        this._fightMainWorld?.startGame();
+        this._fightMainUI?.startGame();
     }
 
     /**
@@ -142,7 +149,7 @@ export class FightMainLayer extends LayerBase {
         this._gameSpeed = data;
     }
 
-    private _viewChange(event:Message) {
+    private _onViewChange(event:Message) {
         let data = event.getRawData();
         let topShowLayerName = data.topShow;
         Logger.i("viewChange", topShowLayerName);

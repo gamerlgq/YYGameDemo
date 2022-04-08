@@ -143,7 +143,7 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
                     path: "fight/prefabs/changjing/mainfightui"
                 },
                 "FightEditorUI": {
-                    path: "fight/prefabs/changjing/fighteditorui"
+                    path: "fight/prefabs/editor/fighteditorui"
                 },
                 "FightFormation": {
                     path: "fight/prefabs/changjing/FightFormation"
@@ -187,6 +187,14 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IR
                 "ChatLayer":{
                     path:"chat/prefabs/ChatLayer",
                     isShowBg: true,
+                }
+            }
+        },
+
+        newguide:{
+            prefab:{
+                "Finger":{
+                    path:"newguide/prefabs/finger"
                 }
             }
         }

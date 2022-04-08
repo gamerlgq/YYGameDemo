@@ -1,4 +1,4 @@
-import { log, Node, Tween, Vec3 } from "cc";
+import { Node, Tween, Vec3 } from "cc";
 import { Singleton } from "../../../../framework/components/Singleton";
 import { HeroSpineNode, MonsterSpineNode, SpineNodeBase } from "../../common/spine/SpineNodeBase";
 import { FightEvent } from "../event/FightEvent";

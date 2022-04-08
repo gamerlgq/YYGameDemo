@@ -122,8 +122,16 @@ export class RoleLayer extends FightLayerBase {
         return this._attackRoleList[index];
     }
 
+    public getRoleAttckers() {
+        return this._attackRoleList
+    }
+
     public getRoleDefender(index:number):MonsterSpineNode {
         return this._defendRoleList[index];
+    }
+
+    public getRoleDefenders() {
+        return this._defendRoleList;
     }
 
     /**
