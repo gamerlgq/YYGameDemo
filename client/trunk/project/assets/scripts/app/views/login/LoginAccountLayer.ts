@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, EditBox, log, sys, game, UITransform } from 'cc';
+import { _decorator, Component, Node, EditBox, log, sys, game, UITransform, error } from 'cc';
 import { gameMgr } from '../../../framework/core/GameMgr';
 import { sceneMgr } from '../../../framework/core/SceneMgr';
 import { storage } from '../../../framework/core/storage/Storage';
@@ -95,6 +95,17 @@ export class LoginAccountLayer extends LayerBase {
                 // password: passWord,
             // }
         // );
+
+        if (sys.isNative) {
+            log("call android")
+            var o = jsb.reflection.callStaticMethod("com/yyGame/lib/PSNative",  "createAlert", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V","提示", "你好王企鹅","['OK']","",4)
+            var o = jsb.reflection.callStaticMethod("com/yyGame/lib/PSNative",  "getDeviceName", "()Ljava/lang/String;")
+            log("device:" + o)
+        }
+    }
+
+    showTips() {
+        G.showMsgTips("回调成功")
     }
 
     // 实名认证

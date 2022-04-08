@@ -2,7 +2,7 @@ import { Camera, director, Game, game, ISchedulable, log, Scheduler, sys } from 
 import { DeviceInfoType } from "../../app/define/ConfigType";
 import { yy } from "../../app/define/YYNamespace";
 import { EnterApp } from "../../app/EnterApp";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { ModelBase } from "../data/ModelBase";
 import { modelEventMgr, msgEventMgr } from "../listener/EventMgr";
 import { Message } from "../listener/Message";
@@ -17,10 +17,11 @@ import { sceneMgr } from "./SceneMgr";
  */
 type tickFunc = (hdl: number) => void;
 
-export class GameMgr extends Singleton implements ISchedulable {
+class GameMgr extends Singleton implements ISchedulable,IRerunApp {
     // ISchedulable
     id?: string;
     uuid?: string;
+
     private _modelMapName: Map<string, any>;
 
     private _slowTickList: Array<tickFunc>;
@@ -40,6 +41,7 @@ export class GameMgr extends Singleton implements ISchedulable {
     // 构造函数
     private constructor() {
         super();
+        
         // camera
         this._cameraMap = new Map();
 
@@ -89,6 +91,10 @@ export class GameMgr extends Singleton implements ISchedulable {
         this._innerMessageQueue.push(msg);
     }
 
+    public addFastTick(func:tickFunc){
+        this._fastTickList.push(func);
+    }
+
     public addSlowTick(func: tickFunc) {
         this._slowTickList.push(func);
     }
@@ -122,17 +128,17 @@ export class GameMgr extends Singleton implements ISchedulable {
         return this._cameraMap.get(key);
     }
 
-    public reRun() {
+    public rerun() {
         log("GameMgr reRunRun0");
         sceneMgr.removeAllTableLayer();
         sceneMgr.setSystemOpenLayer(null);
         sceneMgr.setNewGuideLayer(null);
         if (this._app) {
             log("GameMgr reRunRun1");
-            this._app.reRun();
+            this._app.rerun();
         } else {
             log("GameMgr reRunRun2");
-            director.loadScene("HotUpdate");
+            director.loadScene("Launch");
         }
     }
 
@@ -232,12 +238,13 @@ export class GameMgr extends Singleton implements ISchedulable {
         // SFRedGuideMgr.dispatchEvent(msg);
     }
 
-    clear(){
+    public clear(){
         gameMgr = null;
+    }
+
+    static recreate(){
+        gameMgr = GameMgr.getInstance<GameMgr>();
     }
 }
 
-// ()();
-export let gameMgr = (()=>{
-    return GameMgr.getInstance<GameMgr>();
-})();
+export let gameMgr:GameMgr = GameMgr.getInstance<GameMgr>();

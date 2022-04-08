@@ -6,26 +6,17 @@
  * @Description: file content
  */
 
-import { _decorator, Component, Label, RichText, Button } from 'cc';
+import { _decorator, Label, RichText, Button,log } from 'cc';
 import { sceneMgr } from '../../../framework/core/SceneMgr';
 import { LayerBase } from '../../../framework/ui/LayerBase';
+import { DoubleBtnDialogArgsType } from '../../define/ConfigType';
 const { ccclass, property } = _decorator;
 
-export type DoubleDialogArgsType = {
-    title?: string;
-    msg?: string;
-    leftBtnName?: string;
-    rightBtnName?: string;
-    leftCallback?: () => void;
-    rightCallback?: () => void;
-    hideLeftButton?: boolean;
-    newGuide?: boolean;
-}
 
 @ccclass('DoubleBtnDialog')
 export class DoubleBtnDialog extends LayerBase {
 
-    static DoubleDialogArgs:DoubleDialogArgsType = {}
+    static DoubleDialogArgs:DoubleBtnDialogArgsType = {}
 
     @property(Label)
     lblTitle: Label = null;
@@ -43,11 +34,10 @@ export class DoubleBtnDialog extends LayerBase {
     private _addType: number = 0;
 
     start () {
-        // this.updateDialog();
-        this.node._uiProps.localOpacity = 0
+
     }
 
-    updateDialog(args:DoubleDialogArgsType) {
+    updateDialog(args:DoubleBtnDialogArgsType) {
         this._args = args;
         this._args.title = args.title || "";
         this._args.msg = args.msg || "";
@@ -116,9 +106,9 @@ export class DoubleBtnDialog extends LayerBase {
         if (this._addType == 1) {
             this.node.destroy();
         } else if (this._addType == 2) {
-            sceneMgr.popTableLayer();
+            sceneMgr?.popTableLayer();
         } else {
-            sceneMgr.removeDialog();
+            sceneMgr?.removeDialog();
         }
     }
 
@@ -126,14 +116,3 @@ export class DoubleBtnDialog extends LayerBase {
         this._addType = addType;
     }
 }
-
-/**
- * [1] Class member could be defined like this.
- * [2] Use `property` decorator if your want the member to be serializable.
- * [3] Your initialization goes here.
- * [4] Your update function goes here.
- *
- * Learn more about scripting: https://docs.cocos.com/creator/3.4/manual/zh/scripting/
- * Learn more about CCClass: https://docs.cocos.com/creator/3.4/manual/zh/scripting/decorator.html
- * Learn more about life-cycle callbacks: https://docs.cocos.com/creator/3.4/manual/zh/scripting/life-cycle-callbacks.html
- */

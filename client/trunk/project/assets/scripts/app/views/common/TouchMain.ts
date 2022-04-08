@@ -34,7 +34,7 @@ export class TouchMain extends Component {
             this.node.addChild(this._touchEffectNode)
             this._touchEffectNode.active = false
             this._touchEffectComp = this._touchEffectNode.getChildByName("ScriptNode").getComponent(TouchEffect)
-        },false)
+        },Prefab,false)
         
         this.node.on(Node.EventType.TOUCH_START, this.onTouchStart,this)
         this.node.on(Node.EventType.TOUCH_MOVE, this.onTouchMove,this)

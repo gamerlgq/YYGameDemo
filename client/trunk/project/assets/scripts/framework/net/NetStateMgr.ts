@@ -6,18 +6,17 @@
  * @Description: file content
  */
 
-
 import { G } from "../../app/common/GlobalFunction";
 import { DoubleBtnDialogArgsType } from "../../app/define/ConfigType";
 import { Protocol } from "../../app/define/define";
 import { ModelLogin } from "../../app/model/model";
 import { GameConfig } from "../../GameConfig";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { gameMgr } from "../core/GameMgr";
 import { msgEventMgr } from "../listener/EventMgr";
 import { socketMgr } from "./SocketMgr";
 
-class NetStateMgr extends Singleton{
+class NetStateMgr extends Singleton implements IRerunApp{
     private _reconnect;
     private _request_server_info_time: number = null;
     private _status: any;
@@ -25,6 +24,7 @@ class NetStateMgr extends Singleton{
     // 构造函数;
     private constructor() {
         super()
+
         msgEventMgr.addEventListener(
             Protocol.Login.identify,
             this.loginCheck.bind(this)
@@ -32,8 +32,10 @@ class NetStateMgr extends Singleton{
         msgEventMgr.addEventListener(
             Protocol.Login.login,
             this.loginHandler.bind(this)
-        );
+        );        
+    }
 
+    init(){
         gameMgr.addSlowTick(this.slowTickHandler.bind(this));
     }
 
@@ -64,7 +66,7 @@ class NetStateMgr extends Singleton{
             }
             let msg = event.reason;
             if (msg == "") {
-                msg = "与战车失去联系，请指挥官检查网络再尝试。";
+                msg = "与服务器失去联系，请指挥官检查网络再尝试。";
             }
             this.netWorkError(msg);
             socketMgr.sendInnerMsg(Protocol.Inner.FightPause);
@@ -79,7 +81,7 @@ class NetStateMgr extends Singleton{
 
     // 返回登录界面
     redirectLoginView() {
-        gameMgr.reRun();
+        gameMgr.rerun();
     }
 
     // 重新链接
@@ -152,12 +154,13 @@ class NetStateMgr extends Singleton{
         this.requestServerInfo();
     }
 
-    clear() {
+    public clear() {
         netStateMgr = null;
+    }
+
+    static recreate(): void {
+        netStateMgr = NetStateMgr.getInstance<NetStateMgr>();
     }
 }
 
-// ()();
-export let netStateMgr = (()=>{
-    return NetStateMgr.getInstance<NetStateMgr>();
-})();
+export let netStateMgr = NetStateMgr.getInstance<NetStateMgr>();

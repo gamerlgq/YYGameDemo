@@ -1,6 +1,7 @@
 
 import { _decorator, Component, Node, js, director, Label, sys, assetManager, log, ProgressBar, game } from 'cc';
 import { EnterApp } from '../app/EnterApp';
+import { GameConfig } from '../GameConfig';
 const { ccclass, property } = _decorator;
 
 /**
@@ -30,7 +31,7 @@ export class HotUpdate extends Component {
 
 
     start() {
-        if (sys.isNative) {
+        if (sys.isNative && GameConfig.OpenUpdate) {
             this.checkUpdate()
         }
         else {

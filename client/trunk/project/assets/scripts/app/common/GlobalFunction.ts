@@ -16,7 +16,7 @@ import { yy } from "../define/YYNamespace";
 export namespace G {
     export function showDoubleBtnDialog(args:DoubleBtnDialogArgsType){
         //主场景
-        if (director.getScene().name == "Main") {
+        if (director.getScene().name == "main") {
             sceneMgr.sendCreateView(ViewProtocol.DoubleBtnDialog, args);
         }
         // } else {

@@ -7,7 +7,7 @@
  */
 
 import { log, sys } from "cc";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { netStateMgr } from "./NetStateMgr";
 
 export type HttpCallback = {
@@ -25,7 +25,7 @@ export class HttpMessage {
     }
 }
 
- class HttpMgr extends Singleton{
+ class HttpMgr extends Singleton implements IRerunApp{
     private constructor(){
         super();
     }
@@ -126,12 +126,13 @@ export class HttpMessage {
         return serializeParams;
     }
 
-    clear() {
+    public clear() {
         httpMgr = null;
+    }
+
+    static recreate(): void {
+        httpMgr = HttpMgr.getInstance<HttpMgr>();
     }
 }
 
-// ()();
-export let httpMgr = (()=>{
-    return HttpMgr.getInstance<HttpMgr>();
-})();
+export let httpMgr = HttpMgr.getInstance<HttpMgr>();

@@ -1,0 +1,4 @@
+include ':libcocos',':libservice',':androidLIb'
+project(':libcocos').projectDir     = new File(COCOS_ENGINE_PATH,'cocos/platform/android/libcocos2dx')
+project(':androidLIb').projectDir    = new File(NATIVE_DIR, 'app')
+rootProject.name = "androidLIb"

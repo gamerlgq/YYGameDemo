@@ -5,13 +5,14 @@ import { gameMgr } from "../framework/core/GameMgr";
 import { sceneMgr } from "../framework/core/SceneMgr";
 import { languageManager, LanguageManager } from "../framework/language/Language";
 import { netLoadingMgr } from "../framework/net/NetLoadingMgr";
+import { netStateMgr } from "../framework/net/NetStateMgr";
 import { translateMgr } from "../framework/translate/TranslateMgr";
 import { GameConfig } from "../GameConfig";
 import { dataRegisterMgr } from "./define/DataRegisterMgr";
 import { ViewProtocol } from "./define/ViewProtocol";
 import { viewRegisterMgr } from "./define/ViewRegisterMgr";
 import { modelRegisterMgr } from "./model/ModelRegisterMgr";
-
+import {nativeCallBackInit } from "./nativeCallBack/loader";
 /*
  * @Author: liuguoqing
  * @Date: 2022-03-02 16:36:11
@@ -29,24 +30,28 @@ export class EnterApp {
         this.loadDefine();
         this.loadAllDataFile();
         this.initSDKHelper();
+        this.loadAllCallBack();
     }
 
-    reRun() {
+    rerun() {
         singletonMgr.destoryAll();
         let scene = director.getScene();
-        audioMgr.stopAll()
+        audioMgr.stopAllAndClear()
         // let main = scene.getComponentInChildren("Main");
         // gameMgr.setCamera("default", main.defaultCamera);
         // gameMgr.setCamera("fight", main.fightCamera);
         // this.run();
-        director.loadScene("HotUpdate");
+        // director.loadScene("Launch");
+        game.restart();
     }
 
     init() {
+        singletonMgr.init();
         sceneMgr.init();
         gameMgr.setApp(this);
         audioMgr.init();
-        netLoadingMgr.init()
+        netLoadingMgr.init();
+        netStateMgr.init();
         //玩家ID，保存音效设置
         // audioMgr.setUuid("3998857")
 
@@ -71,6 +76,10 @@ export class EnterApp {
             this.loadAllRedGuide();
             this.done();
         });
+    }
+
+    loadAllCallBack() {
+        nativeCallBackInit()
     }
 
     loadAllRedGuide() {

@@ -1,5 +1,5 @@
 import { log } from "cc";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { Message } from "./Message";
 /*
  * @Author: liuguoqing
@@ -14,7 +14,7 @@ export interface EventCallback {
     (event: Message):void | string | boolean;
 }
 
-export class EventMgr extends Singleton {
+class EventMgr extends Singleton implements IRerunApp{
     // 字段
     _listeners: Map<number, Map<string, EventCallback>>;
     _listenerHandleIndex: number;
@@ -32,7 +32,7 @@ export class EventMgr extends Singleton {
         this._waitAddListeners = [];
         this._waitDelListeners = new Map();
     }
-
+ 
     // 方法
     addEventListener(eventName: number, listener: EventCallback): string {
         if (this._listeners.get(eventName) == null) {
@@ -119,35 +119,45 @@ export class EventMgr extends Singleton {
         this._waitDelListeners.clear();
     }
 
-    clear() {
+    public clear() {
        
     }
+
+    static recreate(): void {
+        
+    }
 }
 
-class ModelEventMgr extends EventMgr {
-    clear() {
+class ModelEventMgr extends EventMgr implements IRerunApp{
+    public clear() {
         modelEventMgr = null;
     }
+
+    static recreate(): void {
+        modelEventMgr = ModelEventMgr.getInstance<ModelEventMgr>();
+    }
 }
-class MsgEventMgr extends EventMgr {
-    clear() {
+class MsgEventMgr extends EventMgr implements IRerunApp{
+    public clear() {
         msgEventMgr = null;
     }
+
+    static recreate(): void {
+        msgEventMgr = MsgEventMgr.getInstance<MsgEventMgr>();
+    }
 }
-class ViewEventMgr extends EventMgr {
-    clear() {
+class ViewEventMgr extends EventMgr implements IRerunApp{
+    public clear() {
         viewEventMgr = null;
+    }
+
+    static recreate(): void {
+        viewEventMgr = ViewEventMgr.getInstance<ViewEventMgr>();
     }
 }
 
-export let modelEventMgr = (()=>{
-    return ModelEventMgr.getInstance<ModelEventMgr>();
-})();
+export let modelEventMgr = ModelEventMgr.getInstance<ModelEventMgr>();
 
-export let msgEventMgr = (()=>{
-    return MsgEventMgr.getInstance<MsgEventMgr>();
-})();
+export let msgEventMgr = MsgEventMgr.getInstance<MsgEventMgr>();
 
-export let viewEventMgr = (()=>{
-    return ViewEventMgr.getInstance<ViewEventMgr>();
-})();
+export let viewEventMgr = ViewEventMgr.getInstance<ViewEventMgr>();

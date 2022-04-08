@@ -52,4 +52,8 @@ export class FightDataMgr extends Singleton{
     public clear() {
         fightDataMgr = null;
     }
+
+    public isSigned(){
+        return false;
+    }
 }

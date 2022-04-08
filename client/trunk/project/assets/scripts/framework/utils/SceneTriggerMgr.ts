@@ -8,7 +8,7 @@
 //  只有在切换table的时候会主动检查，不够可以找我聊
 
 import { log } from "cc";
-import { Singleton } from "../components/Singleton";
+import { IRerunApp, Singleton } from "../components/Singleton";
 import { sceneMgr } from "../core/SceneMgr";
 
 //  监听 使用范例
@@ -25,7 +25,7 @@ import { sceneMgr } from "../core/SceneMgr";
 // -- SFSceneTriggerMgr.getInstance().check();
 
 
-export class SceneTriggerMgr extends Singleton {
+export class SceneTriggerMgr extends Singleton implements IRerunApp{
     _listeners: Map<string, Array<any>>;
     _listenerHandleIndex;
     // 构造函数
@@ -142,13 +142,15 @@ export class SceneTriggerMgr extends Singleton {
     }
 
     // 覆盖销毁
-    clear() {
+    public clear() {
         this._listeners.clear();
         this._listenerHandleIndex = 0;
         sceneTriggerMgr = null;
     }
+
+    static recreate(): void {
+        sceneTriggerMgr = SceneTriggerMgr.getInstance<SceneTriggerMgr>();
+    }
 }
 
-export let sceneTriggerMgr = (() => {
-    return SceneTriggerMgr.getInstance<SceneTriggerMgr>();
-})();
+export let sceneTriggerMgr = SceneTriggerMgr.getInstance<SceneTriggerMgr>();

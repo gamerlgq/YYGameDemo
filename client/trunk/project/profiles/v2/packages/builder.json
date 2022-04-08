@@ -6,7 +6,7 @@
     "outputName": "android",
     "mainBundleCompressionType": "merge_dep",
     "platform": "android",
-    "debug": true
+    "debug": false
   },
   "BuildTaskManager": {
     "taskMap": {
@@ -14,12 +14,12 @@
         "id": "1648534258017",
         "progress": 1,
         "state": "success",
-        "message": "2022-3-29 14:11 Build success in 5895 ms!",
+        "message": "2022-4-6 18:27 Build success in 62829 ms!",
         "options": {
           "name": "NewProject",
           "platform": "android",
           "buildPath": "project://build",
-          "debug": true,
+          "debug": false,
           "md5Cache": false,
           "sourceMaps": false,
           "replaceSplashScreen": false,
@@ -104,7 +104,7 @@
             "hot-update": null
           }
         },
-        "time": "2022-3-29 14:10",
+        "time": "2022-4-6 18:26",
         "dirty": false
       }
     }

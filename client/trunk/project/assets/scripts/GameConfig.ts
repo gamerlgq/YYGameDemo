@@ -14,5 +14,6 @@ export let GameConfig:GameConfigType = {
     SDKLogin: "",
     ServerUrl: "",
     ServerListUrl: "",
-    BigUpdateType: ""
+    BigUpdateType: "",
+    OpenUpdate:true,
 }

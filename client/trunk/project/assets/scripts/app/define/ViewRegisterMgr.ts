@@ -6,7 +6,7 @@
  * @Description: file content
  */
 
-import { Singleton } from "../../framework/components/Singleton";
+import { IRerunApp, Singleton } from "../../framework/components/Singleton";
 import { DialogCreator } from "../views/dialog/Creator";
 import { LoginCreator } from "../views/login/Creator";
 import { PreRewardCreator } from "../views/pre_reward/Creator";
@@ -20,11 +20,10 @@ import { ViewInfoType } from "./ConfigType";
 import { LoadingCreator } from "../views/loading/Creator";
 import ChatCreator from "../views/chat/Creator";
 import { log } from "cc";
-import { G } from "../common/GlobalFunction";
 
 type ViewConfig = {
     path: string;//预制体路径
-    isShowBg?: boolean;//是否显示背景(默认false不现实背景)
+    isShowBg?: boolean;//是否显示背景(默认false不显示背景)
     isCache?: boolean;//是否永久缓存(默认false不永久缓存) 手动管理是否释放
     batch?:Array<number>;//批量资源例如 hero_1 ~ helr_xx [1,xx];
 }
@@ -40,7 +39,7 @@ interface ViewRegMgrInterface {
 }
 
 
-export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface {
+export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface,IRerunApp {
   
     // 注册预页面预制体路径
     ViewType = {
@@ -99,12 +98,12 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface {
         dialog: {
             prefab: {
                 "DoubleBtnDialog": {
-                    path: 'common_ui/prefabs/double_btn_dialog',
+                    path: 'common_ui/prefabs/ui/double_btn_dialog',
                     isShowBg: true,
                     isCache: true
                 },
                 "Tips": {
-                    path: "common_ui/prefabs/tips",
+                    path: "common_ui/prefabs/ui/tips",
                     isShowBg: true,
                     isCache: true
                 }
@@ -212,29 +211,14 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface {
             let module = this.ViewType[system];
             Object.keys(module.prefab).forEach((view: string) => {
                 let arr = <ViewConfig>module.prefab[<string><unknown>view];
-                let isHidden = arr.isShowBg ?? false;
+                let isShowBg = arr.isShowBg ?? false;
                 // log("ViewRegisterMgr:ctor() view [ %s ] [ %s ]",view,isHidden.toString());
-                if (isHidden) {
+                if (isShowBg) {
                     ShowBackgroundMgr.regShowBackgroundView(view);
                 }
             })
         })
     }
-
-    // 在编辑器中右键添加resources下的预加载资源,自动保存到maincity/datas/preload.json文件中
-    getMaincityPreloadList():Array<string>{
-        let list:Array<string> = new Array();
-        let config = G.getConfig("MaincityPreload");
-        if (config){
-            const keys = Object.keys(config);
-            keys.forEach(key=>{
-                let pair:Array<string>=new Array();
-                list.push(key);
-            })
-        }
-        return list;
-    }
-
 
     // 各个系统中获取页面预制的都路径 返回 ViewInfoType
     getViewInfo<TMoudleName extends yy.types.ViewModuleName,
@@ -253,17 +237,19 @@ export class ViewRegisterMgr extends Singleton implements ViewRegMgrInterface {
 
     // enter app call this method,register all view creator
     public registerAllCreator() {
+        log("register all creator")
         this.Cretors.forEach((ctor) => {
             viewCreatorMgr.registeredCreator(new ctor());
         })
     }
 
-    clear(){
-        viewRegisterMgr = null
+    public clear(){
+        viewRegisterMgr = null;
+    }
+
+    static recreate(): void {
+        viewRegisterMgr = ViewRegisterMgr.getInstance<ViewRegisterMgr>();
     }
 }
 
-// ()();
-export let viewRegisterMgr = (() => {
-    return ViewRegisterMgr.getInstance<ViewRegisterMgr>();
-})();
+export let viewRegisterMgr:ViewRegisterMgr = ViewRegisterMgr.getInstance<ViewRegisterMgr>();

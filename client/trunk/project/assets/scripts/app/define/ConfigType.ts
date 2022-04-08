@@ -46,13 +46,16 @@ export type GameConfigType = {
     ServerUrl: string;
     ServerListUrl: string;
     BigUpdateType: string;
+    OpenUpdate:boolean,
 }
 
 export type DoubleBtnDialogArgsType = {
-    msg: string;
-    leftBtnName: string;
-    rightBtnName: string,
-    leftCallback: Function;
-    rightCallback: Function,
-    hideLeftButton: boolean,
+    title?: string;
+    msg?: string;
+    leftBtnName?: string;
+    rightBtnName?: string;
+    leftCallback?: () => void;
+    rightCallback?: () => void;
+    hideLeftButton?: boolean;
+    newGuide?: boolean;
 }

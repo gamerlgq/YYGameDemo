@@ -3,7 +3,8 @@
     "QDKey": "0000010000",
     "QDName": "赢游网络",
     "SDKLogin": false,
-    "ServerUrl": "http://10.20.202.226:8081",
+    "OpenUpdate":false,
+    "ServerUrl": "192.168.0.121:9001",
     "ServerListUrl": "http://10.20.202.226:8080",
     "BigUpdateType": 1
 }

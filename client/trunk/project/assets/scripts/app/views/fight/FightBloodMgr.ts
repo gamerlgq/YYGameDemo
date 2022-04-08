@@ -57,4 +57,8 @@ export class FightBloodMgr extends Singleton {
     public clear(){
         fightBloodMgr = null;
     }
+
+    public isSigned(){
+        return false;
+    }
 }

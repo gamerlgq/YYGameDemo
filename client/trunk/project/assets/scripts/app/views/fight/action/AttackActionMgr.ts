@@ -146,4 +146,8 @@ export class AttackActionMgr extends Singleton{
     public clear(){
         attackActionMgr = null;
     }
+
+    public isSigned(){
+        return false;
+    }
 }
